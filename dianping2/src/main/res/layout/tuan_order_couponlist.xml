@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.tuan.widget.OrderCouponList android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.TableView android:id="@id/tv_coupponlist" android:background="@color/white" android:paddingTop="6.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.dianping.widget.view.NovaRelativeLayout android:layout_gravity="right" android:id="@id/buyqrcode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/qrcode_hint" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true">
+                <ImageView android:background="@drawable/purchase_result_qrcode" android:padding="5.0dip" android:layout_width="23.0dip" android:layout_height="23.0dip" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_gray" android:gravity="top" android:id="@id/scan_qrcode_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="扫码验券" />
+            </LinearLayout>
+            <ImageView android:id="@id/vertical_divider" android:background="@drawable/gray_vertical_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/qrcode_hint" />
+        </com.dianping.widget.view.NovaRelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/show_more_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" style="@style/SingleLineTableItemWithPadding">
+            <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_gray" android:gravity="center_vertical" android:id="@id/show_more" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_filter_down" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" />
+</com.dianping.base.tuan.widget.OrderCouponList>

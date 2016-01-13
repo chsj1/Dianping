@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:orientation="horizontal" android:id="@id/ktvdateContainer" android:background="@drawable/tuan_tab_filter" android:layout_width="wrap_content" android:layout_height="55.0dip" android:minWidth="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_black_to_orange" android:gravity="center" android:id="@id/ktvDateTV" android:layout_width="wrap_content" android:layout_height="37.0dip" android:minWidth="40.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/text_size_9" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/ktvDateDiscount" android:background="@drawable/ktv_background_round_orange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="2.0dip" android:layout_toRightOf="@id/ktvDateTV" />
+</com.dianping.widget.view.NovaRelativeLayout>

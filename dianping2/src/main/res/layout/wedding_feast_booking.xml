@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/prefer_promo" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/SingleLineTableItemWithPadding">
+                    <include layout="@layout/wedding_feast_perfer_promo" />
+                </LinearLayout>
+            </com.dianping.base.widget.TableView>
+            <LinearLayout android:orientation="horizontal" android:id="@id/rebate_promo" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/SingleLineTableItemWithPadding">
+                <include layout="@layout/wedding_feast_rebate_promo" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/bg_saw" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_15" android:paddingBottom="14.0dip" android:text="请填写联系方式" style="@style/TableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <EditText android:ellipsize="end" android:gravity="center_vertical" android:id="@id/phoneNum" android:layout_width="fill_parent" android:hint="请输入手机号码" android:singleLine="true" android:maxLength="11" android:inputType="number" style="@style/SingleLineTableItemWithPadding" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <com.dianping.widget.view.NovaButton android:id="@id/find_conditions_go_btn" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="确认" style="@style/NovaWeightButton" />
+    </RelativeLayout>
+</LinearLayout>

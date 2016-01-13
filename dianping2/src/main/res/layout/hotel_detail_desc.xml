@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.TableView android:id="@id/hotel_table" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.TableHeader android:id="@id/facility_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="基础设施" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <GridView android:gravity="center" android:layout_gravity="center" android:id="@id/facilityGridView" android:background="@color/white" android:padding="14.0dip" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="8.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+        <com.dianping.base.widget.FacilityGridView android:orientation="vertical" android:id="@id/hotel_facility" android:background="@color/white" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.dianping.base.widget.ExpandableHeightGridView android:gravity="center" android:id="@id/facility_gird" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="14.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+            <ImageView android:layout_gravity="center" android:id="@id/facility_arrow" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down_black" />
+        </com.dianping.base.widget.FacilityGridView>
+        <com.dianping.base.widget.TableHeader android:id="@id/funfacility_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="娱乐设施" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/clickable_deep_black" android:gravity="center_vertical" android:id="@id/tv_hotel_fun_facility" android:background="@drawable/shopinfo_list_item" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="6.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="55.0dip" android:lineSpacingMultiplier="1.1" />
+        <com.dianping.base.widget.TableHeader android:id="@id/phone_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="酒店电话" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <include android:id="@id/phone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ticket_item" />
+        <com.dianping.base.widget.TableHeader android:id="@id/landmark_header" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="位置交通" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <com.dianping.base.widget.ExpandableHeightListView android:id="@id/landmark" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:groupIndicator="@null" android:divider="@color/line_gray" android:dividerHeight="1.0px" />
+        <com.dianping.base.widget.TableHeader android:id="@id/desc_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="酒店介绍" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <com.dianping.base.widget.ExpandableTextView android:orientation="vertical" android:id="@id/desc" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_medium_1" android:ellipsize="end" android:id="@id/desc_text" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" />
+            <ImageView android:layout_gravity="center" android:id="@id/desc_arrow" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down_black" />
+        </com.dianping.base.widget.ExpandableTextView>
+        <com.dianping.base.widget.TableHeader android:id="@id/policy_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="酒店政策" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <LinearLayout android:orientation="vertical" android:id="@id/policy" android:background="@color/white" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_medium_1" android:id="@id/policy_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.dianping.base.widget.ExpandableHeightGridView android:gravity="center" android:id="@id/policy_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:stretchMode="columnWidth" android:columnWidth="40.0dip" android:numColumns="auto_fit" />
+        </LinearLayout>
+    </com.dianping.base.widget.TableView>
+</ScrollView>

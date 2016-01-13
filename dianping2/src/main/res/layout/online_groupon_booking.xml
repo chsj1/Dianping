@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/groupon_booking_info_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/groupon_booking_info" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/shop_picker_view" android:background="@drawable/booking_item_dynamic_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="22.0dip" android:layout_marginBottom="22.0dip">
+                    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:id="@id/shop_name_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="订座门店" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/shop_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:src="@drawable/booking_dynamic_arrow_right" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_black" android:gravity="right" android:id="@id/shop_name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="11.0dip" android:singleLine="true" android:layout_toLeftOf="@id/shop_arrow" android:layout_toRightOf="@id/shop_name_title" android:layout_centerVertical="true" />
+                    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/groupon_booking_info_layout" android:paddingBottom="85.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/online_groupon_booking_info" />
+                    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" layout="@layout/online_groupon_booking_contact" />
+                    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="bottom" android:paddingLeft="17.0dip" android:paddingBottom="11.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="可选的团购套餐" />
+                    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/groupon_lists" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <RelativeLayout android:id="@id/click_more" android:background="@drawable/booking_item_dynamic_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                        <TextView android:textColor="@color/light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多团购套餐" android:drawableRight="@drawable/mc_arrow_down" android:drawablePadding="7.0dip" android:layout_centerInParent="true" />
+                        <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/yy_list_bkg_line_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/text_large" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/submit_groupon_booking" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="5.0dip" android:text="立即订座" style="@style/NovaWeightButtonTheme" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/groupon_booking_result_view" android:background="@drawable/main_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

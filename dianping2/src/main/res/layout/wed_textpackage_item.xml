@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip">
+        <View android:layout_gravity="center_vertical" android:background="@color/light_red" android:layout_width="5.0dip" android:layout_height="15.0dip" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/wed_textpackage_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="服装造型" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/intervalLine" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/interval_dash_line" />
+    <LinearLayout android:orientation="vertical" android:id="@id/wed_textpackage_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.widget.NearbyMallsItem android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.WrapHeightViewPager android:id="@id/nearby_malls_slide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        <com.dianping.widget.NavigationDot android:id="@id/nearby_malls_nav_dots" android:background="@color/white" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nearby_malls_slide" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</com.dianping.search.widget.NearbyMallsItem>

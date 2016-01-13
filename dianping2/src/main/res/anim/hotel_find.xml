@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/hotel_shoplist_eye1" />
+    <item android:duration="50" android:drawable="@drawable/hotel_shoplist_eye2" />
+    <item android:duration="50" android:drawable="@drawable/hotel_shoplist_eye3" />
+    <item android:duration="50" android:drawable="@drawable/hotel_shoplist_eye2" />
+    <item android:duration="50" android:drawable="@drawable/hotel_shoplist_eye1" />
+</animation-list>

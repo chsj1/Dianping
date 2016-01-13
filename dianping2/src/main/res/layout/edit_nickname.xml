@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_height">
+            <com.dianping.widget.DPBasicItem android:id="@id/passwd_edt" dp:dptitle="昵称" dp:input_hint="" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/save_profile" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="20.0dip" android:text="保存" style="@style/NovaWeightButtonTheme" />
+            </com.dianping.base.widget.TableHeader>
+        </com.dianping.base.widget.TableView>
+    </ScrollView>
+</merge>

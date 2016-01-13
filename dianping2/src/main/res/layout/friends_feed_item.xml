@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.friendsgowhere.FriendsFeedItem android:orientation="vertical" android:background="@color/white" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="top" android:id="@id/user_profile_layout" android:layout_width="fill_parent" android:layout_height="68.0dip" layout="@layout/plaza_userprofile_layout" />
+    <include android:id="@id/my_poi_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="240.0dip" layout="@layout/poi_image_gallery_layout" />
+    <include android:id="@id/intro_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" layout="@layout/plaza_feed_introduce_layout" />
+    <include android:id="@id/extra_poi_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" layout="@layout/plaza_feed_poi_layout" />
+    <View android:id="@id/extra_poi_layout_cut" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include android:id="@android:id/inputArea" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" layout="@layout/plaza_feed_comment_layout" />
+    <View android:id="@android:id/primary" android:background="@color/margin_inner_line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:id="@id/feed_line_bottom" android:background="@color/gray_light_background" android:layout_width="fill_parent" android:layout_height="13.0dip" />
+</com.dianping.main.find.friendsgowhere.FriendsFeedItem>

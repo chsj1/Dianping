@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/column_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.StaggeredGridView android:id="@id/grid_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:column_count="2" app:item_margin="12.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center|right|top" android:orientation="horizontal" android:id="@id/distance_container" android:background="#80000000" android:visibility="invisible" android:layout_width="80.0dip" android:layout_height="24.0dip" android:layout_marginTop="12.0dip">
+        <ImageView android:id="@id/distance_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

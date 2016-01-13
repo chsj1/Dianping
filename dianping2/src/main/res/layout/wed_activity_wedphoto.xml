@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/imagebutton_babyphoto_back" android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/wed_back" android:scaleType="centerInside" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:gravity="center" android:id="@id/textview_babyphoto_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_toRightOf="@id/imagebutton_babyphoto_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager_babyphoto" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/textview_babyphoto" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/textview_babyphoto_index" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <include layout="@layout/wedding_booking_button" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ugc_photo_add_paster" android:background="@color/photo_edit_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ugc_photo_editcategory_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ugc_addpaster_group_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <View android:id="@id/ugc_addpaster_group_bottom_line" android:background="@color/photo_edit_background_edittext" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:gravity="center" android:id="@id/ugc_select_paster_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="4" style="@style/CustomGridView" />
+    <include android:layout_gravity="center" android:id="@id/ugc_photo_paster_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/simple_list_item_18" />
+</LinearLayout>

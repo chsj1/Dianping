@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/title_bar" android:background="@drawable/main_home_title_background" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height" style="?android:attr/windowTitleBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/btn_back_wx" android:background="@drawable/title_btn_right_transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_home_back" />
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/city" android:paddingLeft="@dimen/title_bar_button_margin" android:paddingRight="0.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:drawableRight="@drawable/title_home_arrow_down" android:drawablePadding="5.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dianping.base.widget.ButtonSearchBar android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_search_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/searchIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_mail_icon" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="50.0dip" android:layout_height="fill_parent">
+            <com.dianping.widget.view.NovaImageButton android:id="@id/notify" android:background="@drawable/title_btn_right_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_navibar_icon_add" />
+            <ImageView android:layout_gravity="bottom|center" android:id="@id/tips_arrow" android:background="@drawable/title_btn_right_transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_title_tips_arrow" android:adjustViewBounds="true" />
+            <com.dianping.base.widget.MeasuredTextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@id/findmain_mail_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="8.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/right_title_button" android:paddingLeft="10.0dip" android:paddingRight="18.0dip" android:visibility="gone" android:layout_width="85.0dip" android:layout_height="fill_parent" android:text="上海" android:singleLine="true" android:drawableRight="@drawable/title_arrow_down" />
+</LinearLayout>

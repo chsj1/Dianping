@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaFrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.MeasuredListView android:id="@id/sd_more_portal_listview" android:background="@drawable/selectdish_portal_popwindow_bg" android:layout_width="155.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:divider="@color/transparent" />
+    <ImageView android:layout_gravity="right" android:id="@id/sd_tips_up_arrow" android:background="@drawable/transparent" android:layout_width="15.0dip" android:layout_height="6.0dip" android:src="@drawable/selectdish_tips_up_arrow" android:adjustViewBounds="true" />
+</com.dianping.widget.view.NovaFrameLayout>

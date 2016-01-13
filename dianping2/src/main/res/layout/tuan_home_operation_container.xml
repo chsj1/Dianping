@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.CustomGridView android:id="@id/operation_grid" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

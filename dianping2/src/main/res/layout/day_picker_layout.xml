@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/round_corner_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.dianping.base.widget.wheel.widget.WheelView android:layout_gravity="center" android:id="@id/year" android:background="@drawable/wheel_left_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.dianping.base.widget.wheel.widget.WheelView android:layout_gravity="center" android:id="@id/month" android:background="@drawable/wheel_right_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <com.dianping.base.widget.wheel.widget.WheelView android:layout_gravity="center" android:id="@id/day" android:background="@drawable/wheel_right_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:gravity="center" android:layout_gravity="center" android:id="@id/day_picker_ok" android:background="@drawable/textbox_bg" android:paddingLeft="20.0dip" android:paddingTop="5.0dip" android:paddingRight="20.0dip" android:paddingBottom="5.0dip" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="确定" android:drawableLeft="@drawable/time_picker_ok" />
+    </LinearLayout>
+</LinearLayout>

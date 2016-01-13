@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/gray_light_background" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/text_large" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/review_comment_edit" android:background="@drawable/review_comment_bg" android:paddingLeft="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:maxLength="2000" android:layout_weight="1.0" />
+    <Button android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@id/issue_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="发送" style="@style/NovaWeightButtonTheme" />
+</LinearLayout>

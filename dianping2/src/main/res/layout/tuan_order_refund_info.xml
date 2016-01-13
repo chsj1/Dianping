@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItem">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="退款数量" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_white_to_dark_gray" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/order_refund_subtraction" android:background="@drawable/purchase_amount_minus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" />
+                <EditText android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/order_refund_count" android:background="@drawable/text_input_bg" android:layout_width="66.0dip" android:layout_height="34.0dip" android:inputType="number" />
+                <Button android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_white_to_dark_gray" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/order_refund_add" android:background="@drawable/purchase_amount_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            </LinearLayout>
+            <View android:background="#ffb7babb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="退款金额" android:layout_weight="1.0" />
+                <com.dianping.base.tuan.widget.RMBLabelItem android:gravity="center_vertical" android:id="@id/order_refund_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" dp:style_price="style3" dp:usage="now" />
+            </LinearLayout>
+            <View android:background="#ffb7babb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            <RelativeLayout android:id="@id/order_refund_note" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+                <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:layout_gravity="left" android:id="@id/refund_note_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="优惠不可退" android:layout_toRightOf="@id/refund_note_icon" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/tuan_common_orange" android:ellipsize="end" android:gravity="center|right" android:layout_gravity="right" android:id="@id/order_refund_amount_desc" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/refund_note_title" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.dianping.base.widget.TableView>
+</LinearLayout>

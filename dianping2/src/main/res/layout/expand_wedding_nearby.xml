@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/clickable_white_to_gray" android:paddingLeft="@dimen/shopinfo_marginleft" android:paddingRight="@dimen/shopinfo_marginright" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_black" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部3条团购" />
+    <ImageView android:id="@id/indicator_wedding_nearby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

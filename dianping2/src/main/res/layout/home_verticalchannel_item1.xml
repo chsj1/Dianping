@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.VerticalChannelFixedLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/vertical_list_item"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/deep_gray"
+            android:textSize="@dimen/home_titlesize" />
+
+        <TextView
+            android:id="@id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/home_vertical_channel_sub_item_margintop"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/home_subtitlesize" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/home_vertical_channel_pic_item_margintop">
+
+        <com.dianping.base.widget.NetworkThumbView
+            android:id="@id/icon"
+            android:layout_width="@dimen/home_vertical_item_picture_height1"
+            android:layout_height="@dimen/home_vertical_item_picture_height1"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            dp:placeholderEmpty="@drawable/placeholder_empty"
+            dp:placeholderError="@drawable/placeholder_error"
+            dp:placeholderLoading="@drawable/placeholder_loading" />
+
+        <ImageView
+            android:id="@id/tag_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/home_vertical_item_picture_height1"
+            android:visibility="gone" />
+    </FrameLayout>
+</com.dianping.main.find.VerticalChannelFixedLayout>

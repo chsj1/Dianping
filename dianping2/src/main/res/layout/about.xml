@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableView android:id="@id/more_tableview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_height">
+        <com.dianping.base.widget.TableHeader android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/about_imv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/aboutus_icon" />
+            <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/clickable_light_gray" android:gravity="center_horizontal" android:id="@android:id/text1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="大众点评 NA" />
+        </com.dianping.base.widget.TableHeader>
+        <com.dianping.widget.DPBasicItem android:id="@id/more_share" dp:dptitle="告诉朋友" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/more_help_shop" dp:dptitle="帮助商户" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.widget.DPBasicItem android:id="@id/shop_cooperation" dp:dptitle="商户合作" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/text_school" android:clickable="true" android:text="校园推荐码" style="@style/SingleLineTableItemWithPadding" />
+    </com.dianping.base.widget.TableView>
+</ScrollView>

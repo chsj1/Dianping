@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/tuan_common_light_gray" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tuan_common_gray" android:id="@id/navi_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <com.dianping.base.tuan.widget.CustomTableView android:id="@id/navi_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*" android:shrinkColumns="*" android:layout_below="@id/navi_title" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black_to_orange" android:gravity="center" android:id="@android:id/title" android:background="@drawable/tuan_tab_filter" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

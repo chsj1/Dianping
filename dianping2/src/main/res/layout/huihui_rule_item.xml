@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" />
+    <ImageView android:id="@id/split_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/huihui_popup_line" android:scaleType="fitXY" />
+    <include android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="13.0dip" layout="@layout/hui_cashier_rule_content" />
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

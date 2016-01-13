@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_line" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip">
+        <View android:background="@color/background_gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center|left" android:id="@id/key" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/top_line_key" android:background="@color/background_gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:gravity="center|left" android:id="@id/value" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+        <View android:id="@id/top_line_value" android:background="@color/background_gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/bottom_line" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

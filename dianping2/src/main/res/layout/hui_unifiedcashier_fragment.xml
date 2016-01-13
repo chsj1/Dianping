@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/whole_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_gray" />
+    </LinearLayout>
+    <ScrollView android:id="@id/hui_cashier_loaded_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_above="@id/bottom_layout" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/hui_cashier_container_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <com.dianping.widget.LoadingFullScreenItem android:gravity="center" android:orientation="vertical" android:id="@id/hui_cashier_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight">
+        <ImageView android:id="@id/anim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/loading_fullscreen_anim" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff878787" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载支付信息，请稍候..." />
+    </com.dianping.widget.LoadingFullScreenItem>
+    <com.dianping.widget.LoadingErrorView android:gravity="center" android:orientation="horizontal" android:id="@id/error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="网络链接失败，点击重新加载" />
+    </com.dianping.widget.LoadingErrorView>
+</RelativeLayout>

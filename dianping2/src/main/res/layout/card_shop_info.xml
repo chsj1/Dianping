@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/card_shop_info" android:background="@drawable/mc_listview_item_background_rectangle_single" android:paddingLeft="@dimen/mc_item_left_padding" android:paddingRight="@dimen/mc_item_right_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/product_item_header_height">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:id="@id/view_shop_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商户信息" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/card_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mc_arrow_right" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.dianping.base.widget.ShopPower android:id="@id/shop_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/card_arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

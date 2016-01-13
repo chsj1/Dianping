@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/table_view_item" android:paddingLeft="@dimen/shopinfo_marginleft" android:paddingRight="@dimen/shopinfo_marginright" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_16" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金钱豹" android:singleLine="true" android:layout_toLeftOf="@id/distance" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/clickable_light_gray" android:gravity="right" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="100m" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_centerVertical="true">
+                <com.dianping.base.widget.ShopPower android:id="@id/shop_power" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:ellipsize="end" android:gravity="right" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="￥10000-1000000/桌" android:singleLine="true" android:layout_toRightOf="@id/shop_power" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/wedding_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/arrow" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divder_line" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</LinearLayout>

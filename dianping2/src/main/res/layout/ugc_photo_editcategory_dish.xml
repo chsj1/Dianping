@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/photo_editcategory_dish" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/ugc_photo_editcategory_title" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/photo_editcategory_dish_layout" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="85.0dip">
+        <include android:id="@id/photo_editcategory_dish_name_edit" layout="@layout/ugc_photo_edit_custom_edittext" />
+        <include android:id="@id/photo_editcategory_dish_price_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/ugc_photo_edit_custom_edittext" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/photo_edit_half_tran_text" android:id="@id/photo_edit_dish_recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/ugc_photo_edit_dish_recommend" />
+        <LinearLayout android:orientation="vertical" android:id="@id/photo_editcategory_dish_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+</FrameLayout>

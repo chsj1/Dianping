@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaFrameLayout android:background="@color/gray_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/photo_plaza_list" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:layout_alignParentTop="true" />
+    <com.dianping.base.widget.CustomImageButton android:layout_gravity="bottom|center" android:id="@id/publisher" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/find_icon_camera" />
+</com.dianping.widget.view.NovaFrameLayout>

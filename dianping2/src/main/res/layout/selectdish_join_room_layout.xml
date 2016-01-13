@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/deep_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="68.0dip" android:text="大家一起点" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="和身边的朋友输入同样的四个数字\n进入共享菜单，一起点菜吧~" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/sd_number_layout" android:background="@drawable/selectdish_background_gray_frame" android:clickable="true" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="13.0dip">
+        <EditText android:textSize="@dimen/text_size_24" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/sd_first_number_edittext" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:longClickable="false" android:layout_width="50.0dip" android:layout_height="fill_parent" android:cursorVisible="false" android:singleLine="true" android:maxLength="2" android:inputType="number" />
+        <View android:background="@color/sd_frame_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_24" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/sd_second_number_textview" android:clickable="false" android:longClickable="false" android:layout_width="50.0dip" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="1" android:inputType="number" />
+        <View android:background="@color/sd_frame_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_24" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/sd_third_number_textview" android:clickable="false" android:longClickable="false" android:layout_width="50.0dip" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="1" android:inputType="number" />
+        <View android:background="@color/sd_frame_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_24" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/sd_forth_number_textview" android:clickable="false" android:longClickable="false" android:layout_width="50.0dip" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="1" android:inputType="number" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.movie.view.CinemaListItem android:orientation="vertical" android:id="@id/cinema_item" android:background="@drawable/movie_item_white_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/movie_cinema_list_item_header" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layer_minprice_and_discount" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/light_red" android:id="@id/minprice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/text_color_gray" android:id="@id/minprice_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:text="起" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/layer_discountlabel" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/light_gray" android:id="@id/cinema_region" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/light_gray" android:id="@id/cinema_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3km" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divider_line" android:background="@color/wm_border_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+</com.dianping.movie.view.CinemaListItem>

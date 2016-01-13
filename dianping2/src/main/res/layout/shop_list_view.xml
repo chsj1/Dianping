@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.pulltorefresh.PullToRefreshListView android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@color/alpha_home_listview_white" android:layout_weight="1.0" ptr:ptrAnimationStyle="flip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto" />

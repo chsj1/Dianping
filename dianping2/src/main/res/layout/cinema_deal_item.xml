@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.movie.view.CinemaDealItem android:orientation="vertical" android:background="@drawable/list_item" android:layout_width="fill_parent" android:layout_height="73.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip">
+        <com.dianping.widget.NetworkImageView android:id="@id/deal_photo" android:layout_width="68.0dip" android:layout_height="52.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_black" android:ellipsize="end" android:id="@id/deal_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/light_red" android:id="@id/deal_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/gray" android:id="@id/deal_original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                <com.dianping.base.widget.ColorBorderTextView android:textSize="@dimen/text_size_hint" android:id="@id/promo_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/gray" android:id="@id/sales_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="3.0dip" />
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <View android:id="@id/seperated_line" android:background="@drawable/list_divider_right_inset" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</com.dianping.movie.view.CinemaDealItem>

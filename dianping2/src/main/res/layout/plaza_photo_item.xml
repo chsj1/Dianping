@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/poi_large_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/poi_large_imageview_layout" />
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:gravity="center" android:id="@id/show_tag" android:background="@drawable/plaza_btn_show_tag_background" android:paddingLeft="18.0dip" android:paddingTop="5.0dip" android:paddingRight="18.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="隐藏标签" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.dianping.widget.view.NovaImageView android:id="@id/download_pic" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/icon_save_white" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

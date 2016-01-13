@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.LoadingFullScreenItem android:gravity="center" android:orientation="vertical" android:id="@id/selectdish_orderresult_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight">
+        <ImageView android:id="@id/anim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/loading_fullscreen_anim" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff878787" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载订单信息，请稍候..." />
+    </com.dianping.widget.LoadingFullScreenItem>
+    <FrameLayout android:id="@id/selectdish_orderresult_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.dianping.widget.pulltorefresh.PullToRefreshScrollView android:id="@id/selectdish_orderresult_loaded_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/selectdish_orderresult_title_item" />
+            <LinearLayout android:orientation="vertical" android:id="@id/selectdish_orderresult_info" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/selectdish_orderresult_maininfo" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:id="@id/subinfo_line" android:background="@drawable/huihui_popup_line" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/selectdish_orderresult_subinfo" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="@color/line_gray" android:layout_width="wrap_content" android:layout_height="1.0px" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/goto_orderdetail_layout" android:background="@drawable/selectdish_item_press" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="查看点单详情" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/selectdish_orderresult_menu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/font_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="11.0dip" android:text="点单菜品" />
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.dianping.base.widget.TableView android:id="@id/selectdish_orderresult_menu_tableview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/selectdish_orderresult_groupon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/font_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="13.0dip" android:layout_marginBottom="11.0dip" android:text="您已点菜品" />
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="12.5dip" android:paddingRight="15.0dip" android:paddingBottom="7.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:id="@id/selectdish_groupon_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="团购单：" />
+                    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:id="@id/selectdish_groupon_name_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/selectdish_groupon_name" />
+                    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:id="@id/selectdish_groupon_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="验证码：" android:layout_below="@id/selectdish_groupon_name" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/selectdish_groupon_code_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/selectdish_groupon_code" android:layout_below="@id/selectdish_groupon_name_content" />
+                </RelativeLayout>
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/goto_groupon_orderdetail" android:background="@drawable/selectdish_item_press" android:layout_width="fill_parent" android:layout_height="45.0dip">
+                    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="查看团购详情" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/selectdish_addreview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:id="@id/selectdish_addreview_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="觉得这家店怎么样？" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_14" android:id="@id/selectdish_addreview_button" android:layout_width="48.0dip" android:layout_height="30.0dip" android:text="点评" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NovaWeightButtonTheme" />
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="right" android:id="@id/selectdish_addreview_status" android:visibility="invisible" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="已点评" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/light_red" android:id="@id/selectdish_addreview_tip" android:background="@drawable/hui_background_lightred_border" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="写点评送积分" android:layout_toLeftOf="@id/selectdish_addreview_status" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/selectdish_orderresult_twobutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="20.0dip">
+                <FrameLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.dianping.widget.view.NovaButton android:textColor="@color/hobbit_deep_gray" android:gravity="center" android:layout_gravity="bottom|center|left" android:id="@id/selectdish_orderresult_left_button" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:text="联系客服" style="@style/NovaLightButtonTheme" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="center|right|top" android:id="@id/selectdish_orderresult_left_button_subtitle" android:background="@drawable/background_button_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立减" />
+                </FrameLayout>
+                <View android:layout_width="2.0dip" android:layout_height="fill_parent" />
+                <FrameLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.dianping.widget.view.NovaButton android:textColor="@color/hobbit_deep_gray" android:gravity="center" android:layout_gravity="bottom|center|left" android:id="@id/selectdish_orderresult_right_button" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:text="我要加菜" style="@style/NovaLightButtonTheme" />
+                    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="center|right|top" android:id="@id/selectdish_orderresult_right_button_subtitle" android:background="@drawable/background_button_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立减" />
+                </FrameLayout>
+            </LinearLayout>
+            <FrameLayout android:id="@id/selectdish_orderresult_onebutton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="20.0dip">
+                <com.dianping.widget.view.NovaButton android:textColor="@color/hobbit_deep_gray" android:gravity="center" android:layout_gravity="bottom|center|left" android:id="@id/selectdish_orderresult_middle_button" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:text="联系客服" style="@style/NovaLightButtonTheme" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="center|right|top" android:id="@id/selectdish_orderresult_onebutton_subtitle" android:background="@drawable/background_button_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立减" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.dianping.widget.pulltorefresh.PullToRefreshScrollView>
+</FrameLayout>

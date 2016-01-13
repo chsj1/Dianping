@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layer_action_success" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/text_gray" android:id="@id/btn_action_lookfor" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/action_button_margin_left_right" android:layout_marginRight="@dimen/action_button_margin_between" android:text="查看订单" android:layout_weight="1.0" style="@style/NovaTuanDefButtonTheme" />
+        <Button android:textColor="@color/text_gray" android:id="@id/btn_action_continuebuy" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/action_button_margin_between" android:layout_marginRight="@dimen/action_button_margin_left_right" android:text="继续购买" android:layout_weight="1.0" style="@style/NovaTuanDefButtonTheme" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layer_action_cancel" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_action_confirm" android:text="查看退款进度" style="@style/NovaTuanDefButtonTheme" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layer_action_fail" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/text_gray" android:id="@id/btn_action_view_order" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/action_button_margin_left_right" android:layout_marginRight="@dimen/action_button_margin_between" android:text="查看退款进度" android:layout_weight="1.0" style="@style/NovaTuanDefButtonTheme" />
+        <Button android:textColor="@color/white" android:id="@id/btn_action_rebuy" android:background="@drawable/btn_weight" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/action_button_margin_between" android:layout_marginRight="@dimen/action_button_margin_left_right" android:text="重新购买" android:layout_weight="1.0" style="@style/NovaTuanDefButtonTheme" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mc_listview_item_background_rectangle_single" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/cardscore_layer" android:paddingLeft="@dimen/mc_item_left_padding" android:paddingRight="@dimen/mc_item_right_padding" android:layout_width="fill_parent" android:layout_height="@dimen/product_item_header_height">
+        <TextView android:textSize="@dimen/text_medium_1" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员积分" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/arrow_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mc_arrow_right" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:id="@id/cardscore_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="绑定手机，消费拿积分" android:layout_toLeftOf="@id/arrow_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

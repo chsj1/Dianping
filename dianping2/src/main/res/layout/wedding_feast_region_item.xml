@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:id="@id/regionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="黄浦区" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/check" android:visibility="visible" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/icon_check_on_weddingfeast" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

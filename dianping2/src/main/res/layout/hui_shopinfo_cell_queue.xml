@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/queue_cell" android:background="@drawable/list_item" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/queue_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/queue_shopinfo_icon" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/queue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="排号" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/right_line" android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:id="@id/queue_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_toLeftOf="@id/right_line" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.dianping.widget.view.NovaLinearLayout>

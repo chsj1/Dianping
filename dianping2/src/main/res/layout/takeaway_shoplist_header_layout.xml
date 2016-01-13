@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.BaseBannerView android:id="@id/banner_layout" android:layout_width="fill_parent" android:layout_height="63.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/icon_layout" android:background="@drawable/white_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v4.view.ViewPager android:id="@id/icon_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.dianping.widget.NavigationDot android:layout_gravity="center_horizontal" android:id="@id/nav_dots" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

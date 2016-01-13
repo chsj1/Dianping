@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/shopinfo_marginleft" android:paddingRight="@dimen/shopinfo_marginright" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@android:id/icon1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/detail_grouponicon" android:minWidth="22.0dip" android:minHeight="22.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="团购" android:layout_toRightOf="@android:id/icon1" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/babytuan_layout_normal_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/icon_refund" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tuan_refund_icon_check" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:id="@id/refund_support_day" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="随时退" android:singleLine="true" />
+        <ImageView android:id="@id/icon_expire" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/tuan_refund_icon_check" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:id="@id/refund_support_expired" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="过期退" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/babytuan_layout_list_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:id="@id/babytuan_shopinfo_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow" />
+    </LinearLayout>
+</RelativeLayout>

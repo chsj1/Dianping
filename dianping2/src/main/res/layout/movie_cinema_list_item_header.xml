@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/dark_black" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/cinema_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/cinema_flag_seat" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_seat_small" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/cinema_flag_tuan" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tuan_small" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/cinema_user_profile_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/detail_cinema_footprint" />
+</LinearLayout>

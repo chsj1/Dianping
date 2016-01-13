@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/viewer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/filter_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/filter_panel">
+            <ListView android:id="@id/filter_list" android:background="@drawable/mid_filter_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/list_item" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/placeholder" android:layout_width="fill_parent" android:layout_height="@dimen/filter_panel_bottom_margin" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

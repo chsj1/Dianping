@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:gravity="center" android:id="@id/time" android:background="@drawable/bookingdetail_period_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+        <ImageView android:id="@id/rebate_icon" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/bookingdetail_period_item_hascoupon" android:scaleType="fitCenter" android:layout_alignBottom="@id/time" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/hot_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yy_bookingonline_hot" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bk_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" android:visibility="gone" layout="@layout/double_text_title_bar" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:ellipsize="end" android:gravity="center|left" android:id="@id/notification_header" android:background="@color/background_notification_bar" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawableRight="@drawable/icon_white_arrow" />
+    <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_18" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

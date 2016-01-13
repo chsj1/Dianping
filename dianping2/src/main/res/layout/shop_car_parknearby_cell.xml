@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/car_parknearby_cell" android:paddingLeft="@dimen/shopinfo_marginleft" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaRelativeLayout android:id="@id/car_parknearby_title" android:background="@drawable/clickable_white_to_gray" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/section_height_with_text">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/car_parknearby_title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="附近停车场" android:maxLines="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:gravity="center_vertical" android:id="@id/car_parknearby_title_arrow" android:layout_width="wrap_content" android:layout_height="40.0dip" android:drawableRight="@drawable/arrow" android:layout_alignParentRight="true" />
+    </com.dianping.widget.view.NovaRelativeLayout>
+    <View android:id="@id/car_parknearby_line" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.dianping.base.widget.MeasuredListView android:id="@id/car_parknearby_lists" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" />
+</com.dianping.widget.view.NovaLinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center|left" android:id="@id/info" android:layout_width="fill_parent" android:text="找出附近还没被识破的关闭商户吧：）" style="@style/CustomChannelItem" />
+        <fragment android:id="@id/shop_list_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.dianping.base.shoplist.fragment.ShopListFragment" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/error_bad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bad_face" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="@dimen/text_size_14" android:id="@id/error_text_bad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="附近没有疑似关闭商户" />
+            <Button android:textSize="@dimen/text_medium" android:id="@id/btn_retry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="4.0dip" android:text="重试" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

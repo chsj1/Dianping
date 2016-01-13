@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:id="@id/shop_list_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" class="com.dianping.base.shoplist.fragment.ShopListFragment" />
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

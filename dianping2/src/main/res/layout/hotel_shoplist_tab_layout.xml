@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.hotel.shoplist.widget.HotelShopListTabView android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:id="@id/tab1" android:layout_width="80.0dip" android:layout_height="30.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商户" />
+    </com.dianping.widget.view.NovaLinearLayout>
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:id="@id/tab3" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="30.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:id="@id/title3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.dianping.widget.view.NovaLinearLayout>
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:id="@id/tab2" android:layout_width="80.0dip" android:layout_height="30.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="团购" />
+    </com.dianping.widget.view.NovaLinearLayout>
+</com.dianping.hotel.shoplist.widget.HotelShopListTabView>

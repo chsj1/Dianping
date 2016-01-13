@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/title_bar_left_view_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.dianping.base.widget.CustomImageButton android:id="@id/left_view" android:background="@null" android:layout_width="@dimen/title_bar_button_size" android:layout_height="fill_parent" android:src="@drawable/ic_back_u" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_bar_right_view_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" style="@style/TitleBar" />
+    <RelativeLayout android:gravity="center" android:id="@id/title_bar_content_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/title_bar_right_view_container" android:layout_toRightOf="@id/title_bar_left_view_container" android:layout_centerHorizontal="true">
+        <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title_bar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="240.0dip" android:singleLine="true" style="@style/TitleBarTitleView" />
+        <TextView android:textColor="@color/text_color_gray" android:ellipsize="end" android:gravity="center" android:id="@id/title_bar_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_below="@id/title_bar_title" style="@style/TitleBarSubTitleView" />
+    </RelativeLayout>
+</RelativeLayout>

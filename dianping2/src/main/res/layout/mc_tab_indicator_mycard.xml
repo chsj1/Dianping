@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout style="@style/Widget.Holo.Tab"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_small" android:textColor="@color/yellow" android:gravity="bottom|center" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mc_icon_tab_vip" android:scaleType="center" android:layout_above="@android:id/title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

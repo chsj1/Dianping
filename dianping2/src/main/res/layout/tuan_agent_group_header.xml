@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_hint" android:ellipsize="end" android:paddingBottom="11.0dip" android:layout_height="@dimen/single_line_height_meduim" android:singleLine="true" style="@style/TableHeaderTextView"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

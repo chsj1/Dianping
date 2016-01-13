@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/suggest_layout" android:background="@color/white" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:enabled="false" android:textSize="@dimen/text_size_18" android:textColor="@android:color/white" android:gravity="center" android:id="@id/suggest_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="立即推荐" style="@style/NovaWeightButtonTheme" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="请选择推荐菜品" />
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/inner_divider" android:layout_above="@id/suggest_layout" android:layout_below="@id/title" style="@style/CustomListItem" />
+</RelativeLayout>

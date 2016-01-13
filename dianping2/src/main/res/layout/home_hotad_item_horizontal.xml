@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.home.HotAdItem android:gravity="center" android:orientation="horizontal" android:background="@drawable/list_item" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/home_titlesize" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="10.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/home_subtitlesize" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/subtitle" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <com.dianping.base.widget.NetworkThumbView android:id="@id/image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+</com.dianping.main.home.HotAdItem>

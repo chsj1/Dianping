@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/content" android:background="@drawable/beautiful_progress_dialog_bg" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_centerVertical="true">
+        <ProgressBar android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" style="?android:attr/progressBarStyleSmall" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/message" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/divider" android:background="@drawable/beautiful_progress_dialog_vertical_divider" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/btn_cancel" android:layout_width="60.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_beautiful_progress_dialog_canel" android:scaleType="centerInside" />
+    </LinearLayout>
+</RelativeLayout>

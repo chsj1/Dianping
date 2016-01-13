@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/movie_discount_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/confirm_redeem_layer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/confirm_redeem_button" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="确认使用" style="@style/NovaTuanWeightButton" />
+    </FrameLayout>
+</LinearLayout>

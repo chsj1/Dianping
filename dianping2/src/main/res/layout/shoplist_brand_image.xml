@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.base.widget.NetworkThumbView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+        <TextView android:textSize="@dimen/basesearch_shoplist_info_text_size" android:textColor="@color/white" android:ellipsize="end" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/intro" android:background="@drawable/mask_image" android:paddingLeft="4.0dip" android:paddingTop="19.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/list_item" android:scaleType="fitXY" />
+    </FrameLayout>
+</com.dianping.widget.view.NovaLinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.dianping.widget.pulltorefresh.PullToRefreshScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_view" PullToRefresh:ptrAnimationStyle="load">
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.dianping.widget.pulltorefresh.PullToRefreshScrollView>
+    </RelativeLayout>
+</FrameLayout>

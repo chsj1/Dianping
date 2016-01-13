@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaRelativeLayout android:orientation="horizontal" android:id="@id/wed_property_view_more" android:background="@drawable/clickable_white_to_gray" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_black" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shopinfo_marginleft" android:text="" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/indicator_wedding_nearby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/shopinfo_marginleft" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.dianping.widget.view.NovaRelativeLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/shopinfo_marginleft" />
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="horizontal" android:id="@id/linearlayout_wed_property" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

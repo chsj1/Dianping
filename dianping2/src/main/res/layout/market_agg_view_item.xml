@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.deallist.widget.MarketAggViewItem android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.TableView android:id="@id/agg_item_table" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/divider_line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+    <View android:background="@color/divider_line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.dianping.search.deallist.widget.MarketAggViewItem>

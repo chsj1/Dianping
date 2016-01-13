@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/userProfile" android:layout_width="fill_parent" android:layout_height="79.0dip" layout="@layout/user_profile_item" />
+        </FrameLayout>
+        <TableLayout android:orientation="horizontal" android:background="@drawable/white_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:stretchColumns="0,2">
+            <TableRow>
+                <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/followers" android:background="@color/white" android:padding="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/my_focus_icon_normal" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" />
+                    <TextView android:textSize="@dimen/text_large" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注" />
+                    <TextView android:textSize="@dimen/text_large" android:textColor="@color/light_gray" android:id="@id/my_honey_num_txt" android:padding="5.0dip" android:focusable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </com.dianping.widget.view.NovaLinearLayout>
+                <View android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fans" android:background="@color/white" android:padding="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:background="@drawable/my_fans_icon_normal" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="5.0dip" />
+                    <TextView android:textSize="@dimen/text_large" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝" />
+                    <TextView android:textSize="@dimen/text_large" android:textColor="@color/light_gray" android:id="@id/my_fans_num_txt" android:padding="5.0dip" android:focusable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </com.dianping.widget.view.NovaLinearLayout>
+            </TableRow>
+        </TableLayout>
+        <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.dianping.base.widget.TableView android:id="@id/user_tableview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+            <com.dianping.base.widget.UserProfileItem android:id="@id/review" dp:itemTitle="Ta的点评" dp:itemSubTitle="点评/签到/照片" dp:itemImage="@drawable/my_review_user_icon_normal" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.UserProfileItem android:id="@id/favour" dp:itemTitle="Ta的收藏" dp:itemImage="@drawable/my_collect_user_icon_normal" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        </com.dianping.base.widget.TableView>
+        <com.dianping.widget.view.NovaButton android:id="@id/follow" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="加关注" style="@style/NovaWeightButtonTheme" />
+        <com.dianping.widget.view.NovaButton android:id="@id/message" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:text="发私信" style="@style/NovaLightButtonTheme" />
+    </LinearLayout>
+</ScrollView>

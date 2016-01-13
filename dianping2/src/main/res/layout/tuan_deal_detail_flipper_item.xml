@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.NetworkPhotoView android:id="@android:id/icon" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/tuan_load_fail" dp:placeholderLoading="@drawable/tuan_load_fail" dp:placeholderError="@drawable/tuan_load_fail" />
+</RelativeLayout>

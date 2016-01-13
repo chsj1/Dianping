@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/hotel_calender_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/hotel_datepicker_color" android:id="@id/month_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/divider_gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/layout_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tip_layout" android:background="@color/hotel_calender_tip_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:id="@id/tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.deallist.widget.BannerViewItem android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.tuan.widget.TuanBannerView android:id="@id/ad_header_view" android:background="@drawable/table_view_item_with_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.dianping.base.widget.TableHeader android:id="@id/section" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</com.dianping.search.deallist.widget.BannerViewItem>

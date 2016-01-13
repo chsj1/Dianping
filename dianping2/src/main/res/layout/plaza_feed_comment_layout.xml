@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.PlazaFeedCommentView android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:orientation="horizontal" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_light_gray" android:gravity="center|left" android:id="@id/like_comment_number_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </com.dianping.widget.view.NovaLinearLayout>
+    <com.dianping.widget.view.NovaTableLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="0,1,2" android:layout_weight="1.0">
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.dianping.base.widget.CustomImageButton android:id="@id/do_like" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.dianping.base.widget.CustomImageButton android:id="@id/do_comment" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pic_icon_comment" />
+            <com.dianping.base.widget.CustomImageButton android:id="@id/do_more" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more" />
+        </TableRow>
+    </com.dianping.widget.view.NovaTableLayout>
+</com.dianping.main.find.pictureplaza.PlazaFeedCommentView>

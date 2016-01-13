@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.dianping.widget.NetworkImageView android:id="@id/vertical_item_img" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:id="@id/vertical_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/vertical_item_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/vertical_item_flayout" android:background="@drawable/red_dot" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="29.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/text_very_small" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/vertical_item_reddot" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

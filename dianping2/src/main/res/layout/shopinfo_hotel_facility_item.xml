@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.NetworkImageView android:id="@id/hotel_info_facility_img" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff333333" android:id="@id/hotel_info_facility_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/hotel_info_facility_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

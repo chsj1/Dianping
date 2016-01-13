@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/table_view_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_red" android:id="@id/weddinghotel_promo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="到店即送" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:id="@id/weddinghotel_promo_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="价值28,888元大礼包！" android:layout_toRightOf="@id/weddinghotel_promo_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/promo_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="价值28,888元大礼包！" />
+        <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="价值28,888元大礼包！" />
+        <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/extra_promo_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+</LinearLayout>

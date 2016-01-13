@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.TableView android:id="@id/district_enjoy_table" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center" android:id="@id/shoplist_more" android:background="@drawable/table_view_item" android:paddingLeft="@dimen/shopinfo_marginleft" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="55.0dip" android:maxLines="1" android:lineSpacingMultiplier="1.1" />
+</LinearLayout>

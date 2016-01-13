@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:showDividers="middle">
+            <com.dianping.widget.DPBasicItem android:id="@id/shopName_item" dp:dptitle="商户名" dp:input_hint="如：辛香汇" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/region_item" dp:dptitle="地区" dp:count="请选择地区" dp:clickable="true" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/channel_item" dp:dptitle="频道" dp:count="请选择频道" dp:clickable="true" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/address_item" dp:dptitle="地址" dp:input_hint="如：安化路492号" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/near_item" dp:dptitle="靠近" dp:input_hint="如：近凯旋路" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/phone_item" dp:dptitle="电话" dp:input_hint="座机或手机" dp:input_type="phone" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:paddingLeft="@dimen/table_item_padding" android:paddingTop="10.0dip" android:paddingRight="@dimen/table_item_padding" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="感谢您报告商户的错误信息，我们会将回复邮件发送至您填入的邮箱中。" android:lineSpacingMultiplier="1.2" />
+        <com.dianping.widget.DPBasicItem android:id="@id/email_item" dp:input_hint="选填" style="@style/SingleLineTableItemWithPadding" />
+        <Button android:id="@id/btn_add" android:text="提交" style="@style/NovaWeightButton" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/deep_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="请选择就餐人数" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selectdish_digit_circle" />
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/recyclerview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@drawable/selectdish_gradient_left" android:layout_width="0.0sp" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="@drawable/selectdish_gradient_right" android:layout_width="0.0sp" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

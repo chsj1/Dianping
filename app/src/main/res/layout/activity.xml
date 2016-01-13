@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_marginLeft="10.0dip">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="end"
+        android:lineSpacingExtra="1.0dip"
+        android:maxLines="2"
+        android:textColor="#ff878787"
+        android:textSize="15sp"
+        android:text="人看来观看了公开了分开了公开公告客户客户看看好看好看你看看看哈好看好看好看发帖哟好看好看好看客户更好"/>
+</LinearLayout>

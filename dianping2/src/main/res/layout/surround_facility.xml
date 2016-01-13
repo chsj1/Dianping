@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="15.0dip" android:text="周边设施" />
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/sf_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.home.NewUserAdTemplate android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/home_divider" />
+    <LinearLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/newuser1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_newuser_item" />
+    </LinearLayout>
+    <include layout="@layout/home_divider_drawable" />
+</com.dianping.main.home.NewUserAdTemplate>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:layout_gravity="center_horizontal" android:id="@id/icon_img" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/wm_icon_default_big" dp:placeholderLoading="@drawable/wm_icon_default_big" dp:placeholderError="@drawable/wm_icon_default_big" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/deep_gray" android:gravity="bottom" android:layout_gravity="center_horizontal" android:id="@id/icon_name" android:layout_width="wrap_content" android:layout_height="20.0dip" android:singleLine="true" />
+</com.dianping.widget.view.NovaLinearLayout>

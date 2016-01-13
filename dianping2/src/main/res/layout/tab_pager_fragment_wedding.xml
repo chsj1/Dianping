@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/wedding_titlebar" android:background="@drawable/title_background" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height" style="@style/TitleBar">
+            <com.dianping.base.widget.CustomImageButton android:id="@id/left_view" android:background="@null" android:layout_width="@dimen/title_bar_button_size" android:layout_height="fill_parent" android:src="@drawable/ic_back_u" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.dianping.base.widget.CustomImageButton android:id="@id/toupload" android:background="@null" android:layout_width="@dimen/title_bar_button_size" android:layout_height="fill_parent" android:src="@drawable/navibar_icon_addpic" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:gravity="center" android:id="@id/weddingtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="35.0dip" android:layout_marginRight="40.0dip" android:maxLines="1" android:layout_centerInParent="true" style="@style/TitleBarTitleView" />
+            <com.dianping.base.widget.ShopListTabView android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <LinearLayout android:gravity="center" android:id="@id/tab1" android:layout_width="80.0dip" android:layout_height="30.0dip">
+                    <TextView android:textSize="@dimen/text_size_14" android:id="@id/title1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="官方相册" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:id="@id/tab2" android:layout_width="80.0dip" android:layout_height="30.0dip">
+                    <TextView android:textSize="@dimen/text_size_14" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="网友相册" />
+                </LinearLayout>
+            </com.dianping.base.widget.ShopListTabView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_large" android:gravity="center_vertical" android:id="@id/official_empty_view" android:paddingLeft="20.0dip" android:paddingTop="20.0dip" android:paddingRight="12.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/official_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <fragment android:name="com.dianping.base.basic.TabPagerFragment" android:id="@id/official_viewer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/user_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <fragment android:name="com.dianping.wed.widget.WeddingShopPhotoUserGalleryFragment" android:id="@id/user_viewer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/booking_layout" android:background="@color/white" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="61.0dip" android:layout_alignParentBottom="true">
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.dianping.widget.view.NovaRelativeLayout android:id="@id/phone_view" android:background="@drawable/btn_light" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/booking_btn" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/phone_img" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/detail_icon_phone" />
+                    <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:id="@id/phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预约" />
+                </LinearLayout>
+            </com.dianping.widget.view.NovaRelativeLayout>
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_16" android:gravity="center" android:id="@id/booking_btn" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_margin="0.0dip" android:text="预约看店" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NovaWeightButton" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.home.FamousShopTemplate android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/home_divider" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include layout="@layout/home_featureshop" />
+        </LinearLayout>
+        <View android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include android:id="@id/famousad1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/home_feature_shop_item" />
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginRight="5.0dip" />
+            <include android:id="@id/famousad2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/home_feature_shop_item" />
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginRight="5.0dip" />
+            <include android:id="@id/famousad3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/home_feature_shop_item" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/home_divider_drawable" />
+</com.dianping.main.home.FamousShopTemplate>

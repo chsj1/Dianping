@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tag_lay" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tag_content_right_lay" android:background="@drawable/tag_text_bg_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/ugc_picturetag_height" android:layout_marginRight="-8.0dip">
+        <TextView android:textSize="@dimen/ugc_picturetag_textsize" android:textColor="@color/text_color_white" android:gravity="center_vertical" android:id="@id/tag_text_right" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标签" android:singleLine="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tag_cicle_lay" android:layout_width="@dimen/ugc_picturetag_height" android:layout_height="@dimen/ugc_picturetag_height">
+        <com.dianping.base.widget.phototag.WaterWaveView android:layout_width="@dimen/ugc_picturetag_height" android:layout_height="@dimen/ugc_picturetag_height" android:layout_centerInParent="true" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="6.0dip" android:layout_height="6.0dip" android:src="@drawable/tag_icon_img_bg" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tag_content_left_lay" android:background="@drawable/tag_text_bg_left" android:layout_width="wrap_content" android:layout_height="@dimen/ugc_picturetag_height" android:layout_marginLeft="-8.0dip">
+        <TextView android:textSize="@dimen/ugc_picturetag_textsize" android:textColor="@color/text_color_white" android:gravity="center_vertical" android:id="@id/tag_text_left" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标签" android:singleLine="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

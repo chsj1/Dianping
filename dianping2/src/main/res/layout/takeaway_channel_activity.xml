@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/takeaway_shoplistview" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    <com.dianping.takeaway.view.TAFilterBar android:id="@id/takeaway_shoplist_filterbar_fix" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/deal_filter_button_height" />
+    <RelativeLayout android:id="@id/takeaway_error_view" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

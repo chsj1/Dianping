@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/hotel_temp_background_hotel_review_tabitem" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black_to_orange" android:gravity="center" android:id="@id/tab_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="1.0dip" />
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/text_color_black_to_orange" android:gravity="center" android:id="@id/tab_score" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/tab_name" />
+    <ImageView android:id="@id/bottom_arrow" android:background="@drawable/hotel_temp_hotel_oversea_droplist_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tab_score" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianping.pay.view.NumberKeyboardView android:id="@id/num_keyboard" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true" />
+    <com.dianping.base.widget.DPScrollView android:id="@id/scrollview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/num_keyboard">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:textColor="@color/tuan_common_black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_input_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="请输入支付密码" android:singleLine="true" />
+                <com.dianping.pay.view.GridPasswordView android:layout_gravity="center_horizontal" android:id="@id/grid_password" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="35.0dip" app:fontColor="@android:color/black" app:fontSize="30.0sp" app:lineColor="@color/pay_keyboard_pwd_line" app:gridColor="@color/pay_keyboard_pwd_bg" app:passwordLength="6" />
+                <TextView android:textSize="13.0dip" android:textColor="@color/blue_link" android:layout_gravity="right" android:id="@id/tv_forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="35.0dip" android:text="忘记密码？" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.dianping.base.widget.DPScrollView>
+</RelativeLayout>

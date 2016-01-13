@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@id/plaza_explore_topic_listview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="@drawable/plaza_explore_topic_list_divider" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

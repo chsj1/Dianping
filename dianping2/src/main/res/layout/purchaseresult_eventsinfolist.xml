@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <com.dianping.base.widget.TableView android:id="@id/tv_purchaseresult_eventsinfolist" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_weddingrecommend" android:visibility="gone" dp:item_titleSize="@dimen/text_size_16" dp:item_titleColor="@color/deep_gray" dp:item_countSize="@dimen/text_size_hint" dp:item_countColor="@color/text_color_orange" style="@style/TuanPayBasicItemWithIndicator" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_luckymoney" android:visibility="gone" dp:item_icon="@drawable/ic_hongbao" dp:item_title="验完券 发红包" dp:item_titleSize="@dimen/text_size_16" dp:item_titleColor="@color/deep_gray" dp:item_countSize="@dimen/text_size_hint" dp:item_countColor="@color/text_color_orange" style="@style/TuanPayBasicItemWithIndicator" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_foodbookinfo" android:visibility="gone" dp:item_icon="@drawable/food_book_buy_success" dp:item_title="提前订座，不用排队" dp:item_titleSize="@dimen/text_size_16" dp:item_titleColor="@color/deep_gray" style="@style/TuanPayBasicItemWithIndicator" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_weixincard" android:visibility="gone" dp:item_icon="@drawable/weixincard_toadd_buy_success" dp:item_title="添加到微信卡包" dp:item_titleSize="@dimen/text_size_16" dp:item_titleColor="@color/deep_gray" style="@style/TuanPayBasicItemWithIndicator" />
+    </com.dianping.base.widget.TableView>
+</LinearLayout>

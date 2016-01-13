@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.DPBasicItem android:id="@id/phone_item" android:background="@color/white" android:layout_width="0.0dip" android:layout_weight="1.0" dp:dptitle="电话" dp:input_hint="" dp:input_type="phone" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/photo_delete_btn" android:background="@drawable/icon_close" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.dianping.widget.DPBasicItem android:id="@id/open_time" android:background="@color/white" android:layout_width="fill_parent" dp:dptitle="营业时间" dp:clickable="true" dp:title_textType="black_color" dp:subTitle_textType="gray_color" style="@style/SingleLineTableItemWithPadding" />
+</LinearLayout>

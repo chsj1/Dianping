@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.ToolbarButton android:gravity="center" android:clickable="true" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_centerInParent="true">
+        <com.dianping.base.widget.ToolbarImageButton android:layout_gravity="center_horizontal" android:id="@android:id/icon" android:background="@null" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/shopinfo_bottombar_text_color" android:ellipsize="none" android:id="@android:id/text1" android:paddingLeft="3.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:shadowRadius="0.0" />
+    </com.dianping.widget.view.NovaLinearLayout>
+</com.dianping.base.widget.ToolbarButton>

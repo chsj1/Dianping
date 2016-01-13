@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/btn_weight_disable" />
+            <stroke android:width="2.0px" android:color="@color/margin_inner_line_gray" />
+            <corners android:radius="6.0px" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="@color/white_background" />
+            <stroke android:width="2.0px" android:color="@color/margin_inner_line_gray" />
+            <corners android:radius="6.0px" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/btn_weight_disable" />
+            <stroke android:width="2.0px" android:color="@color/margin_inner_line_gray" />
+            <corners android:radius="6.0px" />
+        </shape>
+    </item>
+</selector>

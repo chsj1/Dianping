@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/footview_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bk_color"
+    android:orientation="vertical"
+    android:paddingBottom="28.0dip">
+
+    <TextView
+        android:id="@id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_white"
+        android:gravity="center"
+        android:padding="12.0dip"
+        android:text="查看全部"
+        android:textColor="@color/text_color_black"
+        android:textSize="@dimen/text_medium_1" />
+
+    <View
+        android:id="@id/divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/line_gray" />
+</com.dianping.widget.view.NovaLinearLayout>

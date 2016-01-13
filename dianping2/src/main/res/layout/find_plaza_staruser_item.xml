@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.PlazaStarUserItem android:gravity="top" android:background="@drawable/list_item" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/rank_layout" android:layout_width="45.0dip" android:layout_height="56.0dip" android:scaleType="fitCenter">
+        <ImageView android:layout_gravity="center" android:id="@id/user_rank_image" android:layout_width="25.0dip" android:layout_height="40.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="center" android:id="@id/user_rank_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </FrameLayout>
+    <com.dianping.base.widget.CircleImageView android:id="@id/user_avatar_image" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/rank_layout" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/user_avatar_image">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_tag_layout" android:layout_width="0.0dip" android:layout_height="18.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/light_gray" android:id="@id/item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/user_avatar_image" android:layout_below="@id/user_top_layout" />
+    <View android:background="@color/listitem_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_toRightOf="@id/user_avatar_image" android:layout_below="@id/item_content" />
+</com.dianping.main.find.pictureplaza.PlazaStarUserItem>

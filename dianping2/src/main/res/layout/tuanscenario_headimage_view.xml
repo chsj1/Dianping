@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:id="@id/tuanscenario_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerVertical="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/movie_guide_item_loading_error" />
+</LinearLayout>

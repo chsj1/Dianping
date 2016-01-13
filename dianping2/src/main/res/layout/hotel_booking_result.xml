@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/yy_prompt_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/yy_prompt_icon_wait" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_gray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="预计10分钟内发送\n入园游玩凭证短信到您的手机上" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="30.0dip" android:text="凭此入园短信进入景区游玩" />
+        </LinearLayout>
+        <Button android:id="@id/button" android:layout_marginTop="20.0dip" android:text="查看团购券" style="@style/NovaTuanLightButton" />
+    </LinearLayout>
+</ScrollView>

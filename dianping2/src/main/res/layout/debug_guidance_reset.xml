@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.TableView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    <com.dianping.widget.DPBasicItem android:id="@id/guidance_new_item" dp:dptitle="新手引导" style="@style/SingleLineTableItemWithPadding" />
+    <com.dianping.widget.DPBasicItem android:id="@id/guidance_update_item" dp:dptitle="升级引导" style="@style/SingleLineTableItemWithPadding" />
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    <com.dianping.widget.DPBasicItem android:id="@id/reset_item" dp:dptitle="重置进程" style="@style/SingleLineTableItemWithPadding" />
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    <LinearLayout android:orientation="horizontal" style="@style/SingleLineTableItemWithPadding">1
+<TextView android:textSize="@dimen/text_size_18" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更新service" />
+        <EditText android:gravity="center|right" android:id="@id/debug_update_url" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="http://192.168.31.15:8080/test/ok.apk" />
+    </LinearLayout>
+    <com.dianping.widget.DPBasicItem android:id="@id/debug_update_start_item" dp:dptitle="开始更新服务测试" style="@style/SingleLineTableItemWithPadding" />
+    <com.dianping.widget.DPBasicItem android:id="@id/debug_update_clear_item" dp:dptitle="清空更新测试数据" style="@style/SingleLineTableItemWithPadding" />
+</com.dianping.base.widget.TableView>

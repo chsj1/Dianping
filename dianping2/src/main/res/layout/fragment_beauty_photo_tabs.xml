@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layhout_one" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/deal_filter_button_height" android:layout_weight="1.0">
+        <com.dianping.widget.view.NovaTextView android:gravity="center" android:id="@id/tab1" android:background="@drawable/fav_btn_filter" android:layout_width="fill_parent" android:layout_height="@dimen/deal_filter_button_height" android:text="发型秀" android:singleLine="true" style="@style/TabIndicator" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/deal_filter_button_height" android:layout_weight="1.0">
+        <com.dianping.widget.view.NovaTextView android:gravity="center" android:id="@id/tab2" android:background="@drawable/fav_btn_filter" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="风格" android:singleLine="true" style="@style/TabIndicator" />
+    </LinearLayout>
+</LinearLayout>

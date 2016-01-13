@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:paddingLeft="17.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="68.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="right" android:id="@id/shop_info" android:paddingTop="2.0dip" android:layout_width="75.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/shop_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/shop_info" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:id="@id/shop_keyword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="85.0dip" android:singleLine="true" android:layout_below="@id/shop_name" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

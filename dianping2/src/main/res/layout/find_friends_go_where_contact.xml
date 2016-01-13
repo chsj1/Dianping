@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_layout" android:background="@drawable/friends_go_where_top_bg" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <TextView android:textSize="@dimen/text_size_19" android:textColor="@color/find_friends_dark" android:id="@id/title_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true" />
+        <com.dianping.widget.view.NovaRelativeLayout android:id="@id/findfriend" android:background="@drawable/friends_go_where_contact_button_bg" android:layout_width="220.0dip" android:layout_height="45.0dip" android:layout_marginTop="9.0dip" android:layout_below="@id/title_text" android:layout_centerHorizontal="true">
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_20" android:textColor="@color/white" android:id="@id/check_button" android:background="@color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/icon_wechat" android:drawablePadding="8.0dip" android:layout_centerInParent="true" />
+        </com.dianping.widget.view.NovaRelativeLayout>
+        <com.dianping.base.widget.CustomImageButton android:id="@id/ignore" android:background="@null" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/icon_friend_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/tip_layout" android:background="@color/gray_light_background" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <View android:background="@color/deap_light_black" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="10.0" />
+            <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/icon_locate_grey" android:scaleType="centerInside" android:layout_weight="1.5" />
+            <View android:background="@color/deap_light_black" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="10.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:id="@id/tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/divider" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

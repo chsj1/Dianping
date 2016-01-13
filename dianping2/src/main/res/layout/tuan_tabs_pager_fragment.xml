@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/tab_and_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:visibility="gone" layout="@layout/wide_title_bar" />
+        <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/deal_filter_button_height" android:layout_weight="0.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tabcontent_layer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            <com.dianping.base.tuan.widget.CustomViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:id="@id/listview_header_background" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/listview_header_content" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <ImageView android:id="@id/listview_header_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/listview_header_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                <TextView android:id="@id/listview_header_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listview_header_hint_normal" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/listview_header_last_time" />
+                    <TextView android:textSize="12.0sp" android:id="@id/listview_header_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

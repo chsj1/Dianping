@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.queue.view.DateTimePickerView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <com.dianping.base.widget.NumberPicker android:id="@id/date_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/NPWidget.Holo.NumberPicker" />
+        <com.dianping.base.widget.NumberPicker android:id="@id/time_picker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="31.0dip" style="@style/NPWidget.Holo.NumberPicker" />
+    </LinearLayout>
+    <ImageView android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_large" android:textColor="@color/dark_black" android:id="@id/confirm_button" android:background="@drawable/dialog_btn_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="确定" android:layout_weight="1.0" />
+        <ImageView android:background="#ffc8c8c8" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_large" android:textColor="@color/dark_black" android:id="@id/cancel_button" android:background="@drawable/dialog_btn_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.dianping.queue.view.DateTimePickerView>

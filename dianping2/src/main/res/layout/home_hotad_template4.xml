@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/home_divider" />
+    <View android:id="@id/divider" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/hotad1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_hotad_item_horizontal" />
+        <View android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+        <include android:id="@id/hotad2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/home_hotad_item_horizontal" />
+    </LinearLayout>
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/hotad3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_hotad_item_horizontal" />
+        <View android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" />
+        <include android:id="@id/hotad4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/home_hotad_item_horizontal" />
+    </LinearLayout>
+    <include layout="@layout/home_divider_drawable" />
+</LinearLayout>

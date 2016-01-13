@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:background="@drawable/table_view_item" android:clickable="true" android:layout_width="1.0dip" android:layout_height="39.0dip" android:layout_marginLeft="@dimen/base_suggest_hotword_item_lr_margin" android:layout_marginRight="@dimen/base_suggest_hotword_item_lr_margin" android:layout_marginBottom="@dimen/base_suggest_hotword_item_bottom_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/icon_search_hot" android:layout_toLeftOf="@id/text" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_gray" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_black" android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="@dimen/shopinfo_marginleft" android:text="套餐详情" />
+    <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/shopinfo_marginleft" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0dip" />
+    <com.dianping.widget.view.NovaRelativeLayout android:orientation="horizontal" android:id="@id/wed_content_more" android:background="@drawable/clickable_white_to_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_black" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shopinfo_marginleft" android:text="查看图文详情" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/indicator_wedding_nearby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/shopinfo_marginleft" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/wedding_line" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/shopinfo_marginleft" />
+    </com.dianping.widget.view.NovaRelativeLayout>
+</LinearLayout>

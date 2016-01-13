@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/membercard_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/mc_icon_little" />
+        <com.dianping.widget.view.NovaImageView android:id="@id/checkbox_membercard_op" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/mc_cbx_rest" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkbox_membercard_op" android:layout_toRightOf="@id/membercard_icon">
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/textview_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_gray" />
+    <ImageView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_gray" />
+</FrameLayout>

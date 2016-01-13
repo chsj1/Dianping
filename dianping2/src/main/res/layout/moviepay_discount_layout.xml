@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/movie_module_separator" />
+    <com.dianping.base.widget.TableView android:orientation="vertical" android:id="@id/discount_layer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.movie.view.MoviePayReductionItemView android:id="@id/movie_reduction_discount" dp:item_title="活动优惠" style="@style/TuanPayBasicItemWithIndicator" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/movie_coupon_discount" dp:item_title="抵用券/优惠码" style="@style/TuanPayBasicItemWithIndicator" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/movie_reedeem_discount" dp:item_title="兑换券" style="@style/TuanPayBasicItemWithIndicator" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/hongbao" android:visibility="gone" dp:item_title="我的返现" dp:item_indicator="@drawable/cbx_bg" style="@style/TuanPayBasicItem" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/memberpoint" android:visibility="gone" dp:item_title="积分" dp:item_indicator="@drawable/cbx_bg" style="@style/TuanPayBasicItem" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/need_pay" android:visibility="gone" dp:item_title="还需支付" dp:item_subTitleColor="@color/tuan_common_orange" style="@style/TuanPayBasicItem" />
+    </com.dianping.base.widget.TableView>
+    <include android:id="@id/loading_layer" layout="@layout/loading_item" />
+</LinearLayout>

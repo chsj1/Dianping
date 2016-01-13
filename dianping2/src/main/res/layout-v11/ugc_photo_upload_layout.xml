@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.ugc.widget.GridPhotoFragmentView android:layout_gravity="top" android:id="@id/photo_upload_browser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/snsview_height" android:numColumns="3" style="@style/PhotoGridViewTheme" />
+        <include android:layout_gravity="bottom" android:id="@id/photo_upload_sns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" layout="@layout/sns_view" />
+    </FrameLayout>
+</ScrollView>

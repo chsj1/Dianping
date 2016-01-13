@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/takeaway_shopmenu_banner" android:layout_width="fill_parent" android:layout_height="45.0dip" layout="@layout/takeaway_shopmenu_banner_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/takeaway_shopmenu_banner">
+        <LinearLayout android:orientation="vertical" android:layout_width="110.0dip" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/recommend_category_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/recommend_category_name" android:paddingLeft="12.0dip" android:paddingTop="18.0dip" android:paddingRight="12.0dip" android:paddingBottom="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点评精选" android:maxLines="2" android:drawableLeft="@drawable/wm_dishlist_icon_fire" android:drawablePadding="2.0dip" android:layout_centerVertical="true" />
+                <View android:id="@id/bar_view" android:background="@color/light_red" android:visibility="gone" android:layout_width="4.0dip" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View android:id="@id/recommend_category_divider" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.dianping.base.widget.PortableScrollView android:id="@id/takeaway_shopmenu_filter" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/recommend_menu_list" android:background="@null" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" />
+            <ListView android:id="@id/takeaway_shopmenu_list_list" android:background="@null" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/statusLayout" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

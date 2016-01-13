@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:id="@id/name" android:paddingLeft="@dimen/table_item_padding" android:paddingTop="10.0dip" android:paddingRight="@dimen/table_item_padding" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="成人票" />
+        <com.dianping.widget.DPBasicItem android:id="@id/price" android:background="@drawable/background_line" dp:dptitle="单价        " dp:subTitle="￥80" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/count" android:background="@drawable/background_click_line" dp:dptitle="张数        " dp:subTitle="1张" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/totalprice" android:background="@drawable/background_line" dp:dptitle="总额        " dp:subTitle="￥0" dp:subTitle_textType="yellow_color" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/traveldate" android:background="@drawable/background_click_line" dp:dptitle="游玩日期" dp:subTitle="" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/bname" android:background="@drawable/background_line" android:layout_marginTop="@dimen/section_height" dp:dptitle="取票人    " dp:input_hint="请输入姓名" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/bphoneno" android:background="@drawable/background_line" dp:dptitle="手机号    " dp:input_hint="请输入手机号码" dp:input_type="phone" dp:input_maxLength="11" style="@style/SingleLineTableItemWithPadding" />
+        <Button android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="@dimen/section_height" android:text="提交订单" style="@style/NovaWeightButton" />
+    </LinearLayout>
+</ScrollView>

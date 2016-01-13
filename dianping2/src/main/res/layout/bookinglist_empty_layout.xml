@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/no_order_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/yy_text_none" android:scaleType="center" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/light_gray" android:id="@id/current_phonenum" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/no_order_image" android:layout_centerHorizontal="true" />
+    <Button android:textSize="@dimen/text_large" android:textColor="@color/white" android:gravity="center" android:id="@id/search_order" android:background="@drawable/booking_important_action_btn_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="手机号查订单" android:layout_below="@id/current_phonenum" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yy_bkg_pattern" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/blue_link" android:gravity="center_horizontal" android:id="@id/cooperation_entrance" android:clickable="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginBottom="20.0dip" android:text="我的餐厅想开通预订 >" android:layout_alignBottom="@id/image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

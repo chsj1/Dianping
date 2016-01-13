@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.ShopinfoCommonCell android:orientation="vertical" android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:background="@drawable/table_view_item" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/find_conditions_go_text" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="找婚宴很纠结？点评帮你挑。" android:singleLine="true" android:layout_centerVertical="true" />
+        <com.dianping.widget.view.NovaButton android:id="@id/find_conditions_go_btn" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:text="智能推荐" android:layout_alignParentRight="true" style="@style/NovaWeightButton" />
+    </RelativeLayout>
+</com.dianping.base.widget.ShopinfoCommonCell>

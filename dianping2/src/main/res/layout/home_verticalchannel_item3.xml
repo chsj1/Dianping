@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.VerticalChannelFixedLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/vertical_list_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/home_titlesize" android:textColor="@color/deep_gray" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="@dimen/home_subtitlesize" android:textColor="@color/text_gray" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="@dimen/home_vertical_channel_sub_item_margintop" android:layout_marginRight="6.0dip" android:singleLine="true" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_vertical_channel_pic_item_margintop">
+        <com.dianping.base.widget.NetworkThumbView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="@dimen/home_vertical_item_picture_height2" android:layout_height="@dimen/home_vertical_item_picture_height2" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+        <ImageView android:id="@id/tag_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/home_vertical_item_picture_height2" />
+    </FrameLayout>
+</com.dianping.main.find.VerticalChannelFixedLayout>

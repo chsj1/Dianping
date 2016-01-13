@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.NetworkPhotoView android:layout_gravity="top" android:id="@id/map" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/tuan_load_fail" dp:placeholderLoading="@drawable/transparent" dp:placeholderError="@drawable/tuan_load_fail" />
+    <FrameLayout android:orientation="horizontal" android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

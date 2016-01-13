@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/common_bk_color" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pay_success_icon" android:paddingTop="1.0dip" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/icon_pay_success" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/pay_success_icon" android:layout_alignTop="@id/pay_success_icon">
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/deep_gray" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付成功" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentBottom="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/hui_pay_result_pay_info" />
+        <include android:id="@id/hui_pay_result_user_benefit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/hui_pay_result_my_benefit" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/memcard_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.membercard.view.MerchantUserRelationshipView android:id="@id/memchant_user_relation_shipview" android:background="@drawable/hui_list_item_dynamic_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+    <com.dianping.membercard.view.MCHuiInfoDislayView android:id="@id/mc_huicashier_info_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+    <RelativeLayout android:id="@id/addreview_layout" android:background="@drawable/hui_list_bkg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="78.0dip" android:layout_marginTop="15.0dip">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/btn_addreview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="写点评" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RatingBar android:id="@id/ratingbar" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/btn_addreview" android:layout_centerInParent="true" android:layout_centerVertical="true" style="@style/fake_ratingbar_style" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/background_gray" />
+    <com.dianping.hui.widget.HuiAdaptiveNetworkImageView android:id="@id/advertisement" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:scaleType="centerCrop" />
+    <FrameLayout android:id="@id/hui_pay_result_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" />
+</LinearLayout>

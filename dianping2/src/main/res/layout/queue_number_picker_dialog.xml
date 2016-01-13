@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.queue.view.CustomDialogView android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/list_item_selected" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/light_red" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/content_view" android:background="@drawable/white_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:id="@id/button1" android:background="@drawable/list_item_normal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0" />
+        <View android:background="@color/line_gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:id="@id/button2" android:background="@drawable/dialog_btn_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.dianping.queue.view.CustomDialogView>

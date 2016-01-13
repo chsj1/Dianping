@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light" />
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:tabWidgetStyle">@style/Widget.Holo.Light.TabWidget</item>
+        <item name="android:textViewStyle">@style/CustomTextView</item>
+    </style>
+    <style name="Widget.Holo.Light.TabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:tabStripLeft">@null</item>
+        <item name="android:tabStripRight">@null</item>
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:measureWithLargestChild">true</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">8.0dip</item>
+    </style>
+</resources>

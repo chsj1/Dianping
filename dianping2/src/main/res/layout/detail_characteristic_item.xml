@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.shopinfo.widget.ShopDetailFeatureItem android:orientation="vertical" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/container_lay" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.NetworkImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/text_color_black" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/expand_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down_black" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/content" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.0dip" />
+</com.dianping.shopinfo.widget.ShopDetailFeatureItem>

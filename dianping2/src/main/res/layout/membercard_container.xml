@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/card_back" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.membercard.view.MemberCardImageView android:id="@id/card_image" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:isHalf="false" />
+        <ImageView android:layout_gravity="center" android:id="@id/card_qrcode" android:background="@drawable/qrcode_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    </FrameLayout>
+    <include android:id="@id/card_front" layout="@layout/member_card_item" />
+</FrameLayout>

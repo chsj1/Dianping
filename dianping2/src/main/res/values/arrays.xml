@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="checkin_new_or_load">
+        <item>加载草稿</item>
+        <item>新建签到留言</item>
+    </string-array>
+    <string-array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="deal_info_share_item">
+        <item>com.dianping.tuan.share.TuanWXShare</item>
+        <item>com.dianping.tuan.share.TuanWXQShare</item>
+        <item>com.dianping.tuan.share.TuanQQShare</item>
+        <item>com.dianping.tuan.share.TuanSmsShare</item>
+        <item>com.dianping.tuan.share.TuanWeiboShare</item>
+        <item>com.dianping.tuan.share.TuanQzoneShare</item>
+        <item>com.dianping.tuan.share.TuanMailShare</item>
+        <item>com.dianping.tuan.share.TuanCopyShare</item>
+    </string-array>
+    <string-array name="default_share_item">
+        <item>com.dianping.base.share.action.base.WXShare</item>
+        <item>com.dianping.base.share.action.base.WXQShare</item>
+        <item>com.dianping.base.share.action.base.QQShare</item>
+        <item>com.dianping.base.share.action.base.SmsShare</item>
+        <item>com.dianping.base.share.action.base.WeiboShare</item>
+        <item>com.dianping.base.share.action.base.QzoneShare</item>
+        <item>com.dianping.base.share.action.base.MailShare</item>
+        <item>com.dianping.base.share.action.base.CopyShare</item>
+    </string-array>
+    <string-array name="edit_draft_items">
+        <item>删除草稿</item>
+        <item>编辑草稿</item>
+    </string-array>
+    <string-array name="efte_share_item">
+        <item>com.dianping.t.share.TuanWXShare</item>
+        <item>com.dianping.t.share.TuanWXQShare</item>
+        <item>com.dianping.t.share.TuanQQShare</item>
+        <item>com.dianping.t.share.TuanQzoneShare</item>
+    </string-array>
+    <array name="famous_template">
+        <item>@layout/home_famousshop_timer_lay2</item>
+        <item>@layout/home_famousshop_timer_lay3</item>
+        <item>@layout/home_famousshop_lay2</item>
+        <item>@layout/home_famousshop_lay3</item>
+    </array>
+    <array name="famousad_template_item">
+        <item>@id/famousad1</item>
+        <item>@id/famousad2</item>
+        <item>@id/famousad3</item>
+    </array>
+    <array name="feature_template">
+        <item>@layout/home_feature_template2</item>
+        <item>@layout/home_feature_template3</item>
+        <item>@layout/home_feature_template4</item>
+    </array>
+    <array name="feature_template_item">
+        <item>@id/feature1</item>
+        <item>@id/feature2</item>
+        <item>@id/feature3</item>
+        <item>@id/feature4</item>
+    </array>
+    <array name="featureshop_template">
+        <item>@layout/home_feature_lay3</item>
+        <item>@layout/home_feature_lay4</item>
+    </array>
+    <array name="guess_images">
+        <item>@drawable/guess_bancai</item>
+        <item>@drawable/guess_chashugu</item>
+        <item>@drawable/guess_fanqie</item>
+        <item>@drawable/guess_fengmi</item>
+        <item>@drawable/guess_guozhi</item>
+        <item>@drawable/guess_hetao</item>
+        <item>@drawable/guess_huanggua</item>
+        <item>@drawable/guess_lianou</item>
+        <item>@drawable/guess_luobo</item>
+        <item>@drawable/guess_meigui</item>
+        <item>@drawable/guess_mugua</item>
+        <item>@drawable/guess_nimeng</item>
+        <item>@drawable/guess_putao</item>
+        <item>@drawable/guess_taozi</item>
+        <item>@drawable/guess_tuanmeitang</item>
+        <item>@drawable/guess_wawacai</item>
+        <item>@drawable/guess_xiapi</item>
+        <item>@drawable/guess_yu</item>
+        <item>@drawable/guess_yutou</item>
+        <item>@drawable/guess_zhou</item>
+    </array>
+    <string-array name="guidance_class_names">
+        <item>Guidance1View</item>
+        <item>Guidance2View</item>
+        <item>Guidance3View</item>
+    </string-array>
+    <array name="hotad_template">
+        <item>@layout/home_hotad_template1</item>
+        <item>@layout/home_hotad_template2</item>
+        <item>@layout/home_hotad_template3</item>
+        <item>@layout/home_hotad_template4</item>
+    </array>
+    <array name="hotad_template_item">
+        <item>@id/hotad1</item>
+        <item>@id/hotad2</item>
+        <item>@id/hotad3</item>
+        <item>@id/hotad4</item>
+    </array>
+    <string-array name="hotel_prod_info_share_item">
+        <item>com.dianping.hotel.deal.share.HotelProdWXShare</item>
+        <item>com.dianping.hotel.deal.share.HotelProdWXQShare</item>
+        <item>com.dianping.hotel.deal.share.HotelProdQQShare</item>
+        <item>com.dianping.hotel.deal.share.HotelProdSmsShare</item>
+        <item>com.dianping.hotel.deal.share.HotelProdWeiboShare</item>
+        <item>com.dianping.hotel.deal.share.HotelProdQzoneShare</item>
+        <item>com.dianping.hotel.deal.share.HotelProdMailShare</item>
+        <item>com.dianping.hotel.deal.share.HotelProdCopyShare</item>
+    </string-array>
+    <string-array name="message_empty_tips">
+        <item>没有新的用户消息</item>
+        <item>没有新的系统消息</item>
+        <item>没有新的广播</item>
+        <item>没有新的订阅</item>
+    </string-array>
+    <string-array name="mine_tab">
+        <item>@string/my_orders</item>
+        <item>@string/my_tuan</item>
+        <item>@string/my_wallet</item>
+        <item>@string/my_favorite</item>
+        <item>@string/my_cookie</item>
+        <item>@string/my_needreview</item>
+        <item>@string/settings</item>
+        <item>@string/review</item>
+        <item>@string/everyday_recommend</item>
+        <item>@string/jobs</item>
+    </string-array>
+    <array name="newuser_template_item">
+        <item>@id/newuser1</item>
+    </array>
+    <string-array name="pay_share_item">
+        <item>com.dianping.base.share.action.base.WXShare</item>
+        <item>com.dianping.base.share.action.base.WXQShare</item>
+        <item>com.dianping.base.share.action.base.QQShare</item>
+    </string-array>
+    <string-array name="photo_new_or_load">
+        <item>加载草稿</item>
+        <item>上传新的照片</item>
+    </string-array>
+    <string-array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
+    <string-array name="preferences_front_light_values">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+    <string-array name="review_new_or_load">
+        <item>加载草稿</item>
+        <item>新增点评</item>
+    </string-array>
+    <string-array name="save_draft_items">
+        <item>舍弃草稿</item>
+        <item>保存草稿</item>
+    </string-array>
+    <string-array name="select_changelocation_items">
+        <item>重新定位</item>
+        <item>自定义地址</item>
+    </string-array>
+    <string-array name="select_draft_items">
+        <item>舍弃草稿</item>
+        <item>保存草稿</item>
+    </string-array>
+    <string-array name="select_error_report_items">
+        <item>商户已关</item>
+        <item>地图位置错误</item>
+        <item>商户信息错误</item>
+        <item>商户重复</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="select_follow_items">
+        <item>查看TA的主页</item>
+        <item>取消关注</item>
+    </string-array>
+    <string-array name="select_mycollect_dialog_items">
+        <item>从收藏里删除</item>
+        <item>查看商户位置</item>
+        <item>在此商户签到</item>
+    </string-array>
+    <string-array name="select_queuing_items">
+        <item>无人排队</item>
+        <item>5人以下</item>
+        <item>6–10人</item>
+        <item>11–20人</item>
+        <item>20人以上，太火了</item>
+    </string-array>
+    <string-array name="select_remove_upload_items">
+        <item>删除此照片</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="select_upload_dialog_items">
+        <item>手机拍照</item>
+        <item>手机相册</item>
+    </string-array>
+    <string-array name="select_usercollect_dialog_items">
+        <item>查看商户位置</item>
+        <item>在此商户签到</item>
+    </string-array>
+    <string-array name="share_list_items">
+        <item>发送短信</item>
+        <item>发给微信好友</item>
+        <item>分享到微博等网站</item>
+        <item>发送邮件</item>
+    </string-array>
+    <array name="vertical_template">
+        <item>@layout/home_vertical_template1</item>
+        <item>@layout/home_vertical_template2</item>
+        <item>@layout/home_vertical_template3</item>
+        <item>@layout/home_vertical_template4</item>
+        <item>@layout/home_vertical_template5</item>
+    </array>
+    <array name="vertical_template_item">
+        <item>@id/vertical1</item>
+        <item>@id/vertical2</item>
+        <item>@id/vertical3</item>
+        <item>@id/vertical4</item>
+        <item>@id/vertical5</item>
+        <item>@id/vertical6</item>
+        <item>@id/vertical7</item>
+    </array>
+</resources>

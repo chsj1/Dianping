@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:id="@id/babytohome_photo_item" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:minHeight="65.0dip" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:layout_gravity="bottom|center" android:id="@id/babytohome_photo_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" />
+</com.dianping.widget.view.NovaFrameLayout>

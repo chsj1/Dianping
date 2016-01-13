@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.SubscribeItem android:gravity="top" android:orientation="horizontal" android:id="@id/notification" android:background="@drawable/list_item" android:paddingLeft="20.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/thumb" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="20.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <com.dianping.base.widget.NetworkThumbView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/avatar_36" dp:placeholderError="@drawable/placeholder_error_s" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/message_cover" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_17" android:ellipsize="end" android:id="@id/notification_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_14" android:layout_gravity="center|right" android:id="@id/notification_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_15" android:id="@id/notification_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/gray" android:id="@id/notification_quote" android:background="@drawable/talkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" />
+        <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+</com.dianping.base.widget.SubscribeItem>

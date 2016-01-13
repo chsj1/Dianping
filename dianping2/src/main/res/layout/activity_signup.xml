@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/input_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" layout="@layout/fast_login_view" />
+    <com.dianping.widget.view.NovaButton android:id="@id/register" android:layout_height="45.0dip" android:layout_margin="17.0dip" android:text="立即注册" style="@style/NovaWeightButton" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip">
+        <com.dianping.widget.view.NovaCheckBox android:id="@id/check" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" style="@style/SignupCheckbox" />
+        <TextView android:textSize="@dimen/text_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我已阅读并同意大众点评网" />
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_medium" android:textColor="@color/connect_consumer_service_link" android:id="@id/user_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《用户使用协议》" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.TableView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.tuan.widget.RMBSingleItem android:id="@id/total_price" dp:rmb_usage_now_color="@color/deep_gray" dp:style_price="style2" dp:usage="now" dp:item_title="小计" dp:item_subTitleSize="@dimen/text_size_17" style="@style/TuanPayBasicItem" />
+</com.dianping.base.widget.TableView>

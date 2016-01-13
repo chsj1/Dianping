@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/feed_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.LoadingFullScreenItem android:gravity="center" android:orientation="vertical" android:id="@id/feed_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/anim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/loading_fullscreen_anim" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_gray" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.dianping.widget.LoadingFullScreenItem>
+    <include android:layout_gravity="center" android:id="@id/feed_error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/error_item" />
+</FrameLayout>

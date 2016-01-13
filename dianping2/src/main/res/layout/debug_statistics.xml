@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    <com.dianping.debug.DebugDomainItem android:id="@id/statistics_item" dp:itemDomainSelector="日志统计" dp:itemDianpingDomain="http://stat.api.dianping.com/utm.js?v=androidv1" dp:itemBetaDomain="http://stat.api.51ping.com/utm.js?v=androidv1" dp:itemMobileAPIDomain="http://192.168.7.69:8080/utm.js?v=androidv1" style="@style/SingleLineTableItemWithLeftPadding" />
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    <com.dianping.debug.DebugDomainItem android:id="@id/push_statistics_item" dp:itemDomainSelector="push日志" dp:itemDianpingDomain="http://stat.api.dianping.com/utm.js?v=androidpush" dp:itemBetaDomain="http://stat.api.51ping.com/utm.js?v=androidpush" style="@style/SingleLineTableItemWithLeftPadding" />
+</com.dianping.base.widget.TableView>

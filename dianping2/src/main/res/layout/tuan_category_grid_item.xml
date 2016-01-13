@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="center" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/catagory_mask" android:background="@drawable/catagory_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@color/white" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tuan_common_black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/category_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:ems="6" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/banner_cell_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+</FrameLayout>

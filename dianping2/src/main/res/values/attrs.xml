@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="gdQuickActionBarItemStyle" format="reference" />
+    <attr name="numberPickerStyle" format="reference" />
+    <attr name="rmb_usage_now_centerline" format="boolean" />
+    <attr name="rmb_usage_now_color" format="color" />
+    <attr name="style_price">
+        <enum name="style1" value="1" />
+        <enum name="style2" value="2" />
+        <enum name="style3" value="3" />
+        <enum name="style4" value="4" />
+        <enum name="style5" value="5" />
+        <enum name="style6" value="6" />
+    </attr>
+    <attr name="usage">
+        <enum name="both" value="3" />
+        <enum name="now" value="2" />
+        <enum name="origin" value="1" />
+    </attr>
+    <attr name="actionbarCompatTitleStyle" format="reference" />
+    <attr name="actionbarCompatItemStyle" format="reference" />
+    <attr name="actionbarCompatItemHomeStyle" format="reference" />
+    <attr name="actionbarCompatProgressIndicatorStyle" format="reference" />
+    <attr name="auto_hide" format="boolean" />
+    <attr name="bannnerLayout" format="reference" />
+    <attr name="item_icon" format="reference" />
+    <attr name="item_title" format="reference|string" />
+    <attr name="item_titleSize" format="reference|dimension" />
+    <attr name="item_titleColor" format="reference" />
+    <attr name="item_subTitle" format="reference|string" />
+    <attr name="item_subTitleSize" format="reference|dimension" />
+    <attr name="item_subTitleColor" format="reference" />
+    <attr name="item_count" format="reference|string" />
+    <attr name="item_countSize" format="reference|dimension" />
+    <attr name="item_countColor" format="reference" />
+    <attr name="item_indicator" format="reference" />
+    <attr name="isSingleBigMode" format="boolean" />
+    <attr name="textColor" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="isSingle" format="boolean" />
+    <attr name="degrees" format="float" />
+    <attr name="pivotX" format="float" />
+    <attr name="pivotY" format="float" />
+    <attr name="dptitle" format="string" />
+    <attr name="subTitle" format="string" />
+    <attr name="input" format="string" />
+    <attr name="input_hint" format="string" />
+    <attr name="input_type" format="integer">
+        <flag name="email" value="0x00000020" />
+        <flag name="number" value="0x00000002" />
+        <flag name="password" value="0x00000080" />
+        <flag name="phone" value="0x00000003" />
+        <flag name="text" value="0x00000001" />
+    </attr>
+    <attr name="input_maxLength" format="integer" />
+    <attr name="count" format="string" />
+    <attr name="checked" format="integer">
+        <enum name="check" value="1" />
+        <enum name="uncheck" value="2" />
+    </attr>
+    <attr name="clickable" format="boolean" />
+    <attr name="show1stPic" format="boolean" />
+    <attr name="show2ndPic" format="boolean" />
+    <attr name="title_textType" format="integer">
+        <flag name="black_color" value="0x00000008" />
+        <flag name="bold" value="0x00000010" />
+        <flag name="gray_color" value="0x00000004" />
+        <flag name="small" value="0x00000001" />
+        <flag name="yellow_color" value="0x00000002" />
+    </attr>
+    <attr name="subTitle_textType" format="integer">
+        <flag name="black_color" value="0x00000008" />
+        <flag name="bold" value="0x00000010" />
+        <flag name="gray_color" value="0x00000004" />
+        <flag name="small" value="0x00000001" />
+        <flag name="yellow_color" value="0x00000002" />
+    </attr>
+    <attr name="count_textType" format="integer">
+        <flag name="black_color" value="0x00000008" />
+        <flag name="bold" value="0x00000010" />
+        <flag name="gray_color" value="0x00000004" />
+        <flag name="small" value="0x00000001" />
+        <flag name="yellow_color" value="0x00000002" />
+    </attr>
+    <attr name="input_textType" format="integer">
+        <flag name="black_color" value="0x00000008" />
+        <flag name="bold" value="0x00000010" />
+        <flag name="gray_color" value="0x00000004" />
+        <flag name="small" value="0x00000001" />
+        <flag name="yellow_color" value="0x00000002" />
+    </attr>
+    <attr name="right1stPic" format="reference" />
+    <attr name="right2ndPic" format="reference" />
+    <attr name="arrowImage" format="reference" />
+    <attr name="placeholderClick" format="reference" />
+    <attr name="placeholderReload" format="reference" />
+    <attr name="placeholderScaleType" format="string" />
+    <attr name="cornerRadius" format="dimension" />
+    <attr name="borderStrokeWidth" format="dimension" />
+    <attr name="borderColor" format="color" />
+    <attr name="isCircle" format="boolean" />
+    <attr name="isSquare" format="boolean" />
+    <attr name="needReload" format="boolean" />
+    <attr name="forceDownload" format="boolean" />
+    <attr name="itemDomainSelector" format="string" />
+    <attr name="itemDianpingDomain" format="string" />
+    <attr name="itemBetaDomain" format="string" />
+    <attr name="itemPPEDomain" format="string" />
+    <attr name="itemAlphaDomain" format="string" />
+    <attr name="itemYiminDomain" format="string" />
+    <attr name="itemCustomDomain" format="string" />
+    <attr name="itemMobileAPIDomain" format="string" />
+    <attr name="line_1" format="reference|string" />
+    <attr name="line_2" format="reference|string" />
+    <attr name="line_mode">
+        <enum name="double_line" value="2" />
+        <enum name="single_line" value="1" />
+    </attr>
+    <attr name="emotionColumnCount" format="integer" />
+    <attr name="emotionRowCount" format="integer" />
+    <attr name="gridViewPaddingLeft" format="dimension" />
+    <attr name="gridViewPaddingTop" format="dimension" />
+    <attr name="gridViewPaddingBottom" format="dimension" />
+    <attr name="gridViewPaddingRight" format="dimension" />
+    <attr name="imageSpace" format="integer" />
+    <attr name="maxSize" format="integer" />
+    <attr name="flingElementId" format="string" />
+    <attr name="itemLayout" format="reference" />
+    <attr name="alwaysShowDivider" format="boolean" />
+    <attr name="isHalf" format="boolean" />
+    <attr name="isPrepaidCard" format="boolean" />
+    <attr name="navigationDotSelected" format="reference" />
+    <attr name="navigationDotUnselected" format="reference" />
+    <attr name="navigationDotCount" format="integer" />
+    <attr name="filterBitmap" format="boolean" />
+    <attr name="requireBeforeAttach" format="boolean" />
+    <attr name="placeholderEmpty" format="reference" />
+    <attr name="placeholderLoading" format="reference" />
+    <attr name="placeholderError" format="reference" />
+    <attr name="placeholderStyleType" format="string" />
+    <attr name="isCorner" format="boolean" />
+    <attr name="radius" format="integer" />
+    <attr name="isTopRound" format="boolean" />
+    <attr name="isBottomRound" format="boolean" />
+    <attr name="widthHeightPer" format="float" />
+    <attr name="isBounds" format="boolean" />
+    <attr name="solidColor" format="reference|color" />
+    <attr name="selectionDivider" format="reference" />
+    <attr name="selectionDividerHeight" format="dimension" />
+    <attr name="selectionDividersDistance" format="dimension" />
+    <attr name="internalMinHeight" format="dimension" />
+    <attr name="internalMaxHeight" format="dimension" />
+    <attr name="internalMinWidth" format="dimension" />
+    <attr name="internalMaxWidth" format="dimension" />
+    <attr name="internalLayout" format="reference" />
+    <attr name="virtualButtonPressedDrawable" format="reference" />
+    <attr name="selected" format="reference" />
+    <attr name="unselected" format="reference" />
+    <attr name="halfselected" format="reference" />
+    <attr name="weight" format="integer" />
+    <attr name="size" format="integer" />
+    <attr name="selectable" format="boolean" />
+    <attr name="ptrRefreshableViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="both" value="0x00000003" />
+        <flag name="disabled" value="0x00000000" />
+        <flag name="manualOnly" value="0x00000004" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullFromEnd" value="0x00000002" />
+        <flag name="pullFromStart" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrDrawableStart" format="reference" />
+    <attr name="ptrDrawableEnd" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="ptrAnimationStyle">
+        <flag name="flip" value="0x00000001" />
+        <flag name="load" value="0x00000003" />
+        <flag name="rotate" value="0x00000000" />
+    </attr>
+    <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean" />
+    <attr name="ptrListViewExtrasEnabled" format="reference|boolean" />
+    <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrDrawableTop" format="reference" />
+    <attr name="ptrDrawableBottom" format="reference" />
+    <attr name="headerMode">
+        <flag name="rotate" value="0x00000001" />
+        <flag name="dper" value="0x00000000" />
+    </attr>
+    <attr name="qrCodeEdgeLength" format="dimension" />
+    <attr name="money_amount_size" format="dimension" />
+    <attr name="money_label_size" format="dimension" />
+    <attr name="minus_size" format="dimension" />
+    <attr name="label_margin_left" format="dimension" />
+    <attr name="label_margin_right" format="dimension" />
+    <attr name="label_margin_top" format="dimension" />
+    <attr name="label_margin_bottom" format="dimension" />
+    <attr name="rmb_margin_left" format="dimension" />
+    <attr name="rmb_margin_right" format="dimension" />
+    <attr name="rmb_margin_top" format="dimension" />
+    <attr name="rmb_margin_bottom" format="dimension" />
+    <attr name="money_margin_top" format="dimension" />
+    <attr name="money_margin_bottom" format="dimension" />
+    <attr name="minus_margin_top" format="dimension" />
+    <attr name="minus_margin_bottom" format="dimension" />
+    <attr name="empty_normal" format="reference" />
+    <attr name="selected_normal" format="reference" />
+    <attr name="layoutManager" format="string" />
+    <attr name="spanCount" format="integer" />
+    <attr name="reverseLayout" format="boolean" />
+    <attr name="stackFromEnd" format="boolean" />
+    <attr name="column_count" format="integer" />
+    <attr name="column_count_portrait" format="integer" />
+    <attr name="column_count_landscape" format="integer" />
+    <attr name="item_margin" format="dimension" />
+    <attr name="grid_paddingLeft" format="dimension" />
+    <attr name="grid_paddingRight" format="dimension" />
+    <attr name="grid_paddingTop" format="dimension" />
+    <attr name="grid_paddingBottom" format="dimension" />
+    <attr name="divider_padding" format="dimension" />
+    <attr name="text" format="reference|string" />
+    <attr name="desc" format="reference|string" />
+    <attr name="button_drawable" format="reference" />
+    <attr name="mode">
+        <enum name="left_button" value="2" />
+        <enum name="right_button" value="1" />
+    </attr>
+    <attr name="itemTitle" format="string" />
+    <attr name="itemSubTitle" format="string" />
+    <attr name="itemImage" format="reference" />
+    <attr name="itemTag" format="string" />
+    <attr name="barColor1" format="color" />
+    <attr name="barColor2" format="color" />
+    <attr name="fontColor" format="reference|color" />
+    <attr name="fontSize" format="dimension" />
+    <attr name="lineColor" format="color" />
+    <attr name="gridColor" format="color" />
+    <attr name="lineWidth" format="dimension" />
+    <attr name="passwordLength" format="integer" />
+    <attr name="passwordTransformation" format="string" />
+</resources>

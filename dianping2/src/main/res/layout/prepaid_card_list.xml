@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/list" android:background="@color/common_bk_color" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:scrollingCache="false" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+    <FrameLayout android:id="@id/mock_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/img_u" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/prepaid_card_item" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lay_d" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="100.0dip">
+            <ImageView android:id="@id/img_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/mc_card_line" android:scaleType="fitXY" />
+            <include android:id="@id/img_d_1" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/card_list_item" />
+            <include android:id="@id/img_d_2" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/card_list_item" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

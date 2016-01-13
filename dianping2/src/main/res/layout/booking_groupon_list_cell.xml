@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/booking_item_dynamic_bg" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_red" android:id="@id/has_buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="[已买]" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/has_choose" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:button="@drawable/hui_radio_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/groupon_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/has_choose" android:layout_toRightOf="@id/has_buy" android:layout_centerVertical="true" />
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

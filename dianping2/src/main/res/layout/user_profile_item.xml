@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/white_bg" android:layout_width="fill_parent" android:layout_height="79.0dip" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/my_info" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <com.dianping.base.widget.CircleImageView android:layout_gravity="center" android:id="@android:id/icon" android:layout_width="58.0dip" android:layout_height="58.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/black" android:ellipsize="end" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:maxEms="10" android:singleLine="true" />
+        <com.dianping.base.widget.NetworkThumbView android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/user_level_logo" android:layout_width="22.0dip" android:layout_height="12.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" dp:placeholderError="@drawable/vip_logo_disable" />
+    </LinearLayout>
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.widget.ShowMoreItem android:gravity="center" android:orientation="vertical" android:background="@drawable/search_shop_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/search_more_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider_line_top" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/search_more_text_size" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/display_more_count" android:layout_width="wrap_content" android:layout_height="0.0dip" android:drawableRight="@drawable/ic_more_down" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/divider_line" android:background="@color/line_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:id="@id/divider" android:background="@color/gray_light_background" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</com.dianping.search.widget.ShowMoreItem>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.pulltorefresh.PullToRefreshScrollView android:id="@id/whole_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/loading_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/deep_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在获取订单信息，请稍候..." />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/agent_container_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</com.dianping.widget.pulltorefresh.PullToRefreshScrollView>

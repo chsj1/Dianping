@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="上海欢乐谷" />
+        <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出游日期" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12345678" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游玩人数" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/people_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取票人" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/people_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Simonyang" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </com.dianping.base.widget.TableView>
+        <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <EditText android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/phone" android:background="@null" android:layout_width="200.0dip" android:layout_height="fill_parent" android:hint="取票手机号码" android:maxLength="11" android:layout_centerVertical="true" android:inputType="number" />
+                <ImageButton android:id="@id/chose_people" android:background="@null" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_list_btn_contact" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </com.dianping.base.widget.TableView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.ExploreTopicListViewItem android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center_vertical" android:id="@id/explore_plaza_topic_image" android:layout_width="57.0dip" android:layout_height="57.0dip" android:layout_margin="10.0dip" android:scaleType="centerCrop" dp:isSquare="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:id="@id/explore_plaza_topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true" />
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_light_gray" android:id="@id/explore_plaza_topic_content_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </com.dianping.widget.view.NovaLinearLayout>
+</com.dianping.main.find.pictureplaza.ExploreTopicListViewItem>

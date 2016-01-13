@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layer_movieticketorder_confirm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/buttom_layout" android:background="@drawable/common_action_btn_white_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/text_large" android:textColor="@color/white" android:gravity="center" android:id="@id/submit_order" android:background="@drawable/btn_weight" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="提交订单" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttom_layout">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/white_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/text_size_22" android:textColor="@color/deep_black" android:id="@id/movie_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/movie_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                            </LinearLayout>
+                            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/tuan_horizontal_dot_line" />
+                            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:id="@id/shop_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" />
+                            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:id="@id/show_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:background="@drawable/coupon_code_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_78" android:textColor="@color/light_red" android:gravity="center" android:id="@id/ticket_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" />
+                        <TextView android:textSize="@dimen/text_large" android:textColor="@color/light_red" android:id="@id/value_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="张" android:singleLine="true" android:layout_toRightOf="@id/ticket_num" android:layout_alignBottom="@id/ticket_num" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/select_seat_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/value_num" android:layout_centerVertical="true">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/seat_layout1" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginTop="5.0dip">
+                                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_black" android:gravity="center" android:id="@id/seat_text_1" android:background="@drawable/movie_detail_seat_frame_on" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="22.0dip" android:text="99排99座" android:singleLine="true" android:layout_weight="1.0" />
+                                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_black" android:gravity="center" android:id="@id/seat_text_2" android:background="@drawable/movie_detail_seat_frame_on" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:text="99排99座" android:singleLine="true" android:layout_weight="1.0" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/seat_layout2" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginTop="8.0dip">
+                                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_black" android:gravity="center" android:id="@id/seat_text_3" android:background="@drawable/movie_detail_seat_frame_on" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="22.0dip" android:text="99排99座" android:singleLine="true" android:layout_weight="1.0" />
+                                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_black" android:gravity="center" android:id="@id/seat_text_4" android:background="@drawable/movie_detail_seat_frame_on" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="22.0dip" android:layout_marginLeft="10.0dip" android:text="99排99座" android:singleLine="true" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取票手机号" />
+                    <EditText android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:gravity="center_vertical" android:id="@id/ticket_phone" android:background="@drawable/yy_list_bkg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:hint="请输入取票手机号码" android:maxLength="11" android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/tip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买须知" />
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/yy_list_bkg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/red" android:id="@id/special_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_black" android:id="@id/normal_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <include android:id="@id/loading" android:visibility="gone" layout="@layout/loading_item_fullscreen" />
+    <include android:id="@id/error" android:visibility="gone" layout="@layout/error_item" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/container" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:id="@id/legalimg1" android:layout_width="0.0dip" android:layout_height="150.0dip" android:scaleType="fitXY" android:layout_weight="1.0" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/wm_list_pic_cut" />
+    <com.dianping.widget.NetworkImageView android:id="@id/legalimg2" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:layout_weight="1.0" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/wm_list_pic_cut" />
+    <com.dianping.widget.NetworkImageView android:id="@id/legalimg3" android:layout_width="0.0dip" android:layout_height="150.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:layout_weight="1.0" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/wm_list_pic_cut" />
+</LinearLayout>

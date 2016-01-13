@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="booking_title_bg">#ffdbdad6</item>
+    <item type="drawable" name="innermap_layer_selected">#ff737373</item>
+    <item type="drawable" name="innermap_layer_unselected">#fff2f2f2</item>
+    <item type="drawable" name="main_home_background">#00000000</item>
+    <item type="drawable" name="main_home_title_background">#ffff6633</item>
+    <item type="drawable" name="title_background">#fffcfcfc</item>
+    <item type="drawable" name="title_background_orange">@color/light_orange</item>
+    <item type="drawable" name="transparent_bg">#00000000</item>
+    <item type="drawable" name="white_bg">#ffffffff</item>
+</resources>

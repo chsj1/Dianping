@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:gravity="center_vertical" android:id="@id/tuan_deal_events_item_rl" android:background="@drawable/list_item" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/icon_frame" android:layout_width="@dimen/deal_list_image_width" android:layout_height="@dimen/deal_list_image_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/deal_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/icon_frame" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/text_color_gray" android:ellipsize="end" android:id="@id/subtitle" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:lines="2" android:layout_centerVertical="true" />
+    </LinearLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

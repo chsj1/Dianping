@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/content_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/operation_layout" android:background="@drawable/wm_list_bkg_line_top" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_alignParentBottom="true" />
+        <com.dianping.widget.pulltorefresh.PullToRefreshScrollView android:id="@id/whole_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/operation_layout" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/agent_container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.dianping.widget.pulltorefresh.PullToRefreshScrollView>
+    </RelativeLayout>
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_item_fullscreen" />
+</FrameLayout>

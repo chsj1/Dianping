@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="horizontal" android:id="@id/cinema_item" android:background="@drawable/movie_cinema_show_expressbg" android:focusable="false" android:layout_width="88.0dip" android:layout_height="84.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_movieshow" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="87.0dip" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/tuan_common_black" android:gravity="left" android:layout_gravity="center" android:id="@id/tv_show_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16:30" />
+        <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:gravity="left" android:layout_gravity="center" android:id="@id/tv_language_and_dimension" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="国语/2D" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/tuan_common_orange" android:layout_gravity="center" android:id="@id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥84" />
+    </com.dianping.widget.view.NovaLinearLayout>
+    <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/movie_gradient_vertical_line" />
+</com.dianping.widget.view.NovaLinearLayout>

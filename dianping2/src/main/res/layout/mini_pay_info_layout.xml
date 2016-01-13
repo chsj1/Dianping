@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_gray" android:id="@id/tv_producttitle" android:paddingLeft="@dimen/table_item_padding" android:paddingTop="10.0dip" android:paddingRight="@dimen/table_item_padding" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_productinfo" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <com.dianping.base.widget.TableView android:orientation="vertical" android:id="@id/layer_orderinfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_count" dp:item_title="数量" style="@style/TuanPayBasicItem" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/table_view_item" android:paddingLeft="@dimen/table_item_padding" android:paddingRight="@dimen/table_item_padding" android:layout_width="fill_parent" android:layout_height="@dimen/single_line_height">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/pay_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="总计" android:layout_weight="1.0" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.dianping.base.tuan.widget.RMBLabelItem android:layout_gravity="right" android:id="@id/tv_total_price" android:layout_width="wrap_content" android:layout_height="wrap_content" dp:rmb_usage_now_color="@color/deep_gray" dp:style_price="style2" dp:usage="now" />
+                <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/text_color_gray" android:layout_gravity="right" android:id="@id/tv_discount_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.dianping.base.widget.TableView>
+</LinearLayout>

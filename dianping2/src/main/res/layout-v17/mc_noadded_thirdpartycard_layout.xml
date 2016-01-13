@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frameLayout" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_20" android:textColor="@color/white" android:gravity="center" android:id="@id/submit" android:background="@drawable/card_add_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="免费添加" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:gravity="center" android:id="@id/upgradetip" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginBottom="1.0dip" android:layout_above="@id/submit" android:textAlignment="center" />
+        <ListView android:id="@id/list" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/white" android:divider="@color/transparent" android:dividerHeight="0.0dip" android:layout_above="@id/upgradetip" style="@style/CustomListItem" />
+    </RelativeLayout>
+</FrameLayout>

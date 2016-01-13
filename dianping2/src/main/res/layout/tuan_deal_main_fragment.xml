@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/deal_main_title_bar" />
+    <com.dianping.tuan.widget.TuanFilterBar android:id="@id/filterBar" android:layout_width="fill_parent" android:layout_height="@dimen/deal_filter_button_height" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_18" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="center|right" android:id="@id/navi_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/deal_list_filter_btn_bg" />
+    </FrameLayout>
+    <include android:visibility="gone" layout="@layout/local_bar" />
+</LinearLayout>

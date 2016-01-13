@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.LoadingFullScreenItem android:gravity="center" android:orientation="vertical" android:id="@id/selectdish_recommend_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight">
+        <ImageView android:id="@id/anim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/loading_fullscreen_anim" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff878787" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载订单信息，请稍候..." />
+    </com.dianping.widget.LoadingFullScreenItem>
+    <FrameLayout android:id="@id/selectdish_recommend_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/selectdish_recommend_loaded" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.selectdish.view.HorizontalNumberPicker android:id="@id/recommend_people_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/recommend_bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true">
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:id="@id/recommend_hasorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已选%s道菜" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="合计：" />
+                    <com.dianping.base.tuan.widget.RMBLabelItem android:layout_gravity="center_vertical" android:id="@id/recommend_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_15" android:gravity="center" android:id="@id/recommend_goorder" android:layout_width="75.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:text="去下单" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NovaWeightButtonTheme" />
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_15" android:textColor="@color/light_red" android:gravity="center" android:id="@id/recommend_adddish" android:background="@drawable/background_light_red_border" android:layout_width="75.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:text="去加菜" android:layout_toLeftOf="@id/recommend_goorder" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_above="@id/recommend_bottom" android:layout_below="@id/recommend_people_num">
+            <LinearLayout android:orientation="horizontal" android:id="@id/recommend_title" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+            <android.support.v4.view.ViewPager android:id="@id/recommend_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

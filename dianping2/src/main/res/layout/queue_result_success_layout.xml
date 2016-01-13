@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/queue_list_bkg_line_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="95.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/icon_pay_success" />
+            <TextView android:textSize="@dimen/text_size_23" android:textColor="@color/deep_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="取号成功" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+        <RelativeLayout android:paddingLeft="17.0dip" android:paddingTop="17.0dip" android:paddingRight="17.0dip" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_shopname_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商户名称：" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_shopname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" android:layout_toRightOf="@id/queue_shopname_title" android:layout_alignTop="@id/queue_shopname_title" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_num_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="排队号码：" android:layout_below="@id/queue_shopname_title" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" android:layout_toRightOf="@id/queue_num_title" android:layout_alignTop="@id/queue_num_title" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_wait_num_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="前面等待：" android:layout_below="@id/queue_num_title" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_wait_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" android:layout_toRightOf="@id/queue_wait_num_title" android:layout_alignTop="@id/queue_wait_num_title" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_wait_time_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="预计等待：" android:layout_below="@id/queue_wait_num_title" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/queue_wait_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" android:layout_toRightOf="@id/queue_wait_time_title" android:layout_alignTop="@id/queue_wait_time_title" />
+        </RelativeLayout>
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取号时间：" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:id="@id/queue_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="8.0dip">
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_20" android:id="@id/order" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="查看我的排号" android:layout_weight="1.0" style="@style/NovaWeightButtonTheme" />
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_19" android:id="@id/menu" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_weight="1.0" style="@style/NovaWeightButtonTheme" />
+        </LinearLayout>
+        <TextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/menu_tip" android:background="@drawable/queue_orange_tip" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

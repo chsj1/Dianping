@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.user.UserProfileHeadLayout android:orientation="vertical" android:background="@drawable/user_top_bg" android:layout_width="fill_parent" android:layout_height="135.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="63.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip">
+            <com.dianping.base.widget.CircleImageView android:id="@id/edit_photo" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/portrait_def" dp:placeholderError="@drawable/portrait_def" />
+            <com.dianping.widget.NetworkImageView android:layout_gravity="bottom|center|right" android:id="@id/iv_level" android:layout_width="27.0dip" android:layout_height="15.0dip" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:id="@id/tv_name" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:id="@id/follower_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="粉丝 " />
+                <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:id="@id/following_profile" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关注 " />
+            </LinearLayout>
+            <com.dianping.widget.view.NovaTextView android:textColor="@color/white" android:id="@id/edit" android:background="@drawable/frame_bg" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="编辑个人资料" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="50.0dip">
+                <com.dianping.widget.view.NovaTextView android:textColor="@color/white" android:gravity="center" android:id="@id/do_follow_top" android:background="@drawable/frame_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dip" android:text="加关注" />
+                <com.dianping.widget.view.NovaTextView android:textColor="@color/white" android:gravity="center" android:id="@id/msg" android:background="@drawable/frame_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:minWidth="50.0dip" android:text="私信" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/iv_more" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_icon_more" />
+    </LinearLayout>
+</com.dianping.main.user.UserProfileHeadLayout>

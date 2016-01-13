@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="17.0dip" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/membercard_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/mc_icon_little" />
+        <com.dianping.widget.view.NovaImageView android:id="@id/checkbox_membercard_op" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_infocontainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/checkbox_membercard_op" android:layout_toRightOf="@id/membercard_icon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_gray" />
+    <ImageView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_gray" />
+</FrameLayout>

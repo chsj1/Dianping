@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:layout_gravity="center_horizontal" android:id="@id/error_view" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/error_item" />
+        <include android:layout_gravity="center_horizontal" android:id="@id/loading_view" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/loading_item" />
+        <ScrollView android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/table_view_item_with_line" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/coupon_code_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0px">
+                        <TextView android:textSize="@dimen/text_large" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="余额:" />
+                        <TextView android:textSize="@dimen/text_size_30" android:textColor="@color/orange_red" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/balance" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0px">
+                        <Button android:id="@id/rechargeBtn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="我要充值" android:layout_weight="1.0" style="@style/NovaTuanWeightButton" />
+                        <Button android:id="@id/giftBtn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="赠送朋友" android:layout_weight="1.0" style="@style/NovaTuanLightButton" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/table_view_item" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/consume_history_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_large" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="消费记录" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/consume_history_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down_black" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/consume_container_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/light_gray" android:id="@id/consume_history_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无消费记录" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/consume_history_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/table_view_item" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/recharge_history_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_large" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="充值记录" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/recharge_history_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down_black" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/recharge_container_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/light_gray" android:id="@id/recharge_history_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无充值记录" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/recharge_history_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:id="@id/gift_up_line" android:background="@color/line_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:background="@drawable/table_view_item" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/gift_history_title" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_large" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="赠送记录" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/gift_history_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_down_black" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/gift_container_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="@dimen/text_small" android:textColor="@color/light_gray" android:id="@id/gift_history_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂无赠收记录" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/gift_history_lay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+                <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/attention_lay" android:background="@color/transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_large" android:textColor="@color/dark_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="特别提示" />
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/attention_content" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

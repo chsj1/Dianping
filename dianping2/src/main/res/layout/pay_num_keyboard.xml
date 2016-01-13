@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wm_line_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/beauty_color_text_background" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_one" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_two" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:text="2" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_three" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="3" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0px" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_four" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="4" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_five" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:text="5" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_six" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="6" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0px" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_seven" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="7" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_eight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:text="8" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_nine" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="9" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0px" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_space1" android:background="@color/wm_line_gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:layout_gravity="center" android:id="@id/pay_keyboard_zero" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:text="0" android:layout_weight="1.0" style="@style/PayKeyBoardNum" />
+        <LinearLayout android:gravity="center" android:id="@id/pay_keyboard_del" android:background="@drawable/pay_keyboard_del_selector" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_keyboard_del" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

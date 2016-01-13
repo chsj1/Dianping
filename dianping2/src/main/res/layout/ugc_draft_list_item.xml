@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.ugc.draft.view.UGCDraftListItem android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/basic_checkbox" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_dark_black_to_white" android:gravity="center" android:id="@id/resend" android:background="@drawable/background_resend_border" android:layout_width="56.0dip" android:layout_height="33.0dip" android:text="重发" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/draft_shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/resend" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/draft_date_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/resend" android:layout_below="@id/draft_shop_name" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <com.dianping.base.widget.ShopPower android:layout_gravity="left" android:id="@id/draft_shop_power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/draft_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/draft_photoLayout" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="10.0dip">
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/draft_photo1" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/draft_photo2" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/draft_photo3" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+            <FrameLayout android:id="@id/draft_more_photo_container" android:layout_width="70.0dip" android:layout_height="fill_parent">
+                <com.dianping.imagemanager.DPNetworkImageView android:id="@id/draft_photo4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:id="@id/draft_more_photo" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="更多图片" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.dianping.ugc.draft.view.UGCDraftListItem>

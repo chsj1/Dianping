@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/card_qrcode_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/mc_qr_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="35.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/top_part" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/card_qrcode_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+            <TextView android:textSize="@dimen/text_medium_1" android:textStyle="bold" android:textColor="#ff323232" android:gravity="center_horizontal" android:id="@id/card_qrcode_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="扫描二维码，尊享会员特权" />
+        </LinearLayout>
+        <ImageView android:id="@id/mc_qr_line" android:background="@drawable/mc_qr_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/top_part" />
+        <RelativeLayout android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mc_qr_line">
+            <ImageButton android:id="@id/card_qrcode_setting" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_qrcode_setting_btn" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="@dimen/text_medium" android:textStyle="bold" android:textColor="#ff888888" android:id="@id/card_qrcode_name" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/mc_username_text" android:singleLine="true" android:layout_toLeftOf="@id/card_qrcode_setting" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/text_medium" android:textStyle="bold" android:textColor="#ff888888" android:ellipsize="end" android:id="@id/card_qrcode_birthday" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mc_birthday_text" android:singleLine="true" android:layout_below="@id/card_qrcode_name" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

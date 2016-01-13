@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/unusable_coupon_bg" android:background="#60000000" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/coupon_title" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="15.0dip" android:text="抵用券" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:src="@drawable/tuan_home_divider" android:scaleType="fitXY" />
+        <ListView android:id="@id/unusable_coupon_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:divider="#00000000" />
+    </LinearLayout>
+    <com.dianping.widget.view.NovaImageView android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/tuan_dialog_close" android:scaleType="center" android:layout_alignTop="@id/content" android:layout_alignRight="@id/content" />
+</RelativeLayout>

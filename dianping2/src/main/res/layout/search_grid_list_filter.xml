@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.view.ShopFilterNaviView android:orientation="vertical" android:id="@id/shoplist_grid_filter" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/filter_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+    <View android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_cont" android:padding="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="@dimen/text_large" android:textColor="#ff666666" android:gravity="center" android:id="@id/reset_btn" android:background="@drawable/reset_btn_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="重置" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:gravity="center" android:id="@id/confirm_btn" android:background="@drawable/btn_weight" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</com.dianping.search.view.ShopFilterNaviView>

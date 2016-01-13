@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.ToolbarButton android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="9.0sp" android:textColor="#ffffffff" android:id="@id/show_flower_titleTV" android:background="@drawable/school_showflowertitle_item" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.dianping.base.widget.ToolbarImageButton android:id="@android:id/icon" android:background="@null" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/schoolshowflower" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/shopinfo_bottombar_text_color" android:ellipsize="none" android:id="@android:id/text1" android:paddingLeft="3.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="晒名人" android:singleLine="true" android:shadowColor="#ffffffff" android:shadowDy="1.0" android:shadowRadius="0.0" />
+    </LinearLayout>
+    <View android:background="@color/inner_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" />
+</com.dianping.base.widget.ToolbarButton>

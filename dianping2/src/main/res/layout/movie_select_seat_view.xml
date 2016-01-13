@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.movie.view.NavigateImageView android:id="@id/nav_img" android:background="#ffd8d8d8" android:layout_width="30.0dip" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/seat_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.movie.view.SeatImageView android:id="@id/seat_img" android:background="#ffd8d8d8" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffc0c0c0" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/seat_thirdpartyname" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.dianping.movie.view.SeatThumbnailView android:layout_gravity="center|right|top" android:id="@id/seat_thumbnail" android:background="#99000000" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

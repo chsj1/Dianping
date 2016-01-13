@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.DPScrollView android:id="@id/scrollview" android:background="@color/pay_wx_free_pwd" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_wx_free_pwd_opened" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="@color/light_gray" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信免密支付限额" />
+                <com.dianping.base.widget.TableView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单笔限额支付" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/tv_once_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每日支付限额" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/tv_day_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </com.dianping.base.widget.TableView>
+                <com.dianping.widget.view.NovaButton android:id="@id/nbtn_close_wx_free_pwd" android:layout_marginTop="25.0dip" android:text="关闭微信免密支付" style="@style/PayWxNoPwdButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_wx_free_pwd_not_open" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.0sp" android:textColor="@color/tuan_common_black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="一扫即付,买单快捷又放心" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="32.0dip">
+                    <TextView android:text="快捷" style="@style/PayWxNoPwdTextView" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="扫码即付款" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip">
+                    <TextView android:text="便宜" style="@style/PayWxNoPwdTextView" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="付款时自动选择力度最大优惠" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip">
+                    <TextView android:text="安全" style="@style/PayWxNoPwdTextView" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/tuan_common_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="支付安全护航 每日支付限" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/tuan_common_black" android:layout_gravity="center_vertical" android:id="@id/tv_once_limit_not_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="500元" />
+                </LinearLayout>
+                <com.dianping.widget.view.NovaButton android:id="@id/nbtn_open_wx_free_pwd" android:layout_marginTop="50.0dip" android:layout_marginBottom="30.0dip" android:text="开通微信免密支付" style="@style/NovaTuanWeightButton" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.dianping.base.widget.DPScrollView>
+</RelativeLayout>

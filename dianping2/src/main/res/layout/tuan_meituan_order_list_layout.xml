@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.LoadingItem android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <ImageView android:id="@id/anim_icon" android:background="@drawable/loading_small_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/loading_small_main" />
+        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载中..." />
+    </com.dianping.widget.LoadingItem>
+    <com.dianping.widget.LoadingErrorView android:gravity="center" android:orientation="horizontal" android:id="@id/loading_error_view" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="网络连接失败 点击重新加载" android:drawablePadding="8.0dip" />
+    </com.dianping.widget.LoadingErrorView>
+    <FrameLayout android:id="@id/webview_content" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <com.dianping.base.tuan.widget.CustomViewPager android:id="@id/fragment_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:layout_gravity="top" android:id="@id/pb_progress" android:layout_width="fill_parent" android:layout_height="3.0dip" android:progressDrawable="@drawable/webview_progress_bg" style="?android:attr/progressBarStyleHorizontal" />
+    </FrameLayout>
+</LinearLayout>

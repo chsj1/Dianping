@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_gray" android:gravity="center|left" android:id="@id/hotel_roomtype_list_tips_tip" android:background="@color/white" android:padding="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/hotel_roomtype_list_tips_divider" android:background="@color/hotel_divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_gray" android:gravity="center" android:id="@id/hotel_roomtype_list_tips_source" android:padding="17.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

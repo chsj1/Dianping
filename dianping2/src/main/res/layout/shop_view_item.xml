@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.widget.ShopViewItem android:gravity="center_vertical" android:background="@drawable/tuan_home_listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/root_rl" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@id/deal_item_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_normal" android:layout_centerVertical="true" />
+        <FrameLayout android:id="@id/deal_item_icon_frame" android:background="@color/common_bk_color" android:padding="1.0px" android:layout_width="@dimen/deal_list_image_width" android:layout_height="@dimen/deal_list_image_height" android:layout_toRightOf="@id/deal_item_checkbox" android:layout_alignWithParentIfMissing="true">
+            <com.dianping.base.widget.NetworkThumbView android:id="@id/deal_item_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+            <ImageView android:layout_gravity="center|left|top" android:id="@id/deal_item_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/deal_item_info" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/deal_item_icon_frame" android:layout_centerVertical="true">
+            <RelativeLayout android:id="@id/deal_item_top_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/tuan_common_gray" android:gravity="center_vertical" android:id="@id/deal_item_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/deal_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/deal_item_distance" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/tuan_common_gray" android:ellipsize="end" android:id="@id/deal_item_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:maxLines="2" android:layout_below="@id/deal_item_top_info" android:layout_alignParentLeft="true" android:lineSpacingExtra="1.0dip" />
+            <com.dianping.base.widget.ColorBorderTextView android:textSize="@dimen/text_size_11" android:textColor="@color/tips_text_red" android:id="@id/desc" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/deal_item_subtitle" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/deal_item_status_nopic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.dianping.search.widget.ShopViewItem>

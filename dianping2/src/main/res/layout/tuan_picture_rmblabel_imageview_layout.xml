@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@id/order_network_image" android:layout_width="90.0dip" android:layout_height="66.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading_b" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" dp:radius="4" />
+    <com.dianping.base.tuan.widget.RMBLabelItem android:id="@id/price_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" dp:rmb_usage_now_color="@color/white" dp:style_price="style4" dp:usage="now" />
+</RelativeLayout>

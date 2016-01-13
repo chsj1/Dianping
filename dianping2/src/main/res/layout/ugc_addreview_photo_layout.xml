@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/photo_header_lay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip">
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="上传图片" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/light_gray" android:id="@id/photo_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="已关联7张您上传过的图片" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/photo_header_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:button="@drawable/ugc_addreview_check" android:layout_toLeftOf="@id/photo_header_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.ugc.widget.GridPhotoFragmentView android:id="@id/photo_upload_browser" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" style="@style/PhotoGridViewTheme" />
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/gray" android:id="@id/photo_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传图片" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.dianping.widget.view.NovaLinearLayout>

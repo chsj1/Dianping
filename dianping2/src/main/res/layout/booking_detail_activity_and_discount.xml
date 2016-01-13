@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/white_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <RelativeLayout android:id="@id/activity_info" android:background="@drawable/booking_item_dynamic_bg" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_green" android:id="@id/activity_icon" android:background="@drawable/background_green_border" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="250.0dip" android:singleLine="true" android:layout_toRightOf="@id/activity_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/activity_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/booking_dynamic_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/activity_discount_separate_line" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/discount_info" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rl_promp_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:id="@id/discount_icon" android:background="@drawable/background_light_red_border" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/discount_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="250.0dip" android:singleLine="true" android:layout_toRightOf="@id/discount_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:id="@id/discount_desc" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rl_promp_top" android:lineSpacingExtra="6.0dip" />
+    </RelativeLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

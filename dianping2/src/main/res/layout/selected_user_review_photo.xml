@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sd_detail_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/sd_detail_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height" android:layout_alignParentTop="true" layout="@layout/standard_title_bar" />
+    <View android:id="@id/title_bottom_line" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/sd_detail_title_bar" />
+    <include android:id="@id/sd_bottom_cart_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/selectdish_menu_cart_bottom_layout" />
+    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:gravity="center" android:id="@id/selected_gallery_gridview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="15.0dip" android:stretchMode="columnWidth" android:numColumns="3" android:layout_above="@id/sd_bottom_cart_layout" android:layout_below="@id/title_bottom_line" style="@style/CustomGridView" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bottom_line" layout="@layout/selected_detail_buy_layout" />
+    <FrameLayout android:id="@id/sd_detail_moving_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

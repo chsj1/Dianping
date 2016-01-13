@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/wm_list_bkg" android:paddingLeft="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginRight="17.0dip">
+                <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:id="@id/poi_title" android:layout_width="85.0dip" android:layout_height="wrap_content" android:text="送餐地址" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:textColorHint="@color/text_hint_light_gray" android:gravity="center_vertical" android:id="@id/poi_content" android:background="@null" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="小区/街道/大厦/学校名称" android:cursorVisible="false" android:singleLine="true" android:layout_toLeftOf="@id/arrow_view" android:layout_toRightOf="@id/poi_title" />
+            </RelativeLayout>
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <EditText android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:textColorHint="@color/text_hint_light_gray" android:gravity="center_vertical" android:id="@id/address_detail" android:background="@null" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="85.0dip" android:layout_marginRight="17.0dip" android:hint="楼号/门牌号等详细地址" android:singleLine="true" />
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginRight="17.0dip">
+                <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:layout_width="85.0dip" android:layout_height="wrap_content" android:text="手机号码" />
+                <EditText android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:textColorHint="@color/text_hint_light_gray" android:gravity="center_vertical" android:id="@id/phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="您的手机号" android:singleLine="true" android:maxLength="11" android:inputType="number" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="@dimen/text_size_17" android:id="@id/confirm_btn" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="17.0dip" android:text="确定" style="@style/NovaWeightButtonTheme" />
+    </LinearLayout>
+    <com.dianping.takeaway.view.TAToastView android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

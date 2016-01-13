@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:background="@color/register_suggest_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/content" android:background="@drawable/background_suggest_register_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/register_suggest_title_color" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="逛了那么久，不如注册一下?" android:singleLine="true" />
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/suggest_register_im" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip">
+            <Button android:textColor="@color/register_suggest_btn_negtive_color" android:id="@id/tv_negative" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="暂不需要" android:singleLine="true" android:layout_weight="1.0" style="@style/NovaLightButtonTheme" />
+            <Button android:id="@id/btn_positive" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="快速注册" android:singleLine="true" android:layout_weight="1.0" style="@style/NovaWeightButtonTheme" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/register_suggest_bottom_color" android:gravity="right" android:layout_gravity="right" android:id="@id/tv_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="30.0dip" android:text="已有账号，去登录" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

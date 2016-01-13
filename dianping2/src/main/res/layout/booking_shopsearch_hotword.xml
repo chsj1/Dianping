@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/hot_word_title" android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/booking_shopsearch_title" />
+    <GridView android:id="@id/hot_word_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="3" />
+</LinearLayout>

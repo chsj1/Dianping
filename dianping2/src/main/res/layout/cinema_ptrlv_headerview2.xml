@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/movie_module_separator" />
+    <com.dianping.movie.view.CinemaFilterBar android:id="@id/cinemalist_filterbar_float" android:layout_width="fill_parent" android:layout_height="@dimen/deal_filter_button_height" />
+</LinearLayout>

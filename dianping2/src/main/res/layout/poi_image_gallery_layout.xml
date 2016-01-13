@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.PoiImageGallery android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/poi_large_image" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/poi_large_imageview_layout" />
+    <com.dianping.main.find.pictureplaza.SquareHorizontalImageGallery android:layout_gravity="bottom|center|left" android:id="@id/horizontal_imagegallery" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" dp:imageSpace="10" dp:maxSize="9" dp:flingElementId="photoslide" />
+</com.dianping.main.find.pictureplaza.PoiImageGallery>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/wm_cyan" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/wm_icon_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="送餐地址: " />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@id/address_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号码: " />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@id/phone_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

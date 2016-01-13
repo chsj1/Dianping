@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.TableView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.base.widget.TableHeader android:id="@id/business_hours_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="开放时间" style="@style/ShopDetailTableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/business_hours" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/TableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:id="@id/business_phone_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="商户电话" style="@style/ShopDetailTableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/business_phone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:drawableRight="@drawable/detail_icon_arrow" style="@style/TableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:id="@id/story_name_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="景点简介" style="@style/ShopDetailTableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/story_name_view" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:maxLines="5" android:drawableRight="@drawable/detail_icon_arrow" style="@style/TableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:id="@id/star_tips_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="名人出没" style="@style/ShopDetailTableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/star_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/TableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:id="@id/alt_name_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="商家别名" style="@style/ShopDetailTableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/alt_name_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/TableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:id="@id/route_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="到这去" style="@style/ShopDetailTableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <LinearLayout android:orientation="horizontal" android:id="@id/route_lay" android:background="@drawable/table_view_item" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" style="@style/TableItemWithPadding">
+                <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/route_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_large" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/route_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/text_color_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/more_route" android:visibility="gone" android:clickable="true" android:text="查看更多路线" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:id="@id/feature_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:text="商户特色" style="@style/ShopDetailTableHeaderTextView" />
+            </com.dianping.base.widget.TableHeader>
+            <com.dianping.base.widget.TableView android:id="@id/feature_list" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.dianping.base.widget.TableView>
+    </LinearLayout>
+</ScrollView>

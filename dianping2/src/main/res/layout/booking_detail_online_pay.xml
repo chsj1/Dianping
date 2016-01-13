@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/paid_info" android:background="@drawable/yy_list_bkg" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/booking_section_height">
+        <RelativeLayout android:id="@id/online_pay_title_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已买单" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:id="@id/online_pay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="消费" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/light_red" android:id="@id/online_pay_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/online_pay_title" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/online_pay_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/huihui_popup_line" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/online_pay_detail_layout" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:id="@id/deposit_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center|left" android:layout_gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="定金抵扣" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/deposit_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="¥" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/real_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/real_price_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="手机实付" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/real_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="¥" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|right" android:orientation="vertical" android:id="@id/rebate_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center|right" android:layout_gravity="center|right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="优惠" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center|right" android:layout_gravity="center|right" android:id="@id/rebate_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="¥" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

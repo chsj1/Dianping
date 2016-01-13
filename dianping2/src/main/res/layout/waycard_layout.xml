@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.imagemanager.DPNetworkImageView android:id="@id/card_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/waycard_backgroud" android:scaleType="fitXY" />
+        <RelativeLayout android:paddingLeft="30.0dip" android:paddingTop="30.0dip" android:paddingRight="30.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_name" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/title_line" android:layout_width="4.0dip" android:layout_height="15.0dip" android:src="@drawable/waycard_title_line" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="商户名" android:layout_toRightOf="@id/title_line" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Name" android:layout_toRightOf="@id/name" />
+            </LinearLayout>
+            <TextView android:textSize="24.0sp" android:textColor="@color/white" android:gravity="left" android:id="@id/orishopname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/title_name" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/chshopname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/orishopname" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/enshopname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/chshopname" android:alpha="0.4" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/enshopname">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip">
+                    <ImageView android:id="@id/title_line_address" android:layout_width="4.0dip" android:layout_height="15.0dip" android:src="@drawable/waycard_title_line" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/address_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="地址" android:layout_toRightOf="@id/title_line_address" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/address_en" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Address" android:layout_toRightOf="@id/address_name" />
+                </LinearLayout>
+                <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/oriaddressname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/title_address" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/chaddressname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/oriaddressname" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/enaddressname" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/chaddressname" android:alpha="0.4" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/activity_close" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="22.0dip" android:src="@drawable/waycard_icon_close" />
+    </FrameLayout>
+</ScrollView>

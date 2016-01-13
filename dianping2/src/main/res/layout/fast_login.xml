@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/input_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" layout="@layout/fast_login_view" />
+    <com.dianping.widget.view.NovaButton android:id="@id/fast_login" android:layout_height="45.0dip" android:layout_margin="17.0dip" android:text="登录" style="@style/NovaWeightButton" />
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_medium_1" android:textColor="@color/connect_consumer_service_link" android:gravity="right" android:layout_gravity="right" android:id="@id/login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:text="点评账号和密码登录" android:layout_weight="1.0" />
+</LinearLayout>

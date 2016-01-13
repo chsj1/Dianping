@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/event_item_icon_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true">
+        <com.dianping.base.widget.NetworkThumbView android:id="@id/event_item_icon" android:layout_width="97.0dip" android:layout_height="97.0dip" android:layout_marginLeft="10.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/event_item_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/event_item_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/event_item_icon_frame">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:gravity="center|left" android:id="@id/event_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_gray_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/event_item_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" android:lineSpacingExtra="7.0dip" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/tuan_common_gray" android:ellipsize="end" android:gravity="center|left" android:id="@id/event_item_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:drawableLeft="@drawable/mall_event_time" android:layout_below="@id/event_item_subtitle" />
+    </LinearLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

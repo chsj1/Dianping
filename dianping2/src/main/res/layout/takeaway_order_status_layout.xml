@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/process_layout" android:background="@drawable/wm_list_bkg_line_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_17" android:textStyle="bold" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/process_tip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:singleLine="true" />
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip">
+            <ImageView android:id="@id/confirmed_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/wm_process_confrimed" android:scaleType="centerInside" />
+            <View android:id="@id/fir_process_line" android:background="@color/wm_common_green" android:layout_width="46.0dip" android:layout_height="1.0px" android:layout_marginLeft="2.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="2.0dip" />
+            <ImageView android:id="@id/ordered_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/wm_process_ordered" android:scaleType="centerInside" />
+            <View android:id="@id/sec_process_line" android:background="@color/wm_common_green" android:layout_width="46.0dip" android:layout_height="1.0px" android:layout_marginLeft="2.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="2.0dip" />
+            <ImageView android:id="@id/received_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/wm_process_receive" android:scaleType="centerInside" />
+            <View android:id="@id/thi_process_line" android:background="@color/wm_common_green" android:layout_width="46.0dip" android:layout_height="1.0px" android:layout_marginLeft="2.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="2.0dip" />
+            <ImageView android:id="@id/evaluated_icon" android:layout_width="33.0dip" android:layout_height="33.0dip" android:src="@drawable/wm_process_evaluated" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="17.0dip">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:gravity="center_horizontal" android:id="@id/confirmed_desp" android:layout_width="83.0dip" android:layout_height="wrap_content" android:text="待确认" android:singleLine="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/wm_common_green" android:gravity="center_horizontal" android:id="@id/confirmed_count_down" android:visibility="visible" android:layout_width="83.0dip" android:layout_height="wrap_content" android:text="09:59" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:gravity="center_horizontal" android:id="@id/ordered_desp" android:layout_width="83.0dip" android:layout_height="wrap_content" android:text="接单配送" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:gravity="center_horizontal" android:id="@id/received_desp" android:layout_width="83.0dip" android:layout_height="wrap_content" android:text="已收货" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/wm_common_green" android:gravity="center_horizontal" android:id="@id/evaluated_desp" android:layout_width="83.0dip" android:layout_height="wrap_content" android:text="评价完成" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/process_divider" android:background="@color/common_bk_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tip_layout" android:background="@color/separator_color" android:paddingLeft="17.0dip" android:paddingTop="13.0dip" android:paddingRight="17.0dip" android:paddingBottom="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tip_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/wm_order_icon_cancel" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tip_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+    </LinearLayout>
+    <View android:id="@id/tip_divider" android:background="@color/common_bk_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

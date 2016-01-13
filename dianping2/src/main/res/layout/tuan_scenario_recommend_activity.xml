@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_scenariorecommend" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:name="com.dianping.tuan.fragment.ScenarioRecommendSingleCategoryFragment" android:id="@id/singlecategory_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <fragment android:name="com.dianping.tuan.fragment.ScenarioRecommendMultipleCategoryFragment" android:id="@id/multiplecategory_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <include android:id="@id/loading" android:visibility="gone" layout="@layout/loading_item_fullscreen" />
+    <include android:id="@id/error" android:visibility="gone" layout="@layout/error_item" />
+</FrameLayout>

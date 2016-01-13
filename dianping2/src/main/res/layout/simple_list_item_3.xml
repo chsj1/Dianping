@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:id="@id/icon" android:background="@drawable/shop_item_img_border" android:padding="1.0dip" android:layout_width="90.0dip" android:layout_height="66.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/img_null" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/clickable_deep_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/dish_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_add_approve" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/clickable_light_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/recommend_num" android:paddingLeft="5.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="num" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/clickable_light_gray" android:ellipsize="end" android:gravity="center" android:id="@id/price_text" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="15.0dip" android:text="price" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_22" android:gravity="center" android:background="@color/white" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="添加商户成功！" android:drawableLeft="@drawable/process_status_success" />
+    <View android:background="@color/orange_red" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="您可以继续为商户添加内容哦" />
+</LinearLayout>

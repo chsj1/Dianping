@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:id="@id/image_gallery_pic" android:layout_width="108.0dip" android:layout_height="81.0dip" android:scaleType="centerCrop" android:layout_centerInParent="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    <RelativeLayout android:id="@id/image_gallery_more" android:background="#30000000" android:visibility="gone" android:layout_width="108.0dip" android:layout_height="81.0dip" android:layout_centerInParent="true" android:alpha="30.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:background="@drawable/hotel_icon_photo_white" android:layout_width="27.0dip" android:layout_height="24.0dip" android:scaleType="centerCrop" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看更多" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

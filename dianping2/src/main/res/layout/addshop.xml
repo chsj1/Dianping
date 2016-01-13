@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/review_parent" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mainlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mandatory_layout" android:background="@drawable/table_view_item_with_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/optional_layout" android:background="@drawable/table_view_item_with_line" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:background="@drawable/table_view_item_with_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <com.dianping.ugc.widget.GridPhotoFragmentView android:id="@id/photoLayout" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:numColumns="4" style="@style/PhotoGridViewThemeWithoutMargin" />
+            <TextView android:textColor="@color/light_gray" android:id="@id/uploadTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传图片" android:layout_toRightOf="@id/photoLayout" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

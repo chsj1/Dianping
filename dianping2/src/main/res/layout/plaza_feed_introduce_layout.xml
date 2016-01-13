@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.PlazaFeedIntroView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_16" android:id="@id/comment_textview" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="false" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_light_gray" android:id="@id/expand_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="全文" />
+</com.dianping.main.find.pictureplaza.PlazaFeedIntroView>

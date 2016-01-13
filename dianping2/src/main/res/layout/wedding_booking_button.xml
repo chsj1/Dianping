@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip">
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/textview_wedding_chat" android:visibility="gone" android:clickable="true" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="咨询" android:drawableTop="@drawable/wed_icon_chat_red" android:drawablePadding="2.0dip" />
+        <com.dianping.widget.view.NovaButton android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button_wedding_booking" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="预约看店" android:layout_weight="1.0" style="@style/NovaWeightButtonTheme" />
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/textview_wedding_booking" android:clickable="true" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="电话" android:drawableTop="@drawable/wed_booking_phone" android:drawablePadding="2.0dip" />
+    </com.dianping.widget.view.NovaLinearLayout>
+</LinearLayout>

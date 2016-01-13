@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Switch android:id="@id/room_panel_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="" android:textOff="" android:thumb="@drawable/yy_switch_btn" android:track="@drawable/switch_track" android:switchPadding="0.0dip" android:thumbTextPadding="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_small" android:textColor="@color/light_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:text="赠送金额不支持退款、再次赠送" android:drawableLeft="@drawable/tip_tuan_support_off"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

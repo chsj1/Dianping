@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.TableView android:id="@id/hotel_table" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/route_header" android:visibility="gone" android:text="到这去" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <LinearLayout android:orientation="horizontal" android:id="@id/route_lay" android:background="@drawable/table_view_item" android:padding="15.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/route_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/route_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/text_color_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/more_route" android:visibility="gone" android:clickable="true" android:text="查看更多路线" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.base.widget.TableHeader android:id="@id/landmark_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="周边地标" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <com.dianping.base.widget.ExpandableHeightListView android:id="@id/landmark" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:groupIndicator="@null" android:divider="@color/line_gray" android:dividerHeight="1.0px" />
+        <com.dianping.base.widget.TableHeader android:id="@id/traffic_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="交通设施" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+        <com.dianping.base.widget.ExpandableHeightListView android:id="@id/traffic" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:groupIndicator="@null" android:divider="@color/line_gray" android:dividerHeight="1.0px" />
+        <com.dianping.base.widget.TableHeader android:id="@id/traffic_desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_medium" android:id="@id/tv_traffic_desc" style="@style/TableHeaderTextView" />
+        </com.dianping.base.widget.TableHeader>
+    </com.dianping.base.widget.TableView>
+</ScrollView>

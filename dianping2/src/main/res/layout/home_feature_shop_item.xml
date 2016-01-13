@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.home.FamousAdItem android:orientation="horizontal" android:background="@drawable/home_selector_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/home_titlesize" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:id="@id/famousad_item_tittle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/home_subtitlesize" android:textColor="@color/shopinfo_top_text" android:ellipsize="end" android:id="@id/famousad_item_subtittle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <com.dianping.widget.NetworkImageView android:layout_gravity="center_vertical" android:id="@id/famousad_item_imageview" android:layout_width="@dimen/home_horizontal_famous_size" android:layout_height="@dimen/home_horizontal_famous_size" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_empty" dp:placeholderError="@drawable/placeholder_error" />
+</com.dianping.main.home.FamousAdItem>

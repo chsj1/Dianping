@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/layer_minipayorder_hint" layout="@layout/minipay_order_hint" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_gray" android:id="@id/tv_producttitle" android:padding="@dimen/table_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layer_productinfo" android:background="@color/white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+        <com.dianping.base.widget.TableView android:orientation="vertical" android:id="@id/layer_orderinfo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_count" dp:item_title="数量" style="@style/TuanPayBasicItem" />
+            <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_totalamount" dp:item_title="总计" style="@style/TuanPayBasicItem" />
+        </com.dianping.base.widget.TableView>
+        <com.dianping.base.widget.TableView android:orientation="vertical" android:id="@id/layer_cashier" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+            <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_balanceamount" dp:item_title="账户余额" dp:item_indicator="@drawable/cbx_bg" style="@style/TuanPayBasicItem" />
+            <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/item_needpayamount" dp:item_title="还需支付" dp:item_subTitleColor="@color/tuan_common_orange" style="@style/TuanPayBasicItem" />
+        </com.dianping.base.widget.TableView>
+        <LinearLayout android:orientation="vertical" android:id="@id/layer_paymenttool" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_gray" android:id="@id/tv_paymenttooltitle" android:padding="@dimen/table_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="选择支付方式" />
+            <com.dianping.base.widget.TableView android:id="@id/table_paymenttool" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layer_pay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/bottom_shadow" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.dianping.widget.view.NovaButton android:id="@id/pay" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" style="@style/NovaTuanWeightButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

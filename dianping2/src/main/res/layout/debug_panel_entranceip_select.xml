@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.debug.DebugDomainItem android:id="@id/splash_item" dp:itemDomainSelector="闪屏" dp:itemDianpingDomain="m1.s1.dpfile.com" dp:itemBetaDomain="180.153.132.55" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/dppush_item" dp:itemDomainSelector="DPPush" dp:itemDianpingDomain="114.80.165.64" dp:itemBetaDomain="192.168.217.46" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/dppull_item" dp:itemDomainSelector="DPPull" dp:itemDianpingDomain="http://m.api.dianping.com/pullpush.bin" dp:itemBetaDomain="http://m.api.51ping.com/pullpush.bin" style="@style/SingleLineTableItemWithLeftPadding" />
+        <LinearLayout android:orientation="horizontal" style="@style/SingleLineTableItemWithLeftPadding">
+            <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="点评push" android:layout_weight="1.0" />
+            <ToggleButton android:id="@id/dianping_push" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:textOn="DP push service is running" android:textOff="DP push service is stopped" />
+        </LinearLayout>
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/plugin_site_item" dp:itemDomainSelector="插件site" dp:itemDianpingDomain="http://m.api.dianping.com/site" dp:itemYiminDomain="http://yimin.dp/site" dp:itemCustomDomain="http://i2.dpfile.com/download/site." style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/hotel_order_item" dp:itemDomainSelector="酒店订单" dp:itemDianpingDomain="http://www.dianping.com/hotel/order/mlist?token=!&amp;agent=!&amp;cityid=*" dp:itemBetaDomain="http://w.51ping.com/hotel/order/mlist?token=!&amp;agent=!&amp;cityid=*" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    </com.dianping.base.widget.TableView>
+</ScrollView>

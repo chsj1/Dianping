@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="我们将通知商户尽快与您联系" />
+    <EditText android:ellipsize="end" android:gravity="center_vertical" android:id="@id/phoneNum" android:layout_width="fill_parent" android:hint="请输入手机号码" android:singleLine="true" android:maxLength="11" android:inputType="number" style="@style/SingleLineTableItemWithPadding" />
+</LinearLayout>

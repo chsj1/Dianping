@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/movie_item_white_backgroud" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="17.5dip" android:layout_height="17.5dip" android:src="@drawable/movie_download" android:scaleType="fitXY" />
+    <com.dianping.widget.view.NovaButton android:textColor="@color/blue_more" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/download" android:background="@drawable/movie_item_white_backgroud" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.5dip" android:text="保存取票信息至相册" />
+</com.dianping.widget.view.NovaLinearLayout>

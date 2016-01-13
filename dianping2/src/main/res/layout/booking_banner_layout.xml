@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/hot_tip_layout" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:src="@drawable/bookingdetail_public_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/tip_close_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:src="@drawable/bookingdetail_public_close" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="本餐厅火爆，座位有限，赶快抢座吧！" android:singleLine="true" android:layout_toLeftOf="@id/tip_close_btn" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <View android:background="@color/light_red" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.dianping.base.widget.BaseBannerView android:id="@id/banner_layout" android:layout_width="fill_parent" android:layout_height="63.0dip" />
+</LinearLayout>

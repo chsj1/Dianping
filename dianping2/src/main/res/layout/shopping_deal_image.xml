@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.NetworkPhotoView android:id="@id/brand_image" android:layout_width="fill_parent" android:layout_height="163.0dip" android:scaleType="centerCrop" dp:placeholderError="@drawable/tuan_load_fail"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto" />

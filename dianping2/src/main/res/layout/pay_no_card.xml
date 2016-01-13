@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_img_no_card" />
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="没有绑定的银行卡" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tuan_common_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="您可以在支付过程中进行绑定" />
+</LinearLayout>

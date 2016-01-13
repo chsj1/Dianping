@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/milestone_timeline" android:layout_width="25.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/milestone_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/bookingdetail_timeline_icon_current_loading" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/milestone_line" android:background="@drawable/gray_vertical_line" android:layout_width="5.0px" android:layout_height="60.0dip" android:layout_marginTop="2.0dip" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/milestone_timeline" android:layout_alignTop="@id/milestone_timeline">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:id="@id/milestone_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:id="@id/milestone_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:id="@id/milestone_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="top" android:id="@id/filter" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/content" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-15.0dip" android:layout_marginTop="-20.0dip" android:layout_marginRight="-15.0dip" android:layout_marginBottom="-20.0dip" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/status" android:paddingLeft="15.0dip" android:paddingTop="20.0dip" android:paddingRight="15.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-15.0dip" android:layout_marginTop="-20.0dip" android:layout_marginRight="-15.0dip" android:layout_marginBottom="-20.0dip">
+        <View android:id="@id/search_keyword_title_keep_show" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height" />
+        <FrameLayout android:orientation="vertical" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_item_fullscreen" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/lay_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="bottom|center" android:id="@id/iv_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/wx_shop_list_guide" android:scaleType="centerInside" />
+    </FrameLayout>
+</FrameLayout>

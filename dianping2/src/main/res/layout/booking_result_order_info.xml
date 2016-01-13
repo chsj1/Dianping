@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/booking_result_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/deposit_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/light_red" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/deposit_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定金已支付" />
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/light_red" android:layout_gravity="center_vertical" android:id="@id/deposit_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_gray" android:gravity="center|left" android:id="@id/shop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="食其家(缤谷广场店)" android:singleLine="true" android:layout_toLeftOf="@id/deposit_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/book_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4月20日 18:00" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/book_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="包房优先" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/line" android:background="@color/text_gray" android:layout_width="1.0px" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/book_room" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/book_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="12人" android:layout_toLeftOf="@id/line" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13774283697" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="105.0dip" android:layout_alignParentLeft="@id/phone" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/fir_instead_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/bookingdetail_helpbooking_icon" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center|left" android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="李先生" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

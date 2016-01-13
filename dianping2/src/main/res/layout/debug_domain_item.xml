@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/text_size_18" android:gravity="center|left" android:id="@id/domain_selector" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <EditText android:textSize="@dimen/text_size_18" android:gravity="center|right" android:id="@id/debug_domain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/domain_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

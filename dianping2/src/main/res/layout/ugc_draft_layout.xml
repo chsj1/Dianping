@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.widget.view.NovaListView android:id="@id/list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_above="@id/ugc_list_blank" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ugc_list_blank" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <include layout="@layout/deletebtn_layout" />
+</FrameLayout>

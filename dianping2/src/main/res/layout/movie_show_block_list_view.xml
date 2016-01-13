@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.shopinfo.movie.view.MovieShowBlockListView android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_movie_seat" android:minWidth="22.0dip" android:minHeight="22.0dip" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="选座购票" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/light_gray" android:id="@id/movie_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/loading_retry_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content_layer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:id="@id/movie_poster_scroll" android:background="@drawable/movie_poster_sv_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/layer_movieposter" android:paddingTop="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <include android:id="@id/movieinfo" layout="@layout/movie_profile_view" />
+            <View android:background="@color/wm_border_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.dianping.base.widget.TableHeader android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <include layout="@layout/movie_tip_view" />
+            <HorizontalScrollView android:id="@id/movie_showdates_scroll" android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rg_movieshow_date" android:background="@drawable/movie_date_lay_background" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <View android:background="@color/wm_border_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layer_moviediscountschedule" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layer_movieshowschedule" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</com.dianping.shopinfo.movie.view.MovieShowBlockListView>

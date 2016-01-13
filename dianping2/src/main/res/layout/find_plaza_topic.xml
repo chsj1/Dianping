@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.widget.pulltorefresh.PullToRefreshListView android:layout_gravity="top" android:id="@id/topic_list_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0px" />
+        <com.dianping.base.widget.CustomImageButton android:layout_gravity="bottom|center" android:id="@id/publisher" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/find_icon_camera" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/topic_title_bar_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/topic_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height">
+            <FrameLayout android:id="@id/topic_back" android:background="@null" android:layout_width="@dimen/title_bar_button_size" android:layout_height="fill_parent" android:layout_centerVertical="true">
+                <com.dianping.base.widget.CustomImageButton android:id="@id/back_orange" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_back_u" />
+                <com.dianping.base.widget.CustomImageButton android:id="@id/back" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_back_white" />
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@id/topic_title_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dip" android:text="话题详情" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/TitleBarTitleView" />
+            <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_14" android:textColor="@color/tips_text_red" android:gravity="center" android:id="@id/topic_follow" android:background="@drawable/white_round_corner_rectangle_15dp" android:padding="4.0dip" android:visibility="invisible" android:layout_width="58.0dip" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="已关注" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <include android:id="@id/topic_title_shadow" android:visibility="invisible" layout="@layout/title_shadow" />
+    </LinearLayout>
+</FrameLayout>

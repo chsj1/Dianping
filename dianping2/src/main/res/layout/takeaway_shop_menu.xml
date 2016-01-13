@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/cart_bar" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_alignParentBottom="true" layout="@layout/takeaway_menu_cartbar" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cart_bar" layout="@layout/tab_pager_fragment" />
+    <RelativeLayout android:id="@id/cart_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/cart_bar">
+        <View android:id="@id/cart_bg" android:background="@color/wm_cart_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ListView android:id="@id/cart_list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:dividerHeight="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.dianping.takeaway.view.TAToastView android:id="@id/toast_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/status_layout" android:background="@color/common_bk_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/table_view_item" android:paddingLeft="@dimen/table_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/table_item_padding" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:id="@id/logistics_item_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="上海市闸北区上段，接受扫描" />
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:id="@id/logistics_item_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="2012-08-15 12：24：32" />
+</LinearLayout>

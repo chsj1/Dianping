@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/update_layout" android:background="@drawable/background_layout_round_border" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_margin="7.0dip">
+        <com.dianping.widget.NetworkImageView android:id="@id/update_img" android:background="@drawable/background_img_topround_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" android:scaleType="centerCrop" dp:placeholderEmpty="@null" dp:placeholderError="@null" dp:isCorner="true" dp:radius="5" dp:isTopRound="true" dp:isBottomRound="false" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/update_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="5.0dip" />
+        <ScrollView android:id="@id/update_scroll" android:layout_width="fill_parent" android:layout_height="100.0dip" android:minHeight="20.0dip">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/update_info" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:lineSpacingExtra="5.0dip" />
+        </ScrollView>
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@id/update_btn" android:layout_width="180.0dip" android:layout_height="40.0dip" android:text="立即升级" style="@style/NovaWeightButton" />
+        <TextView android:id="@id/update_suggest_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginBottom="5.0dip" android:text="大家都更新了" />
+    </LinearLayout>
+    <ImageView android:id="@id/update_cross_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="-25.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/guide_icon_cross" android:layout_toRightOf="@id/update_layout" />
+</RelativeLayout>

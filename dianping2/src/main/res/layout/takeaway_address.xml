@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/upinnerDivider" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/inputLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_below="@id/upinnerDivider" style="@style/SingleLineTableItemWithPadding">
+        <EditText android:textSize="@dimen/text_medium_1" android:textColor="@color/black" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/address_edit" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="请输入要切换的位置" android:singleLine="true" android:drawableLeft="@drawable/wm_shoplist_titlebar_adress_icon_location" android:drawablePadding="5.0dip" android:layout_weight="1.0" android:imeOptions="actionSearch" />
+        <FrameLayout android:layout_gravity="center|right" android:layout_width="30.0dip" android:layout_height="30.0dip">
+            <ImageView android:id="@id/clear_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/close" android:scaleType="centerInside" />
+            <com.dianping.widget.view.NovaImageView android:id="@id/lacate_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/wm_icon_location" android:scaleType="centerInside" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@id/downinnerDivider" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/inputLayout" />
+    <ListView android:id="@id/suggestion_listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/downinnerDivider" />
+    <RelativeLayout android:id="@id/emptyView" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/downinnerDivider">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/light_gray" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:text="小二没找到，请换个地址试试" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/history_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/downinnerDivider">
+        <TextView android:id="@id/history_header" android:text="历史搜索地址" style="@style/TableHeaderTextView" />
+        <ListView android:id="@id/history_listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <com.dianping.takeaway.view.TAToastView android:id="@id/taToastView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

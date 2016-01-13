@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/phone_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/phone" android:background="@drawable/table_view_item_with_line" dp:item_title="手机号码" dp:item_titleColor="@color/text_color_light_gray" dp:item_subTitleColor="@color/text_color_gray" style="@style/TuanPayBasicItemWithIndicator" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/quick_buy" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/quick_buy_title" android:layout_width="wrap_content" android:text="免登录直接购买或立即购买" style="@style/TableHeaderTextViewMedium" />
+        <include android:id="@id/quick_buy_module" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fast_login_view" />
+    </LinearLayout>
+</LinearLayout>

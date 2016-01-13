@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="17.0dip" android:paddingTop="12.0dip" android:paddingRight="17.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/sd_cart_freeitem_check_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.dianping.widget.view.NovaCheckBox android:gravity="center_vertical" android:id="@id/exchange" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/hobbit_gift_checkbox_btn" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffff6633" android:layout_gravity="center_vertical" android:id="@id/sd_cart_freeitem_soldout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sd_soldout" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/selectdish_cart_freeitem_onepiece" android:id="@id/sd_cart_freeitem_onepiece" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/sd_one_piece" android:layout_toLeftOf="@id/sd_cart_freeitem_check_layout" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sd_cart_freeitem_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/sd_cart_freeitem_onepiece" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/selectdish_cart_freeitem_tag" android:id="@id/sd_freeitem_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sd_cart_free" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/selectdish_cart_freeitem_name" android:id="@id/sd_freeitem_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/selectdish_cart_freeitem_validtime" android:id="@id/sd_freeitem_validtime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

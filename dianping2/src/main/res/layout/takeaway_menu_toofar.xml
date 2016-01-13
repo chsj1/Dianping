@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="22.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginTop="38.0dip" android:src="@drawable/wm_result_icon_failure" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="34.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="38.0dip">
+            <TextView android:textSize="@dimen/text_size_24" android:textColor="@color/deep_black" android:id="@id/takeaway_shopmenu_toofar_text_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="餐厅离您太远送不到呢！" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_gray" android:id="@id/takeaway_shopmenu_toofar_text_currentaddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="餐厅离您太远送不到呢！" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip">
+        <Button android:id="@id/takeaway_shopmenu_toofar_button_inputaddress" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="11.0dip" android:text="换个送餐位置" android:layout_weight="1.0" style="@style/NovaLightButtonTheme" />
+        <Button android:id="@id/takeaway_shopmenu_toofar_button_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="17.0dip" android:text="查看可送餐厅" android:layout_weight="1.0" style="@style/NovaWeightButtonTheme" />
+    </LinearLayout>
+</LinearLayout>

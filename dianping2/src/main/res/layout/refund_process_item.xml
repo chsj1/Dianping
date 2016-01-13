@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/flow_view" android:layout_width="35.0dip" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip">
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/step_view" android:background="@drawable/refund_flow_circle_highlight" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="1" />
+        <View android:layout_gravity="center_horizontal" android:id="@id/process_line" android:background="@color/orange_red" android:layout_width="2.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Title" android:maxLines="2" android:layout_toLeftOf="@id/time" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_black" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="2012-09-09 12:00" android:layout_alignBaseline="@id/title" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_gray" android:id="@id/content" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/title" android:layout_alignLeft="@id/title" />
+    </RelativeLayout>
+</LinearLayout>

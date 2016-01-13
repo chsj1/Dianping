@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:background="@drawable/search_suggest_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/list_view_start_divider" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="清除历史记录" android:singleLine="true" />
+    <View android:id="@id/divider" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+    <View android:id="@id/list_view_end_divider" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</com.dianping.widget.view.NovaLinearLayout>

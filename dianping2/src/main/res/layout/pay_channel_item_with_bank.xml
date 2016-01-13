@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/table_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/pay_item_title" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <com.dianping.widget.NetworkImageView android:layout_gravity="center_vertical" android:id="@id/niv_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/dark_black" android:ellipsize="end" android:id="@id/title" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付宝客户端" android:singleLine="true" />
+            <com.dianping.base.widget.ColorBorderTextView android:textSize="@dimen/text_size_12" android:textColor="@color/tuan_common_orange" android:ellipsize="end" android:id="@id/lighttitle" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立减5元" android:singleLine="true" />
+            <com.dianping.base.widget.ColorBorderTextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:ellipsize="end" android:id="@id/visibleMsg" android:background="@drawable/round_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立减5元" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/radio_layer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.dianping.base.tuan.widget.RMBLabelItem android:id="@id/rmb_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" dp:style_price="style6" dp:usage="now" />
+            <RadioButton android:textSize="@dimen/text_size_17" android:gravity="center_vertical" android:id="@id/radioBtn" android:paddingRight="@dimen/table_item_padding" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:button="@null" android:drawableRight="@drawable/rad_bg" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/bank_divider" android:background="@drawable/gray_horizontal_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="37.0dip" android:layout_below="@id/pay_item_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bank_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="37.0dip" android:layout_marginRight="15.0dip">
+        <com.dianping.widget.NetworkImageView android:id="@id/bank_icon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="5.0dip" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/dark_black" android:ellipsize="end" android:id="@id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:id="@id/divider_line" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="|" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/dark_black" android:ellipsize="end" android:id="@id/bank_info" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信用卡(2122)" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_guide_more" android:gravity="right" android:id="@id/change_bank_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="更换" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

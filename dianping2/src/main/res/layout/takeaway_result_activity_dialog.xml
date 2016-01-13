@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/wm_checkpic_bg" android:padding="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:layout_gravity="center_horizontal" android:id="@id/activity_icon" android:layout_width="85.0dip" android:layout_height="85.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/placeholder_error" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/light_red" android:gravity="center_horizontal" android:id="@id/activity_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:gravity="center_horizontal" android:id="@id/activity_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    <Button android:id="@id/share_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="22.0dip" android:text="分享给好友" style="@style/NovaWeightButtonTheme" />
+    <Button android:id="@id/close_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="17.0dip" android:text="稍后再说" style="@style/NovaLightButtonTheme" />
+</LinearLayout>

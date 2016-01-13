@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.shopinfo.widget.FriendRelatedCell android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/detail_icon_friends" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/shopinfo_single_text_color" android:id="@id/main_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你有10个微信好" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/title_search_bar_hint_color" android:id="@id/sub_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="抢红包" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_17" android:id="@id/find_friends_btn" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="马上寻找好友" android:layout_centerHorizontal="true" style="@style/NovaWeightButtonTheme" />
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_16" android:textColor="@color/title_search_bar_hint_color" android:id="@id/ignore_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="忽略" android:layout_toRightOf="@id/find_friends_btn" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.dianping.shopinfo.widget.FriendRelatedCell>

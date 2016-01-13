@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:id="@id/autotest" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="wendong.dp:5555" android:layout_weight="1.0" />
+            <ToggleButton android:id="@id/test" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:textOn="正在测试" android:textOff="停止测试" />
+        </LinearLayout>
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/text_size_18" android:id="@id/debug_proxy" android:layout_width="0.0px" android:layout_height="wrap_content" android:hint="代理服务器" android:layout_weight="1.0" />
+            <EditText android:textSize="@dimen/text_size_18" android:id="@id/debug_proxy_port" android:layout_width="80.0dip" android:layout_height="wrap_content" android:hint="80" />
+        </LinearLayout>
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/api_item" dp:itemDomainSelector="API" dp:itemDianpingDomain="http://m.api.dianping.com" dp:itemBetaDomain="http://m.api.51ping.com" dp:itemPPEDomain="http://ppe.m.api.dianping.com" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/mapi_item" dp:itemDomainSelector="MAPI" dp:itemDianpingDomain="http://mapi.dianping.com" dp:itemBetaDomain="http://mapi.51ping.com" dp:itemPPEDomain="http://ppe.mapi.dianping.com" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/booking_item" dp:itemDomainSelector="预定" dp:itemDianpingDomain="http://rs.api.dianping.com/" dp:itemBetaDomain="http://rs.api.51ping.com/" dp:itemPPEDomain="http://ppe.rs.api.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/tuan_item" dp:itemDomainSelector="团购" dp:itemDianpingDomain="http://app.t.dianping.com/" dp:itemBetaDomain="http://app.t.51ping.com/" dp:itemPPEDomain="http://ppe.app.t.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/pay_item" dp:itemDomainSelector="支付" dp:itemDianpingDomain="http://api.p.dianping.com/" dp:itemBetaDomain="http://api.p.51ping.com/" dp:itemPPEDomain="http://ppe.api.p.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/movie_item" dp:itemDomainSelector="电影" dp:itemDianpingDomain="http://app.movie.dianping.com/" dp:itemBetaDomain="http://app.movie.51ping.com/" dp:itemPPEDomain="http://ppe.app.movie.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/membercard_item" dp:itemDomainSelector="会员卡" dp:itemDianpingDomain="http://mc.api.dianping.com/" dp:itemBetaDomain="http://mc.api.51ping.com/" dp:itemPPEDomain="http://ppe.mc.api.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/takeaway_item" dp:itemDomainSelector="外卖" dp:itemDianpingDomain="http://waimai.api.dianping.com/" dp:itemBetaDomain="http://waimai.api.51ping.com/" dp:itemPPEDomain="http://ppe.waimai.api.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/huihui_item" dp:itemDomainSelector="惠惠" dp:itemDianpingDomain="http://hui.api.dianping.com/" dp:itemBetaDomain="http://hui.api.51ping.com/" dp:itemPPEDomain="http://ppe.hui.api.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/beauty_item" dp:itemDomainSelector="丽人" dp:itemDianpingDomain="http://beauty.api.dianping.com/" dp:itemBetaDomain="http://beauty.api.51ping.com/" dp:itemPPEDomain="http://ppe.beauty.api.dianping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/locate_item" dp:itemDomainSelector="定位" dp:itemDianpingDomain="http://l.api.dianping.com/" dp:itemBetaDomain="http://l.api.51ping.com/" dp:itemAlphaDomain="http://malpha.api.51ping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/config_item" dp:itemDomainSelector="config" dp:itemDianpingDomain="http://cf.api.dianping.com/" dp:itemBetaDomain="http://m.api.51ping.com/" dp:itemAlphaDomain="http://malpha.api.51ping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.debug.DebugDomainItem android:id="@id/ga_item" dp:itemDomainSelector="新打点" dp:itemDianpingDomain="http://m.api.dianping.com/" dp:itemBetaDomain="http://m.api.51ping.com/" dp:itemAlphaDomain="http://malpha.api.51ping.com/" style="@style/SingleLineTableItemWithLeftPadding" />
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    </com.dianping.base.widget.TableView>
+</ScrollView>

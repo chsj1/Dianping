@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.CustomEditText android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_2" android:textColor="@color/deep_gray" android:id="@id/title" android:visibility="gone" android:layout_width="63.0dip" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="手机号" />
+    <ImageView android:layout_gravity="center" android:id="@id/icon" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_phone" />
+    <EditText android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:gravity="center_vertical" android:id="@id/edit_text" android:background="@color/white" android:paddingLeft="6.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0px" android:layout_height="54.0dip" android:hint="请输入购票手机号" android:maxLength="11" android:layout_weight="1.0" android:inputType="number" />
+    <ImageButton android:layout_gravity="center" android:id="@id/edit_clear" android:background="@color/white" android:paddingRight="15.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/close" />
+</com.dianping.base.widget.CustomEditText>

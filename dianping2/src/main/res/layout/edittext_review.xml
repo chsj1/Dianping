@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/review_lay" android:background="@drawable/list_cell_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/text_medium_1" android:textColorHint="@color/light_gray" android:gravity="center|left|top" android:id="@id/review_edt" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:maxLines="7" android:minLines="7" android:singleLine="false" android:textCursorDrawable="@null" />
+    <TextView android:textSize="@dimen/text_very_small" android:textColor="@color/btn_weight_disable" android:layout_gravity="right" android:id="@id/number_tip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" />
+</LinearLayout>

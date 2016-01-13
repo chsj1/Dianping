@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.NetworkPhotoView android:id="@android:id/icon" android:background="@drawable/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/tuan_load_fail" dp:placeholderLoading="@drawable/tuan_load_fail" dp:placeholderError="@drawable/tuan_load_fail" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/last_pic_text" android:background="@drawable/hotel_deal_last_pic_shadow" android:paddingLeft="15.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="滑\n动\n查\n看\n图\n文\n详\n情" android:layout_alignParentRight="true" />
+</RelativeLayout>

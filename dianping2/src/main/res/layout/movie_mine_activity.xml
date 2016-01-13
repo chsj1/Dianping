@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/feeds_list" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/icon_bottom_up" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/icon_bot_up" />
+</FrameLayout>

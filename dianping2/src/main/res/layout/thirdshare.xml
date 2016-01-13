@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.DPBasicItem android:id="@id/content_edt" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:input_hint="请输入分享内容" dp:input_type="text" dp:input_maxLength="140" dp:clickable="false" style="@style/TableItemWithPadding" />
+        <TextView android:textSize="@dimen/text_size_14" android:gravity="right" android:id="@id/count_tv" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/sns" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/sns_view" />
+        </LinearLayout>
+        <Button android:id="@id/submit" android:layout_margin="@dimen/table_item_padding" android:text="分享" style="@style/NovaWeightButton" />
+    </LinearLayout>
+</ScrollView>

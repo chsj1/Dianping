@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.widget.DirectZonePartItem android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.NetworkThumbView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginRight="4.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_empty" dp:placeholderError="@drawable/placeholder_empty" />
+    <com.dianping.base.widget.ShopPower android:id="@id/power" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
+    <TextView android:textSize="@dimen/basesearch_shoplist_info_text_size" android:textColor="@color/shop_text_color" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</com.dianping.search.widget.DirectZonePartItem>

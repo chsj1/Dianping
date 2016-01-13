@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="14.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textSize="@dimen/text_large" android:textColor="#ffffffff" android:id="@id/remember_map_choice" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="记住此次选择" />
+    <TextView android:textSize="@dimen/text_medium" android:textColor="#ff000000" android:id="@id/remember_hint" android:paddingLeft="36.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="长按“其他地图”，您可以更改地图选项。" />
+</LinearLayout>

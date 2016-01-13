@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/clickable_white_to_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/hotel_datepicker_color" android:id="@id/tv_shop_location" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="14.0dip" android:maxLines="1" />
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/hotel_datepicker_color" android:id="@id/tv_shop_closeto" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginBottom="15.0dip" android:maxLines="1" />
+</LinearLayout>

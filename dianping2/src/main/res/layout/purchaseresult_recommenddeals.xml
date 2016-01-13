@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_purchaseresult_recommend" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:paddingBottom="14.0dip" android:text="看了本团购的用户还看了" style="@style/TableHeaderTextView" />
+    <com.dianping.base.widget.TableView android:id="@id/table_more" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

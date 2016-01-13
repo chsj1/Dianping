@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.NetworkImageView android:id="@id/wed_case_item_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:minHeight="65.0dip" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+        <ImageView android:id="@id/wed_case_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/wed_icon_case_special" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/wed_case_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+</com.dianping.widget.view.NovaLinearLayout>

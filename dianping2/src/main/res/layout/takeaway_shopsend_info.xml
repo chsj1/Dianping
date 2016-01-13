@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/wm_list_bkg_line_bottom" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/timeLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0">
+        <ImageView android:id="@id/timeImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/wm_shopdetail_icon_time" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/wm_common_green" android:id="@id/timeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="约45分钟" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/sendfeeLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0">
+        <ImageView android:id="@id/sendfeeImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/wm_shopdetail_icon_sendingfee" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/wm_common_green" android:id="@id/sendfeeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50元起送" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:id="@id/delfeeLayout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0">
+        <ImageView android:id="@id/delfeeImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/wm_shopdetail_icon_nodeliveryfee" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/wm_common_green" android:id="@id/delfeeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="免外送费" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/holdLayout" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_weight="1.0" />
+</LinearLayout>

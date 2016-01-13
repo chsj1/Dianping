@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="演职表" />
+    <View android:id="@id/shop_seperated_line" android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+    <com.dianping.widget.view.NovaRelativeLayout android:id="@id/all_actor_layout_new" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+        <HorizontalScrollView android:id="@id/actor_horizontal_scrollview" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/actor_item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </HorizontalScrollView>
+    </com.dianping.widget.view.NovaRelativeLayout>
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:id="@id/all_actor_layout_old" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="导演： " />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:id="@id/director_name_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="主演： " />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:id="@id/main_actor_name_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.dianping.widget.view.NovaLinearLayout>
+</com.dianping.widget.view.NovaLinearLayout>

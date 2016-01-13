@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="18.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:id="@id/feed_comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_16" android:textColor="@color/blue_more" android:id="@id/comments_more" android:paddingTop="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="展开更多评论" android:singleLine="true" />
+</LinearLayout>

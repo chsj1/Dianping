@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.TableView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/SingleLineTableItemWithPadding">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/tuan_common_black" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="卡号" />
+        <EditText android:id="@id/bind_card_no" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLength="20" android:layout_weight="1.0" android:inputType="number" style="@style/PayBindEditText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bind_user_layer" style="@style/SingleLineTableItemWithPadding">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/tuan_common_black" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="开户人" />
+        <EditText android:id="@id/bind_user" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="请确保开户人为本人" android:maxLength="16" android:layout_weight="1.0" style="@style/PayBindEditText" />
+        <ImageButton android:layout_gravity="center" android:id="@id/bind_user_help" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pay_webank_help" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/SingleLineTableItemWithPadding">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/tuan_common_black" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="身份证" />
+        <EditText android:id="@id/bind_id_card" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLength="20" android:layout_weight="1.0" style="@style/PayBindEditText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/SingleLineTableItemWithPadding">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/tuan_common_black" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="手机号" />
+        <EditText android:id="@id/bind_phone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="银行卡预留手机号" android:maxLength="11" android:layout_weight="1.0" android:inputType="number" style="@style/PayBindEditText" />
+        <ImageButton android:layout_gravity="center" android:id="@id/bind_phone_help" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/pay_webank_help" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/SingleLineTableItemWithPadding">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/tuan_common_black" android:layout_width="80.0dip" android:layout_height="wrap_content" android:text="验证码" />
+        <EditText android:id="@id/bind_verify_code" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/PayBindEditText" />
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_12" android:textColor="@color/pay_verify_text_color" android:id="@id/bind_verify_code_get" android:background="@drawable/pay_getver_bg" android:layout_width="100.0dip" android:layout_height="28.0dip" android:text="获取验证码" />
+    </LinearLayout>
+</com.dianping.base.widget.TableView>

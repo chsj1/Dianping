@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:background="@color/wedding_bg_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:id="@id/wed_imageview_vertical" android:background="@drawable/header_default" android:layout_width="225.0dip" android:layout_height="300.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" dp:placeholderEmpty="@drawable/header_default" dp:placeholderLoading="@drawable/transparent" dp:placeholderError="@drawable/header_default" />
+</com.dianping.widget.view.NovaRelativeLayout>

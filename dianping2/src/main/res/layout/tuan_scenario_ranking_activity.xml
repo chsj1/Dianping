@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/scenario_ranking_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/loading" android:visibility="gone" layout="@layout/loading_item_fullscreen" />
+    <include android:id="@id/error" android:visibility="gone" layout="@layout/error_item" />
+</FrameLayout>

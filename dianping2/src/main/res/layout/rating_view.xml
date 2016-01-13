@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:layout_gravity="center_vertical" android:id="@id/rating_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+    <com.dianping.base.widget.RatingBar android:layout_gravity="center_vertical" android:id="@id/ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:id="@id/rating_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+</LinearLayout>

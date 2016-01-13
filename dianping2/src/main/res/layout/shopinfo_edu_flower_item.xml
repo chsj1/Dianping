@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaFrameLayout android:id="@id/firstflowerFL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.dianping.widget.NetworkImageView android:id="@id/firstflowerpic" android:layout_width="192.0dip" android:layout_height="192.0dip" android:src="@drawable/pinkeicon" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/firstflowerpic_cover_image" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/school_flower_cover_shadow" android:scaleType="fitXY" />
+        <com.dianping.widget.NetworkImageView android:id="@id/firstflowerorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/schoolflower_first_order" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center|left" android:id="@id/firstflowerheartcountLL" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/firstflowername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" />
+        </LinearLayout>
+    </com.dianping.widget.view.NovaFrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.dianping.widget.view.NovaFrameLayout android:id="@id/secondflowerFL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.dianping.widget.NetworkImageView android:id="@id/secondflowerpic" android:layout_width="94.0dip" android:layout_height="94.0dip" android:src="@drawable/pinkeicon" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/secondflowerpic_cover_image" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/school_flower_cover_shadow" android:scaleType="fitXY" />
+            <com.dianping.widget.NetworkImageView android:id="@id/secondflowerorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/schoolflower_second_order" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center|left" android:id="@id/secondflowerheartcountLL" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/secondflowername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" />
+            </LinearLayout>
+        </com.dianping.widget.view.NovaFrameLayout>
+        <com.dianping.widget.view.NovaFrameLayout android:id="@id/thirdflowerFL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.dianping.widget.NetworkImageView android:id="@id/thirdflowerpic" android:layout_width="94.0dip" android:layout_height="94.0dip" android:src="@drawable/pinkeicon" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/thirdflowerpic_cover_image" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/school_flower_cover_shadow" android:scaleType="fitXY" />
+            <com.dianping.widget.NetworkImageView android:id="@id/thirdflowerorder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/schoolflower_third_order" />
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center|left" android:id="@id/thirdflowerheartcountLL" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/thirdflowername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" />
+            </LinearLayout>
+        </com.dianping.widget.view.NovaFrameLayout>
+    </LinearLayout>
+</LinearLayout>

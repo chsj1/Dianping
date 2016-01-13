@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/takeaway_share_background" android:paddingLeft="17.0dip" android:paddingTop="15.0dip" android:paddingRight="17.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分享到" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/sharetowechat_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/title" android:layout_alignLeft="@id/title">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_icon_wx" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="微信好友" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sharetofriends_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="20.0dip" android:layout_toRightOf="@id/sharetowechat_btn" android:layout_below="@id/title">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/share_to_icon_wxq" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="微信朋友圈" />
+    </LinearLayout>
+</RelativeLayout>

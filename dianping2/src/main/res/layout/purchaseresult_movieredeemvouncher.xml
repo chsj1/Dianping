@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="30.0dip" android:paddingRight="20.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_movieredeemvouncher_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/purchase_success" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买成功" />
+            <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_black" android:gravity="center_vertical" android:id="@id/tv_showtime_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/text_color_gray" android:id="@id/tv_instruction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layer_action_success" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/text_gray" android:id="@id/btn_redeemvoucher_detail" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/action_button_margin_left_right" android:layout_marginRight="@dimen/action_button_margin_between" android:text="查看兑换券" android:layout_weight="1.0" style="@style/NovaTuanDefButtonTheme" />
+        <Button android:textColor="@color/text_gray" android:id="@id/btn_other_movie" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/action_button_margin_between" android:layout_marginRight="@dimen/action_button_margin_left_right" android:text="看看其他电影" android:layout_weight="1.0" style="@style/NovaTuanDefButtonTheme" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:background="@drawable/table_view_item" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.NetworkThumbView android:id="@id/home_style_cover_image" android:layout_width="fill_parent" android:layout_height="100.0dip" android:src="@drawable/placeholder_default" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/homedesign_head_cover_shadow" android:paddingLeft="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:id="@id/home_style_name" android:paddingLeft="9.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100.0dip" android:text="现代简约" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_very_small" android:textColor="@color/white" android:id="@id/home_style_count" android:paddingLeft="3.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(1024)" android:singleLine="true" />
+    </LinearLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

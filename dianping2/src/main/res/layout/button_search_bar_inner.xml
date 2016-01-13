@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/search_icon" android:background="@null" android:paddingLeft="8.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navibar_search_icon_search" />
+    <TextView android:textSize="@dimen/text_medium" android:textColorHint="@color/title_search_bar_hint_color" android:id="@id/start_search" android:paddingLeft="3.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+</com.dianping.widget.view.NovaLinearLayout>

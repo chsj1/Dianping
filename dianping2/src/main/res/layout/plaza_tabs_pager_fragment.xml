@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height">
+            <com.dianping.base.widget.CustomImageButton android:id="@id/back" android:background="@null" android:layout_width="@dimen/title_bar_button_size" android:layout_height="fill_parent" android:src="@drawable/ic_back_u" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:id="@id/right_layout" android:paddingLeft="12.0dip" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.dianping.widget.view.NovaImageView android:id="@id/right_title_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plaza_home_mine" />
+            </com.dianping.widget.view.NovaLinearLayout>
+            <HorizontalScrollView android:id="@id/tab_scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:fillViewport="true" android:layout_toLeftOf="@id/right_layout" android:layout_toRightOf="@id/back" android:layout_centerInParent="true">
+                <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="wrap_content" android:layout_height="@dimen/titlebar_height" />
+            </HorizontalScrollView>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/tabcontent_layer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            <com.dianping.main.find.pictureplaza.FatherTabViewPager android:id="@id/pager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>

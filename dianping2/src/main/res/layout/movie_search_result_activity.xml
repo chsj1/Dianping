@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:gravity="center|left" android:id="@id/unhit_tv" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_retry_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/result_list_ptr" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/status" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_item_fullscreen" />
+    </FrameLayout>
+</FrameLayout>

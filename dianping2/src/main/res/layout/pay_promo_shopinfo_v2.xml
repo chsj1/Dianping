@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:background="@drawable/table_view_item" android:paddingLeft="@dimen/shopinfo_marginleft" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@android:id/icon1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/detail_payicon" android:minWidth="22.0dip" android:minHeight="22.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/promo_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingRight="5.0dip" android:layout_width="80.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:gravity="center|right" android:id="@id/status_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="center|right" android:id="@id/promo_inventory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/promo_status" android:layout_toRightOf="@android:id/icon1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+            <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/shop_hui_title" android:ellipsize="end" android:id="@id/promo_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/tips_text_red" android:gravity="center" android:id="@id/promo_tips" android:background="@drawable/background_round_textview_lightred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/promo_title" android:layout_alignTop="@id/promo_title" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/tips_text_red" android:gravity="center" android:id="@id/activity_desc" android:background="@drawable/background_round_textview_lightred" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:layout_toRightOf="@id/promo_tips" android:layout_alignTop="@id/promo_title" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip">
+            <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:id="@id/icon_detail" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/icon_discount" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/detail_discount_icon_info" android:scaleType="centerCrop" />
+            </com.dianping.widget.view.NovaLinearLayout>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/promo_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/icon_detail" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/promo_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/line" android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="36.0dip" android:layout_alignParentTop="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/shoplist_search_bar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/text_color_light_gray" android:gravity="top" android:id="@id/search_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/basesearch_shoplist_margin_lr" android:layout_marginTop="@dimen/basesearch_shoplist_margin_lr" android:text="5km内" android:drawableLeft="@drawable/search_location" android:drawablePadding="5.0dip" />
+    <View android:background="@color/separator_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

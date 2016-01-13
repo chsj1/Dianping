@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.PoiLargeImageView android:id="@android:id/content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center_horizontal" android:id="@android:id/icon" android:background="@color/gray_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:minHeight="240.0dip" dp:isSquare="true" dp:forceDownload="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading_b" dp:placeholderError="@drawable/placeholder_error" />
+    <com.dianping.base.widget.phototag.PictureTagLayout android:id="@id/tag_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.dianping.main.find.pictureplaza.PoiLargeImageView>

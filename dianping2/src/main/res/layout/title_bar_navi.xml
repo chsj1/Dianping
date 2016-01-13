@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_main" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/navi_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.dianping.widget.view.NovaLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/map_car" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip">
+            <com.dianping.base.widget.CustomImageButton android:layout_gravity="center_horizontal" android:id="@id/map_car_icon" android:background="@drawable/btn_choose_taxi" android:clickable="false" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn2_name" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="驾车" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+        </com.dianping.widget.view.NovaLinearLayout>
+        <com.dianping.widget.view.NovaLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/map_metrobus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip">
+            <com.dianping.base.widget.CustomImageButton android:layout_gravity="center_horizontal" android:id="@id/map_metrobus_icon" android:background="@drawable/btn_choose_bus" android:clickable="false" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn3_name" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="公交" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+        </com.dianping.widget.view.NovaLinearLayout>
+        <com.dianping.widget.view.NovaLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/map_walk" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.dianping.base.widget.CustomImageButton android:layout_gravity="center_horizontal" android:id="@id/map_walk_icon" android:background="@drawable/btn_choose_walk" android:clickable="false" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/btn1_name" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="步行" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+        </com.dianping.widget.view.NovaLinearLayout>
+    </LinearLayout>
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_18" android:textColor="@color/custom_btn_color_backgroud_white" android:id="@id/map_others" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="其他地图" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

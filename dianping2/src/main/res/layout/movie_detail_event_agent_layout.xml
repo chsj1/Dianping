@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="活动" />
+    <View android:id="@id/shop_seperated_line" android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="horizontal" android:id="@id/double_event_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/left_event_layout" android:background="@drawable/list_item" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:id="@id/left_event_name_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+            <com.dianping.base.widget.CircleImageView android:id="@id/left_event_icon_img" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+        </com.dianping.widget.view.NovaLinearLayout>
+        <View android:background="@color/line_gray" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/right_event_layout" android:background="@drawable/list_item" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:id="@id/right_event_name_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" />
+            <com.dianping.base.widget.CircleImageView android:id="@id/right_event_icon_img" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+        </com.dianping.widget.view.NovaLinearLayout>
+    </com.dianping.widget.view.NovaLinearLayout>
+    <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/single_event_layout" android:background="@drawable/list_item" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/tuan_common_black" android:id="@id/single_event_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/tuan_common_gray" android:id="@id/single_event_subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <com.dianping.base.widget.CircleImageView android:id="@id/single_event_icon_img" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    </com.dianping.widget.view.NovaLinearLayout>
+</com.dianping.widget.view.NovaLinearLayout>

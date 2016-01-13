@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.NetworkImageView android:id="@id/sd_cartitem_photo" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" dp:placeholderEmpty="@drawable/select_dish_menu_item_no_picture_square" dp:placeholderLoading="@drawable/select_dish_menu_item_no_picture_square" dp:placeholderError="@drawable/select_dish_menu_item_no_picture_square" />
+        <FrameLayout android:id="@id/sd_cartitem_operate_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <com.dianping.base.widget.NumOperateButton android:id="@id/sd_cartitem_operate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_gravity="right" android:id="@id/sd_cartitem_not_sale_view" android:layout_width="wrap_content" android:layout_height="66.0dip">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:layout_gravity="center|right|top" android:id="@id/sd_cartitem_not_sale_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/blue_more" android:layout_gravity="bottom|center|right" android:id="@id/sd_cartitem_delete_dish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sd_delete" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/deep_gray" android:id="@id/sd_cartitem_partner_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/sd_cartitem_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/sd_cartitem_operate_status" android:layout_toRightOf="@id/sd_cartitem_photo" android:layout_centerVertical="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/sd_cartitem_name_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/dark_black" android:ellipsize="end" android:id="@id/sd_cartitem_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/dark_black" android:id="@id/sd_cartitem_name_copies" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <com.dianping.base.tuan.widget.RMBLabelItem android:layout_gravity="center_vertical" android:id="@id/sd_menuitem_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/sd_cartitem_name_view" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/sd_cartitem_event_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_below="@id/sd_menuitem_price">
+                <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/light_red" android:id="@id/sd_cartitem_event" android:background="@drawable/background_light_red_border" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/together_who_choose" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我点的" android:singleLine="true" android:layout_below="@id/sd_cartitem_event_view" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sd_cart_mealset_item" android:background="@drawable/background_selectdish_cart_mealset_line" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="86.0dip" android:layout_marginTop="10.0dip" />
+</LinearLayout>

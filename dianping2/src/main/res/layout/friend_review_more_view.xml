@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/review_more_bg_color" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/tuan_common_gray" android:gravity="center" android:id="@id/friend_more_review" android:background="@color/review_more_bg_color" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="更多好友点评" android:drawableRight="@drawable/ic_arrow_down_black" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+</LinearLayout>

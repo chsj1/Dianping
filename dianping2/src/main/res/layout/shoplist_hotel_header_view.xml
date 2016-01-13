@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/head_view" android:background="@color/common_bk_color" android:paddingTop="1.0dip" android:layout_width="fill_parent" android:layout_height="41.0dip" android:baselineAligned="false" android:weightSum="4.0">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/hotel_date_layout" android:background="@drawable/filter_bar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/wm_filterbar_item_gray" android:gravity="center" android:id="@android:id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="入住" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/wm_filterbar_item_gray" android:gravity="center" android:id="@android:id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退房" android:singleLine="true" />
+                </LinearLayout>
+                <ImageView android:id="@id/filter_icon_date_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_filter_down" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/filter_bar_divider" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/hotel_place_layout" android:background="@drawable/filter_bar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/wm_filterbar_item_gray" android:ellipsize="end" android:gravity="center" android:id="@id/place_name_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全城" android:maxEms="4" android:singleLine="true" />
+                <ImageView android:id="@id/filter_icon_place_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_filter_down" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/filter_bar_divider" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/hotel_filter1_layout" android:background="@drawable/filter_bar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.dianping.base.widget.FilterBar android:id="@id/hotel_filter1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/filter_bar_divider" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/hotel_filter2_layout" android:background="@drawable/filter_bar_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.dianping.base.widget.FilterBar android:id="@id/hotel_filter2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

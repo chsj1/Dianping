@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.membercard.view.PrepaidCardLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/container" layout="@layout/prepaid_card_item" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/light_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="15.0dip" android:text="@string/mc_show_vip_card_tips" />
+    <com.dianping.base.widget.TableView android:id="@id/cardInfoLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/SingleLineTableItemWithPadding">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mc_icon_saving_unpressed" />
+            <TextView android:textSize="@dimen/text_size_18" android:id="@id/cardInfo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/table_view_item" android:paddingLeft="@dimen/table_item_padding" android:paddingTop="10.0dip" android:paddingRight="@dimen/table_item_padding" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_22" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="余额：" />
+            <TextView android:textSize="@dimen/text_size_22" android:textColor="@color/yellow" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:layout_toRightOf="@id/text" />
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/yellow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:layout_toRightOf="@id/balance" android:layout_alignBottom="@id/balance" />
+            <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/gray" android:id="@id/validityPeriod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/text" />
+            <ImageView android:layout_gravity="center" android:id="@id/detail_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:id="@id/showDetailTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看明细" android:layout_toLeftOf="@id/detail_arrow" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </com.dianping.base.widget.TableView>
+    <include android:id="@id/nearestShop" layout="@layout/prepaid_card_nearest_shop" />
+</com.dianping.membercard.view.PrepaidCardLayout>

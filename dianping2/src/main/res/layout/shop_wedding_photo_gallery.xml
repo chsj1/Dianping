@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:layout_gravity="center_vertical" android:id="@id/select_title" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="45.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.view.NovaGridView android:gravity="center" android:id="@id/gallery_gridview" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="2" />
+    </FrameLayout>
+    <include android:id="@id/gallery_empty" layout="@layout/simple_list_item_18" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deal_dark_black" android:ellipsize="end" android:id="@id/title" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <com.dianping.base.tuan.widget.GridLinearLayout android:id="@id/navitag_table" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/home_listview_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/hotel_shoplist_gray" android:gravity="center" android:id="@id/display_more" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="更多适用酒店" android:drawableRight="@drawable/ic_arrow_down_black" android:drawablePadding="5.0dip" />
+</com.dianping.widget.view.NovaLinearLayout>

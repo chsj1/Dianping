@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/selfmeal_desc_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:autoLink="phone" android:layout_gravity="center_vertical" android:id="@id/meal_desc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="使用时间" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_meal_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.NetworkImageView android:id="@id/welife_logo_imageview" android:layout_width="12.0dip" android:layout_height="13.5dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/light_gray" android:id="@id/welife_provider_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="" android:layout_toRightOf="@id/welife_logo_imageview" />
+</RelativeLayout>

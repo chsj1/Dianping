@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.movie.view.MovieMainMovieItem android:id="@id/movie1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/movie_photo_default" android:layout_weight="0.54" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="0.46">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+            <com.dianping.movie.view.MovieMainMovieItem android:id="@id/movie2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/movie_photo_default" android:layout_weight="1.0" />
+            <com.dianping.movie.view.MovieMainMovieItem android:id="@id/movie3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/movie_photo_default" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+            <com.dianping.movie.view.MovieMainMovieItem android:id="@id/movie4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/movie_photo_default" android:layout_weight="1.0" />
+            <com.dianping.movie.view.MovieMainMovieItem android:id="@id/movie5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/movie_photo_default" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

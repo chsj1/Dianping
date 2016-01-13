@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_20" android:gravity="center" android:layout_gravity="center" android:id="@id/status" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.dianping.widget.DPBasicItem android:id="@id/orderNumItem" android:background="@drawable/background_line" dp:dptitle="订票号    " dp:subTitle="" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/orderDateItem" android:background="@drawable/background_line" dp:dptitle="下单时间" dp:subTitle="" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/shopNameItem" android:background="@drawable/background_click_line" android:layout_marginTop="@dimen/section_height" dp:dptitle="泰晤士小镇" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/typeItem" android:background="@drawable/background_line" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_height="wrap_content" dp:dptitle="类型        " dp:subTitle="" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/countItem" android:background="@drawable/background_line" dp:dptitle="张数        " dp:subTitle="" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/totalpriceItem" android:background="@drawable/background_line" dp:dptitle="订单总额" dp:subTitle="" dp:subTitle_textType="yellow_color" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/travelDateItem" android:background="@drawable/background_line" dp:dptitle="游玩日期" dp:subTitle="" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/guestItem" android:background="@drawable/background_line" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_height="wrap_content" dp:dptitle="取票人    " dp:subTitle="" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/addressItem" android:background="@drawable/background_line" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_height="wrap_content" dp:dptitle="取票地点" dp:subTitle="" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/noticeItem" android:background="@drawable/background_click_line" android:layout_marginTop="@dimen/section_height" dp:dptitle="订票说明" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/serviceNoItem" android:background="@drawable/background_click_line" android:layout_marginBottom="12.0dip" dp:dptitle="客服电话" dp:subTitle="" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <Button android:id="@id/cancelOrder" android:visibility="gone" android:text="取消订单" style="@style/NovaWeightButton" />
+    </LinearLayout>
+</ScrollView>

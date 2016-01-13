@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/wm_checkpic_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="300.0dip" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image_close" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_icon_closed_foodpicture" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <FrameLayout android:id="@id/big_image_layout" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_below="@id/image_close">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progress_img" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:attr/progressBarStyleSmall" />
+            <com.dianping.widget.NetworkImageView android:id="@id/normal_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@id/error_img" android:background="@drawable/white_bg" android:padding="80.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/placeholder_error" android:scaleType="centerCrop" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/dish_info_layout" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/big_image_layout">
+            <FrameLayout android:id="@id/menu_item_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <com.dianping.base.widget.NumOperateButton android:layout_gravity="center_vertical" android:id="@id/operateButton" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/operation_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/menu_item_remove_button" android:background="@drawable/subtract_num_btn_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:gravity="center" android:layout_gravity="center" android:id="@id/menu_item_count_textview" android:background="@drawable/operate_num_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="35.0dip" android:text="1" android:singleLine="true" />
+                    <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/menu_item_add_btn0" android:background="@drawable/empty_add_num_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/menu_item_add_btn1" android:background="@drawable/dish_add_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/sold_out_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="50.0dip" android:layout_marginRight="20.0dip" />
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_hint_light_gray" android:layout_gravity="center_vertical" android:id="@id/menu_soldout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已售完" />
+                </LinearLayout>
+            </FrameLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/menu_item_buttons" android:layout_alignParentLeft="true">
+                <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:ellipsize="end" android:id="@id/dish_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:maxLines="2" android:layout_alignParentLeft="true" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dish_name">
+                    <com.dianping.base.tuan.widget.RMBLabelItem android:id="@id/detail_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <EditText android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:id="@id/dish_detail_intro" android:background="@drawable/wm_list_bkg_line_top" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="4" android:editable="false" android:layout_below="@id/dish_info_layout" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:layout_marginTop="10.0dip" style="@style/SingleLineTableItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/deal_info_rec_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/deal_info_padding_left" android:src="@drawable/rec_icon_grey" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/deal_info_review_title_text_size" android:textColor="@color/tuan_common_black" android:gravity="center_vertical" android:id="@id/deal_info_rec_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/deal_info_rec_icon" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/deal_info_review_subtitle_text_size" android:textColor="@color/tuan_common_gray" android:gravity="center_vertical" android:id="@id/deal_info_rec_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/deal_info_padding_right" android:drawableRight="@drawable/arrow" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

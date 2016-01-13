@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/booking" android:background="@drawable/hotel_temp_background_hotel_review_booking" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/hotel_date_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip">
+        <ImageView android:id="@id/filter_icon_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/common_filter_icon_date" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/filter_icon_date">
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="入住" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="退房" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#ffcccccc" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ota_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+</LinearLayout>

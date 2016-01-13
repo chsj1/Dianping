@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/background_round_corner_border" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/shop_frame" android:layout_width="fill_parent" android:layout_height="0.0dip">
+        <com.dianping.widget.NetworkImageView android:id="@id/shop_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_white" android:layout_gravity="start|center|top" android:id="@id/mark_text" android:background="@drawable/favor_shop_mark_text" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_black" android:ellipsize="end" android:id="@id/activity_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:lines="2" android:layout_alignParentBottom="true" android:lineSpacingExtra="4.0dip" />
+    </RelativeLayout>
+</com.dianping.widget.view.NovaLinearLayout>

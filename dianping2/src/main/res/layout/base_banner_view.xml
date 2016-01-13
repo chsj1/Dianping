@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/announcelay_head_id" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/banner_pager_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.dianping.widget.view.NovaImageView android:layout_gravity="center|right" android:id="@id/close_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/announcement_close" android:scaleType="center" />
+    <com.dianping.widget.NavigationDot android:layout_gravity="bottom|center|left" android:id="@id/naviDot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="6.0dip" />
+</FrameLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:background="@color/wm_menutitle_gray" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/ktvRoomPriceContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.dianping.widget.view.NovaLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip">
+            <com.dianping.widget.view.NovaLinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/tuan_common_orange" android:gravity="center" android:id="@id/ktvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textColor="@color/text_color_light_gray" android:gravity="center" android:id="@id/ktvOriginalPriceTV" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </com.dianping.widget.view.NovaLinearLayout>
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/tuan_common_orange" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center|right" android:id="@id/booking_reduction" android:background="@drawable/background_round_textview_lightred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+        </com.dianping.widget.view.NovaLinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/bookRoomTV" android:background="@drawable/ktv_room_btn_weight" android:layout_width="60.0dip" android:layout_height="30.0dip" />
+    </LinearLayout>
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:layout_toLeftOf="@id/ktvRoomPriceContainer" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/shopinfo_single_text_color" android:ellipsize="end" android:id="@id/ktvRoomTypeTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:lineSpacingExtra="2.0dip" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:id="@id/ktvRoomComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:layout_weight="1.0" />
+    </com.dianping.widget.view.NovaLinearLayout>
+    <View android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

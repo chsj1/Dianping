@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@null" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:layout_gravity="top" android:id="@id/hotel_roomdetail_listitem_icon" android:padding="1.0dip" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" dp:isCorner="true" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="#ff878787" android:layout_gravity="top" android:id="@id/hotel_roomdetail_listitem_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="123" />
+</LinearLayout>

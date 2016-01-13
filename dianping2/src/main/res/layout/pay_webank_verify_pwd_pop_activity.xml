@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/verify_pwd_pop_bg" android:background="#60000000" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.dianping.pay.view.NumberKeyboardView android:id="@id/num_keyboard" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/num_keyboard">
+        <TextView android:textSize="20.0dip" android:textColor="@color/beauty_color_text_black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="请输入支付密码" />
+        <com.dianping.pay.view.GridPasswordView android:id="@id/grid_password" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_marginLeft="35.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="35.0dip" app:fontColor="@android:color/black" app:fontSize="30.0sp" app:lineColor="@color/pay_keyboard_pwd_line" app:gridColor="@color/pay_keyboard_pwd_bg" app:passwordLength="6" />
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_medium" android:textColor="@color/connect_consumer_service_link" android:layout_gravity="right" android:id="@id/forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="35.0dip" android:layout_marginBottom="30.0dip" android:text="忘记密码?" />
+    </LinearLayout>
+    <com.dianping.widget.view.NovaImageView android:id="@id/close" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:src="@drawable/tuan_dialog_close" android:scaleType="center" android:layout_alignLeft="@id/content" android:layout_alignTop="@id/content" />
+</RelativeLayout>

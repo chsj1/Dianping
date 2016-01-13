@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.membercard.view.MemberCardItem android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.membercard.view.MemberCardImageView android:id="@id/card_image" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:isHalf="false" dp:placeholderEmpty="@drawable/mc_card_bg2_default" dp:placeholderLoading="@drawable/mc_card_bg2_default" dp:placeholderError="@drawable/mc_card_bg2_default" />
+    <LinearLayout android:id="@id/itemlayout" android:paddingLeft="20.0dip" android:paddingTop="16.0dip" android:paddingRight="70.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.membercard.view.MemberCardIconView android:id="@id/card_icon" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/mc_card_log_default" dp:placeholderLoading="@drawable/mc_card_log_default" dp:placeholderError="@drawable/mc_card_log_default" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/text_large" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_title" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:ellipsize="end" android:id="@id/card_subtitle" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/card_vip_icon" android:paddingTop="25.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mc_senior_icon" />
+    <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginBottom="13.0dip">
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:id="@id/member_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:id="@id/member_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom|center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip">
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/card_shop_name" android:background="@drawable/card_label_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:layout_marginBottom="5.0dip" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="29.0dip" android:src="@drawable/mc_qrcode" />
+    </LinearLayout>
+</com.dianping.membercard.view.MemberCardItem>

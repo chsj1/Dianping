@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/businessTimeLinearLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="营业时间:" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_black" android:gravity="center|left" android:layout_gravity="left" android:id="@id/businessTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/starttipsLinearLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名人出没:" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_black" android:gravity="center|left" android:layout_gravity="left" android:id="@id/starttipsTextView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/characteristicFrameLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="@dimen/text_size_14" android:id="@id/characteristicLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商户特色:" />
+        <TextView android:textSize="@dimen/text_size_14" android:ellipsize="end" android:id="@id/characteristic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxLines="2" android:layout_toRightOf="@id/characteristicLabel" />
+    </RelativeLayout>
+</LinearLayout>

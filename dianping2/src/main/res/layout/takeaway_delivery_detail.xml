@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bottom_view" android:layout_width="fill_parent" android:layout_height="62.0dip" android:layout_alignParentBottom="true" layout="@layout/takeaway_delivery_bar" />
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/bottom_view" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/container_view" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <include android:id="@id/loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_item_fullscreen" />
+</RelativeLayout>

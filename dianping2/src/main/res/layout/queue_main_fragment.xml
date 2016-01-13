@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.pulltorefresh.PullToRefreshScrollView android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/queue_main_container" android:paddingTop="@dimen/section_height" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.dianping.widget.pulltorefresh.PullToRefreshScrollView>
+    <include android:gravity="center" android:id="@id/loading_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_item" />
+    <com.dianping.widget.LoadingErrorView android:gravity="center" android:orientation="horizontal" android:id="@id/error_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="网络链接失败，点击重新加载" />
+    </com.dianping.widget.LoadingErrorView>
+</FrameLayout>

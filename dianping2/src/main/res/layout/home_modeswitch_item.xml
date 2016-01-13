@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:id="@id/home_modechange" android:background="@drawable/background_starbar_repeat" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/stabar_img_icon" />
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_12" android:textColor="@color/review_banner_text" android:layout_gravity="center" android:id="@id/mode_info" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textSize="@dimen/text_size_10" android:textColor="@color/text_gray" android:id="@id/mode_button" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginLeft="9.0dip" />
+    </LinearLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

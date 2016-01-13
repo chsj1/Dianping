@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.RouteFrameLayout android:orientation="vertical" android:id="@id/route_framlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/route_cont" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="38.0dip">
+                <ImageView android:background="@drawable/arrow_login_line" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="15.0dip" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="center" android:layout_weight="1.0" />
+                <ImageView android:id="@id/arrow" android:background="@drawable/arrow_login_bg" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/navibar_arrow_up" android:scaleType="center" />
+                <ImageView android:background="@drawable/arrow_login_line" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="15.0dip" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="center" android:layout_weight="1.0" />
+            </LinearLayout>
+            <com.dianping.widget.view.NovaGridView android:id="@id/route_step" android:background="@color/white" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:horizontalSpacing="30.0dip" android:verticalSpacing="17.0dip" android:numColumns="2" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.dianping.base.widget.RouteFrameLayout>
+</RelativeLayout>

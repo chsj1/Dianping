@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.NotificationItem android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center" android:id="@id/notification_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_black" android:gravity="center" android:layout_gravity="center" android:id="@id/notification_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <LinearLayout android:gravity="center|right|top" android:layout_gravity="center|right|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_white" android:id="@id/notification_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center|right|top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/text_color_white" android:gravity="center|left|top" android:layout_gravity="center|right|top" android:id="@id/notification_quote" android:background="@drawable/talkbox_r" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="20.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center|right|top" android:id="@id/thumb" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitCenter">
+            <com.dianping.base.widget.CircleImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/avatar_36" dp:placeholderError="@drawable/placeholder_error_s" />
+        </FrameLayout>
+    </LinearLayout>
+</com.dianping.base.widget.NotificationItem>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/title" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/order_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="团购券数" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/ticket_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游玩人数" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/people_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </com.dianping.base.widget.TableView>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:id="@id/tourist_tip" android:paddingLeft="15.0dip" android:paddingTop="12.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="预约请填写真实信息，入园时需核实" />
+        <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/day_picker" android:clickable="true" style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="游玩日期" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yy_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/day" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出行人" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:gravity="center|right" android:id="@id/people_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/text1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/people_id_layout" style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="身份证" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:gravity="center|right" android:id="@id/people_id" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/text2" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机号" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:gravity="center|right" android:id="@id/phone" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:hint="用于接收确认短信" android:singleLine="true" android:layout_toRightOf="@id/text3" android:layout_centerVertical="true" android:inputType="phone" />
+            </RelativeLayout>
+        </com.dianping.base.widget.TableView>
+        <LinearLayout android:orientation="vertical" android:id="@id/tourist_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/button" android:layout_marginTop="20.0dip" android:text="我要预约" style="@style/NovaTuanWeightButton" />
+    </LinearLayout>
+</ScrollView>

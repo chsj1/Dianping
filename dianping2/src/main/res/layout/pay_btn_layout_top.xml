@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layer_pay" android:background="@color/submit_btn_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.dianping.widget.view.NovaButton android:id="@id/pay" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" style="@style/NovaTuanWeightButton" />
+</LinearLayout>

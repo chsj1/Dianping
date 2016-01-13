@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.tuan.widget.viewitem.TuanTagRightItem android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/light_gray" android:id="@id/text" android:background="@drawable/deal_list_recommend_signal_item_text_bg" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</com.dianping.tuan.widget.viewitem.TuanTagRightItem>

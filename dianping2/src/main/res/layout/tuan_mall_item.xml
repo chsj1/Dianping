@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.tuan.widget.viewitem.TuanMallItem android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/root_rl" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="start" android:id="@id/deal_item_icon_frame" android:background="@color/common_bk_color" android:padding="1.0px" android:layout_width="@dimen/deal_list_image_width" android:layout_height="@dimen/deal_list_image_height" android:layout_alignWithParentIfMissing="true">
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/deal_item_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+            <ImageView android:layout_gravity="start|center|top" android:id="@id/deal_item_status" android:visibility="gone" android:layout_width="39.0dip" android:layout_height="22.0dip" android:layout_marginTop="5.0dip" android:scaleType="fitXY" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/deal_item_info" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/deal_item_icon_frame" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/deal_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tuan_common_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/deal_item_region_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tuan_common_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/deal_item_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@id/deal_item_tips" android:background="@drawable/tuan_mail_info_tips_background" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginTop="8.0dip" android:maxEms="12" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/bottom_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gray_horizontal_line" android:scaleType="fitXY" />
+    <ImageView android:background="@drawable/list_item" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.dianping.tuan.widget.viewitem.TuanMallItem>

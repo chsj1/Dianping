@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/content_coupon_type" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/deep_gray" android:id="@id/content_coupon_type_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/beauty_shopcoupon_type" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/coupon_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/content_rules" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/deep_gray" android:id="@id/content_rules_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/beauty_shopcoupon_rule" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/rules" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/content_valid_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/deep_gray" android:id="@id/content_valid_time_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/beauty_shopcoupon_deadline" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/valid_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

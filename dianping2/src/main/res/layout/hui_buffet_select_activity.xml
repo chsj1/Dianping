@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="58.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ScrollView>
+    <FrameLayout android:id="@id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.dianping.widget.LoadingFullScreenItem android:gravity="center" android:orientation="vertical" android:id="@id/hui_buffet_list_loading_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight">
+        <ImageView android:id="@id/anim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/loading_fullscreen_anim" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff878787" android:id="@id/tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载中，请稍候..." />
+    </com.dianping.widget.LoadingFullScreenItem>
+    <LinearLayout android:id="@id/submit_layout" android:background="@color/white" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:id="@id/btn_submit_buffet_order" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:text="立刻买单" style="@style/NovaWeightButtonTheme" />
+    </LinearLayout>
+</RelativeLayout>

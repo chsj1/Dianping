@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_15" android:gravity="center" android:id="@id/qq_secure_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="27.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/icon" android:layout_centerHorizontal="true" />
+    <com.dianping.widget.view.NovaButton android:id="@id/qq_secure_btn" android:background="@drawable/btn_weight" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/qq_secure_status" style="@style/NovaWeightButton" />
+</RelativeLayout>

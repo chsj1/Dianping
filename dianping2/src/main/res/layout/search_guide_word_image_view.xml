@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.view.NovaFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/search_guide_keyword_img_margin" android:layout_marginRight="@dimen/search_guide_keyword_img_margin">
+        <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center" android:id="@id/search_thunm_guide" android:layout_width="fill_parent" android:layout_height="38.0dip" android:scaleType="centerCrop" dp:cornerRadius="3.0dip" dp:needReload="false" dp:placeholderEmpty="@drawable/search_guide_default" dp:placeholderLoading="@drawable/search_guide_keyword_loading" dp:placeholderError="@drawable/search_guide_default" />
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/basesearch_shoplist_info_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/search_tv_guide" android:layout_width="wrap_content" android:layout_height="38.0dip" android:minWidth="60.0dip" />
+    </com.dianping.widget.view.NovaFrameLayout>
+</RelativeLayout>

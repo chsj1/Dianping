@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:background="@drawable/table_view_item" android:paddingTop="20.0dip" android:paddingBottom="12.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.NetworkImageView android:id="@id/item_photo" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/black" android:id="@id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/item_photo" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/yy_tag_color" android:gravity="center" android:id="@id/tuancount" android:background="@drawable/education_aroundshoptuancount_item" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/item_text" android:layout_centerHorizontal="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

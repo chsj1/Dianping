@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.home.HotCompetitiveItem android:orientation="vertical" android:id="@id/home_competitive_item" android:background="@drawable/home_selector_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <com.dianping.base.widget.NetworkThumbView android:id="@android:id/icon" android:layout_width="@dimen/home_competitive_list_image_width" android:layout_height="@dimen/home_competitive_list_image_height" android:scaleType="fitXY" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading_b" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/home_titlesize_larger" android:textColor="@color/text_color_black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/home_subtitlesize" android:textColor="@color/text_color_gray" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/item_foot_divider" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+</com.dianping.main.home.HotCompetitiveItem>

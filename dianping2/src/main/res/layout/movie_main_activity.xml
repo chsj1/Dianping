@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.pulltorefresh.PullToRefreshScrollView android:id="@id/moviemain_scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/moviemain_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.movie.view.MovieBannerView android:id="@id/moviemain_bannerview" android:background="@drawable/table_view_item_with_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.dianping.movie.view.MovieMainToolBarView android:id="@id/moviemain_toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.dianping.movie.view.MovieMainSlidesView android:id="@id/moviemain_movieslides" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.dianping.movie.view.RecommendCinemaListView android:id="@id/moviemain_cinemalist" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.dianping.widget.pulltorefresh.PullToRefreshScrollView>
+    <com.dianping.movie.view.MovieFloatBadgeButton android:layout_gravity="bottom|center|right" android:id="@id/mymovie" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="50.0dip" />
+</FrameLayout>

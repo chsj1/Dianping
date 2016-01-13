@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaRelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/uses" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="23.0dip">
+            <com.dianping.widget.view.NovaLinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/uses_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentLeft="true" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_notice" android:layout_centerVertical="true" />
+            </com.dianping.widget.view.NovaLinearLayout>
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:id="@id/uses_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" android:layout_alignParentLeft="true" />
+        </com.dianping.widget.view.NovaLinearLayout>
+        <ImageView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.dianping.widget.view.NovaRelativeLayout>
+</com.dianping.widget.view.NovaLinearLayout>

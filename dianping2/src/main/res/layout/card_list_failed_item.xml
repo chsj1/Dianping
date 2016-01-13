@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.membercard.view.MemberCardListItem android:background="@drawable/card_list_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.membercard.view.MemberCardImageView android:id="@id/card_image" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:isHalf="true" />
+    <com.dianping.widget.LoadingErrorView android:gravity="center" android:orientation="horizontal" android:id="@id/error" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="网络不给力哦" />
+    </com.dianping.widget.LoadingErrorView>
+</com.dianping.membercard.view.MemberCardListItem>

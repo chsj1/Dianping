@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:id="@id/ugcdetail" android:background="@drawable/ugc_hasvisit_list_item_background" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/ugc_hasvisit_user_avater_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentLeft="true">
+        <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center|left|top" android:id="@id/ugc_hasvisit_avater" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="fitCenter" dp:isCircle="true" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/portrait_def" dp:placeholderError="@drawable/portrait_def" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/ugc_hasvisit_arrow_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_toLeftOf="@id/ugc_hasvisit_arrow_layout" android:layout_toRightOf="@id/ugc_hasvisit_user_avater_layout">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:id="@id/ugc_hasvisit_user_petname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center_vertical" android:id="@id/ugc_hasvisit_user_level" android:layout_width="wrap_content" android:layout_height="15.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:id="@id/ugc_hasvisit_add_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:id="@id/ugc_hasvisit_add_type_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

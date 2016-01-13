@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/title_bar" android:background="@drawable/title_background" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height" style="@style/TitleBar">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/titlebar_action_hint_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/city_select" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/title_bar_button_margin" android:text="上海" android:singleLine="true" android:drawableRight="@drawable/title_arrow_down_normal" android:drawablePadding="4.0dip" android:layout_alignParentLeft="true" />
+        <com.dianping.base.widget.ButtonSearchBar android:gravity="center_vertical" android:id="@id/button_search_bar" android:background="@drawable/tuan_home_title_search_bar_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/title_bar_search_bar_horizontal_margin" android:layout_marginTop="@dimen/title_search_bar_margin_vertical" android:layout_marginBottom="@dimen/title_search_bar_margin_vertical" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.base.widget.PullListViewWithViewPager android:id="@id/tuan_home_main_listview" android:background="@color/gray_light_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="0.0px" />
+        <FrameLayout android:layout_gravity="top" android:id="@id/content_root" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

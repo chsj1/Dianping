@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/menu_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <fragment android:name="com.dianping.base.basic.TabPagerFragment" android:id="@id/menu_viewer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/booking_layout" android:background="@color/white" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="61.0dip" android:layout_alignParentBottom="true">
+            <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_16" android:gravity="center" android:id="@id/booking_btn" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_margin="0.0dip" android:text="预约看店" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/NovaWeightButton" />
+            <com.dianping.widget.view.NovaRelativeLayout android:id="@id/phone_view" android:background="@drawable/btn_light" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/booking_btn" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <ImageView android:id="@id/phone_img" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/detail_icon_phone" />
+                    <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:id="@id/phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预约" />
+                </LinearLayout>
+            </com.dianping.widget.view.NovaRelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

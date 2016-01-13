@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/table_view_item" android:paddingLeft="@dimen/shopinfo_marginleft" android:paddingRight="@dimen/shopinfo_marginright" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金钱豹" android:singleLine="true" android:layout_toLeftOf="@id/distance" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/clickable_light_gray" android:gravity="right" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="100m" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/layout_name">
+        <com.dianping.base.widget.ShopPower android:id="@id/shop_power" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:ellipsize="end" android:gravity="right" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="￥10000-1000000/桌" android:singleLine="true" android:layout_toRightOf="@id/shop_power" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/wedding_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/bottom_divder_line" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

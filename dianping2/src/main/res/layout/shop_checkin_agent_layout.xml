@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:background="@drawable/table_view_item" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_size_15" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="来过" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_size_15" android:id="@id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/third_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true">
+        <com.dianping.base.widget.CircleImageView android:id="@id/icon_third" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/portrait_def" dp:placeholderError="@drawable/portrait_def" />
+        <ImageView android:id="@id/friend_third" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/shop_icon_friend" android:layout_alignBottom="@id/icon_third" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/second_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/third_img" android:layout_centerVertical="true">
+        <com.dianping.base.widget.CircleImageView android:id="@id/icon_second" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/portrait_def" dp:placeholderError="@drawable/portrait_def" />
+        <ImageView android:id="@id/friend_second" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/shop_icon_friend" android:layout_alignBottom="@id/icon_second" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/first_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/second_img" android:layout_centerVertical="true">
+        <com.dianping.base.widget.CircleImageView android:id="@id/icon_first" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/portrait_def" dp:placeholderError="@drawable/portrait_def" />
+        <ImageView android:id="@id/friend_first" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="13.0dip" android:src="@drawable/shop_icon_friend" android:layout_alignBottom="@id/icon_first" />
+    </RelativeLayout>
+</com.dianping.widget.view.NovaRelativeLayout>

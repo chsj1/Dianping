@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/detail_list_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0.0px" android:layout_weight="1.0" />
+    <View android:background="@color/light_line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.view.NovaImageView android:id="@id/do_like" android:background="@drawable/background_round_corner_border_5dp" android:layout_width="48.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:src="@drawable/icon_like_normal" android:scaleType="center" />
+        <EditText android:textSize="@dimen/text_size_15" android:id="@id/detail_input_text" android:background="@drawable/background_round_corner_border_5dp" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="9.0dip" android:hint="写点评论吧" android:layout_weight="1.0" />
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:id="@id/do_comment" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="13.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="13.0dip" android:text="发送" />
+    </LinearLayout>
+</LinearLayout>

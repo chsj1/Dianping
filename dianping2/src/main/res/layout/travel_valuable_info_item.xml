@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.travel.view.TravelValuableInfoItem android:orientation="vertical" android:paddingLeft="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/single_line_height">
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/deep_gray" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <View android:id="@id/line" android:background="@color/listitem_divide" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</com.dianping.travel.view.TravelValuableInfoItem>

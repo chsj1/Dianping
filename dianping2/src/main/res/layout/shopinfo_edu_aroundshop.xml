@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaRelativeLayout android:orientation="horizontal" android:id="@id/edu_aroundshop_detail" android:background="@drawable/table_view_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/edu_aroundshop_title" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周边指南" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.dianping.widget.view.NovaRelativeLayout>
+    <View android:id="@id/view_edu_line_detail" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+    <com.dianping.base.widget.CustomGridView android:id="@id/gallery_gridview" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="*" />
+</LinearLayout>

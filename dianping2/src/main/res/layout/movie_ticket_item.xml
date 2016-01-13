@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaFrameLayout android:id="@id/ticket_item" android:background="@drawable/list_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:button="@drawable/rad_bg" />
+        <RelativeLayout android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+            <com.dianping.widget.NetworkImageView android:id="@id/icon_img" android:layout_width="48.0dip" android:layout_height="68.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/layer_ticketstatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="vertical" android:id="@id/layer_orderUnpaid" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.dianping.widget.view.NovaButton android:layout_gravity="center" android:id="@id/paynow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="立即付款" style="@style/NovaWeightButtonTheme" />
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:id="@id/remaining_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="剩余14分59秒" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layer_avalibleTicket" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff8fbe00" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交易成功" />
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看取票码" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layer_text_and_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/gray" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已结束" />
+                    <com.dianping.widget.view.NovaButton android:layout_gravity="center" android:id="@id/addcomment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="写影评" style="@style/NovaWeightButtonTheme" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/layer_ticketstatus" android:layout_toRightOf="@id/icon_img" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_large" android:textColor="@color/dark_black" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="蓝精灵2：5张" android:singleLine="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/shop_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="上海开源地中海影城" android:singleLine="true" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/show_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="9月17日 (今天) 16:40" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/forgound" android:background="@color/trans_forgound" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0px" />
+</com.dianping.widget.view.NovaFrameLayout>

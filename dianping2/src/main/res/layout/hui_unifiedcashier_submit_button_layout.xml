@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/white_space" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="17.0dip" />
+    <Button android:enabled="false" android:gravity="center" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="17.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="5.0dip" android:text="确认支付" style="@style/NovaWeightButtonTheme" />
+</LinearLayout>

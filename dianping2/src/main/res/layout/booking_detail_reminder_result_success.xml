@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dialog_bkg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookingdetail_order_success" />
+    <RelativeLayout android:layout_width="304.0dip" android:layout_height="174.0dip" android:layout_alignBottom="@id/dialog_bkg">
+        <Button android:textSize="@dimen/text_medium_1" android:textStyle="bold" android:textColor="#ff157efb" android:gravity="center" android:id="@id/reminder_success_confirm_btn" android:background="@null" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="知道了" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/separate_line" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:scaleType="fitXY" android:layout_above="@id/reminder_success_confirm_btn" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/separate_line">
+            <TextView android:textSize="@dimen/text_medium_1" android:textStyle="bold" android:textColor="@color/deep_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订座成功啦！" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/deep_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="店小二恭迎您光临用餐" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

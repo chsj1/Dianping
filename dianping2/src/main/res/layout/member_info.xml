@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:paddingLeft="@dimen/mc_item_left_padding" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请您准确填写会员信息，享受尊贵服务" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/mc_item_left_padding" android:paddingTop="10.0dip" android:paddingRight="@dimen/mc_item_right_padding" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:layout_gravity="center_vertical" android:id="@id/user_name" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:hint="您的真实姓名" android:singleLine="true" android:layout_weight="1.0" />
+            <RadioGroup android:layout_gravity="center|right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@null" android:dividerPadding="0.0dip">
+                <RadioButton android:textSize="@dimen/text_medium" android:textColor="@color/mc_light_gray_to_yellow" android:layout_gravity="center_vertical" android:id="@id/womanBtn" android:background="@null" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="女士" android:drawableLeft="@drawable/checkbox_bg" />
+                <RadioButton android:textSize="@dimen/text_medium" android:textColor="@color/mc_light_gray_to_yellow" android:layout_gravity="center_vertical" android:id="@id/manBtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="先生" android:drawableLeft="@drawable/checkbox_bg" />
+            </RadioGroup>
+        </LinearLayout>
+        <ImageView android:background="@drawable/mc_horizontal_grey_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/user_birthday" android:background="@null" android:paddingLeft="@dimen/mc_item_left_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="您的生日" android:maxLength="11" />
+        <ImageView android:background="@drawable/mc_horizontal_grey_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_18" android:textColor="@android:color/white" android:layout_gravity="bottom|center" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mc_item_left_padding" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/mc_item_right_padding" android:layout_marginBottom="16.0dip" android:text="提交" style="@style/CustomSmallOrangeButton" />
+</LinearLayout>

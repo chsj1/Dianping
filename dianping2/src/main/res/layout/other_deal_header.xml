@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/deal_info_padding_left" android:paddingTop="10.0dip" android:paddingRight="@dimen/deal_info_padding_right" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/category_indicator" android:layout_width="2.0dip" android:layout_height="12.0dip" android:layout_marginLeft="5.0dip" />
+    <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/text_gray_color" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+</LinearLayout>

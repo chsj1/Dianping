@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="right" android:id="@id/separate_line" android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" />
+    <com.dianping.base.widget.TableView android:orientation="vertical" android:id="@id/table_sumprice" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.tuan.widget.RMBSingleItem android:id="@id/sum_price" dp:style_price="style3" dp:usage="now" style="@style/TuanPayBasicItem" />
+    </com.dianping.base.widget.TableView>
+</LinearLayout>

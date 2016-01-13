@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.TableView android:id="@id/settings" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.widget.DPBasicItem android:textSize="@dimen/text_large" android:gravity="center_vertical" android:id="@id/setting_img_set" dp:dptitle="图片设置" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:textSize="@dimen/text_large" android:gravity="center_vertical" android:id="@id/setting_push_setting" dp:dptitle="消息提醒设置" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:textSize="@dimen/text_large" android:gravity="center_vertical" android:id="@id/setting_clear_cache" dp:dptitle="清除缓存" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <RelativeLayout android:id="@id/setting_qq_secure" android:clickable="true" style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_18" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="手机安全防护" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/detail" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/clickable_light_gray" android:id="@id/secure_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/detail" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+            <com.dianping.widget.view.NovaRelativeLayout android:id="@id/setting_feedback" android:clickable="true" style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_18" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="意见反馈" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/icon_detail" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/clickable_light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="让我们更好" android:layout_toLeftOf="@id/icon_detail" android:layout_centerVertical="true" />
+            </com.dianping.widget.view.NovaRelativeLayout>
+            <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:id="@id/more_check_update" android:clickable="true" style="@style/SingleLineTableItemWithPadding">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_color_default" android:id="@id/update_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="检测新版本" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_size_11" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ic_new" android:background="@drawable/red_round_corner_rectangle" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发现新版本" />
+                <ImageView android:layout_gravity="center|right" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" />
+            </com.dianping.widget.view.NovaLinearLayout>
+            <RelativeLayout android:id="@id/setting_update" android:clickable="true" style="@style/SingleLineTableItemWithPadding">
+                <TextView android:textSize="@dimen/text_size_18" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="自动下载安装包" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/setting_update_value" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <com.dianping.widget.DPBasicItem android:id="@id/more_about" dp:dptitle="关于我们" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+            <com.dianping.widget.DPBasicItem android:id="@id/more_diag" dp:dptitle="诊断网络" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+            <com.dianping.widget.DPBasicItem android:id="@id/setting_invite_friends" android:visibility="gone" dp:dptitle="邀请送红包" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/invite_friends_container" android:background="@drawable/table_view_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:ellipsize="end" android:id="@id/invite_friend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="17.0dip" android:text="邀请1位得5元，2位得10元..." android:singleLine="true" />
+                <com.dianping.widget.view.NovaButton android:id="@id/invite_friends" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="17.0dip" android:text="邀请新伙伴" style="@style/NovaWeightButtonTheme" />
+            </LinearLayout>
+            <com.dianping.base.widget.TableHeader android:id="@id/invite_friends_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+        </com.dianping.base.widget.TableView>
+    </LinearLayout>
+</ScrollView>

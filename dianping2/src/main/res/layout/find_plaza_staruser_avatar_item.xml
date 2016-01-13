@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.PlazaStarUserAvatarItem android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_gravity="center_horizontal" android:layout_width="48.0dip" android:layout_height="48.0dip" layout="@layout/find_plaza_likes_avatar_item" />
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/user_nick_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:singleLine="true" />
+</com.dianping.main.find.pictureplaza.PlazaStarUserAvatarItem>

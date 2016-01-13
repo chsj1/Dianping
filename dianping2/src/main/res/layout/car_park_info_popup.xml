@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/car_service_item_pop_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:paddingTop="30.0dip" android:paddingBottom="27.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/car_parkinfo_popup_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/car_parkinfo_popup_provider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/car_parkinfo_popup_tips" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

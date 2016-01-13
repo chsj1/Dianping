@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/empty_header_layout" android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/empty_page_search" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/dark_black" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="没有找到相关商户" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_above="@id/button" android:layout_alignRight="@id/button" />
+        <Button android:textSize="@dimen/text_medium_1" android:textColor="@color/white" android:ellipsize="end" android:id="@id/button" android:background="@drawable/btn_weight" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="15.0dip" android:text="添加商户" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_alignBottom="@id/icon" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="5.0dip" android:text="你可能喜欢" android:singleLine="true" android:layout_below="@id/icon" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</LinearLayout>

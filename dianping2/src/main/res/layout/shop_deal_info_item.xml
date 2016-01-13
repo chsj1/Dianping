@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.widget.ShopDealInfoItem android:orientation="vertical" android:background="@drawable/search_shop_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/basesearch_shoplist_margin_lr" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tuan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/ic_tuan_small" />
+        <TextView android:textSize="@dimen/search_deal_info_price_text_size" android:textColor="@color/light_red" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/basesearch_shoplist_info_text_size" android:textColor="@color/clickable_light_gray" android:id="@id/original_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" />
+        <TextView android:textSize="@dimen/search_deal_info_title_text_size" android:textColor="@color/text_gray" android:id="@id/deal_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/mc_arrow_right" />
+    </LinearLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.dianping.search.widget.ShopDealInfoItem>

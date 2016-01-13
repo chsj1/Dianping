@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/hotel_roomtype_list_announce" android:visibility="gone" layout="@layout/shop_announce" />
+    <RelativeLayout android:id="@id/hotel_layout_time" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/hotel_roomtype_list_announce">
+        <ImageView android:id="@id/hotel_img_book" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/detail_booking_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/hotel_datepicker_color" android:id="@id/hotel_tv_pick_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toRightOf="@id/hotel_img_book" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/mc_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/promo_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" />
+    <include android:id="@id/hotel_general_promo_info" android:visibility="gone" layout="@layout/hotel_promo_info_explain" />
+    <View android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

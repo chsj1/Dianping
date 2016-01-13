@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/main_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.widget.DPBasicItem android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItemWithPadding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="收货人" android:minEms="3" />
+                    <EditText android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/edit_receiver" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="1-15个字符" android:singleLine="true" android:maxLength="15" android:layout_weight="1.0" android:imeOptions="actionNext" />
+                </LinearLayout>
+            </com.dianping.widget.DPBasicItem>
+            <com.dianping.widget.DPBasicItem android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItemWithPadding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="省" android:ems="3" />
+                    <Button android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/edit_province" android:background="@null" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:drawableRight="@drawable/triangle" android:layout_weight="1.0" android:inputType="none" />
+                </LinearLayout>
+            </com.dianping.widget.DPBasicItem>
+            <com.dianping.widget.DPBasicItem android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItemWithPadding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="市" android:ems="3" android:singleLine="true" />
+                    <Button android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/edit_city" android:background="@null" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:drawableRight="@drawable/triangle" android:layout_weight="1.0" android:inputType="none" />
+                </LinearLayout>
+            </com.dianping.widget.DPBasicItem>
+            <com.dianping.widget.DPBasicItem android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItemWithPadding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edit_county_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="区" android:ems="3" android:singleLine="true" />
+                    <Button android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/edit_county" android:background="@null" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:drawableRight="@drawable/triangle" android:layout_weight="1.0" android:inputType="none" />
+                </LinearLayout>
+            </com.dianping.widget.DPBasicItem>
+            <com.dianping.widget.DPBasicItem android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItemWithPadding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="地址" android:ems="3" />
+                    <EditText android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/edit_adress" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="不必重复填写省市区信息" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionNext" />
+                </LinearLayout>
+            </com.dianping.widget.DPBasicItem>
+            <com.dianping.widget.DPBasicItem android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItemWithPadding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="邮编" android:ems="3" />
+                    <EditText android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/edit_postcode" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="请输入6位邮政编码" android:singleLine="true" android:maxLength="6" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionNext" />
+                </LinearLayout>
+            </com.dianping.widget.DPBasicItem>
+            <com.dianping.widget.DPBasicItem android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItemWithPadding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_black" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip" android:text="电话" android:ems="3" />
+                    <EditText android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:gravity="center_vertical" android:id="@id/edit_phone" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:maxLength="11" android:layout_weight="1.0" android:inputType="phone" android:imeOptions="actionGo" />
+                </LinearLayout>
+            </com.dianping.widget.DPBasicItem>
+        </com.dianping.base.widget.TableView>
+        <Button android:gravity="center" android:layout_gravity="center" android:id="@id/submit" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="确定" style="@style/NovaTuanWeightButton" />
+    </LinearLayout>
+</ScrollView>

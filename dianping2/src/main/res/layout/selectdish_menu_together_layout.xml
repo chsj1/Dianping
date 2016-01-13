@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/sd_menu_title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/titlebar_height" layout="@layout/selectdish_standard_title_bar" />
+        <View android:layout_gravity="top" android:id="@id/title_bottom_line" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:id="@id/sd_room_password_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="群点口令: " android:layout_centerVertical="true" />
+            <TextView android:textSize="17.0dip" android:textColor="@color/deep_gray" android:id="@id/sd_room_password_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/sd_room_password_title" android:layout_alignBaseline="@id/sd_room_password_title" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:id="@id/sd_room_name_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/sd_menu_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.dianping.base.widget.FilterBar android:id="@id/sd_menu_filter" android:layout_width="fill_parent" android:layout_height="43.0dip" android:layout_below="@id/sd_menu_orderbanner" />
+                <include android:id="@id/sd_menu_bottom_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/selectdish_menu_cart_bottom_layout" />
+                <GridView android:id="@id/sd_menu_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:numColumns="2" android:layout_above="@id/sd_menu_bottom_layout" android:layout_below="@id/sd_menu_filter" />
+            </RelativeLayout>
+            <com.dianping.widget.LoadingFullScreenItem android:gravity="center" android:id="@id/sd_menu_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="51.0dip">
+                <ImageView android:id="@id/anim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/loading_fullscreen_anim" />
+            </com.dianping.widget.LoadingFullScreenItem>
+            <com.dianping.widget.LoadingErrorView android:gravity="center" android:orientation="horizontal" android:id="@id/sd_menu_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="51.0dip">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="网络链接失败，点击重新加载" />
+            </com.dianping.widget.LoadingErrorView>
+            <include android:layout_gravity="center" android:id="@id/sd_menu_close" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="51.0dip" layout="@layout/selectdish_menu_close" />
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/sd_menu_moving_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

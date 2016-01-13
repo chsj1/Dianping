@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_gray_top_line" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/dark_black" android:id="@id/sd_cart_summary1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/dark_black" android:id="@id/sd_cart_summary2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/submit_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_14" android:id="@id/submit" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:text="去下单" style="@style/NovaWeightButton" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:layout_gravity="center|right|top" android:id="@id/submit_button_subtitle" android:background="@drawable/background_button_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立减" android:maxLength="5" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/submit_button_layout" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/dark_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sd_total_price" />
+        <com.dianping.base.tuan.widget.RMBLabelItem android:id="@id/sd_cart_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

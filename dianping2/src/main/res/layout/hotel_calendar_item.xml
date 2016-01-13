@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="45.0dip" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="left" android:id="@id/empty_left" android:background="@color/white" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="right" android:id="@id/empty_right" android:background="@color/white" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="2.0dip">
+        <TextView android:textSize="@dimen/text_size_15" android:gravity="center" android:layout_gravity="top" android:id="@id/date_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_very_small" android:gravity="center" android:layout_gravity="bottom" android:id="@id/date_subinfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_below="@id/date_info" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_very_small" android:gravity="center" android:layout_gravity="bottom" android:id="@id/date_subinfo_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_below="@id/date_subinfo" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

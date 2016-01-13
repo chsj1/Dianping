@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/filter_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/text_color_black" android:id="@id/content" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+        <EditText android:textSize="@dimen/text_size_hint" android:id="@id/code_input" android:background="@color/white" android:padding="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="请输入验证码" android:layout_weight="1.0" android:inputType="number" />
+        <Button android:textSize="@dimen/text_size_hint" android:textColor="@color/text_color_orange" android:id="@id/get_code" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="重新获取(60s)" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/red" android:id="@id/error" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="#80999999" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/text_color_black_to_white_1" android:gravity="center" android:id="@id/cancel" android:padding="10.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="#80999999" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/text_size_list" android:textColor="@color/titlebar_action_item_color" android:gravity="center" android:id="@id/ok" android:padding="10.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="提交" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

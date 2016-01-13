@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.pulltorefresh.PullToRefreshListView android:id="@id/plaza_explore_home_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

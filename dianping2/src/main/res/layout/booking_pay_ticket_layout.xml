@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/all_tickets_layout" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/usable_ticket_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="可用" />
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+            <ListView android:id="@id/usable_ticket_list" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="10.0dip" />
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/unusable_ticket_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:paddingLeft="15.0dip" android:paddingTop="18.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不可用" />
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ListView android:id="@id/unusable_ticket_list" android:background="@null" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="10.0dip" />
+            <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

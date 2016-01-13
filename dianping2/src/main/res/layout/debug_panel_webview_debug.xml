@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/web_url_domain_selector" android:padding="4.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="网页调试入口" android:layout_weight="2.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+                <EditText android:gravity="center|right" android:id="@id/web_url_from_domain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="需要被转换的网址:默认http://m.dianping.com/" />
+                <EditText android:gravity="center|right" android:id="@id/web_url_to_domain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="转换成的网页:默认:http://m.51ping.com/" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/table_item_padding" />
+        <Button android:id="@id/change_domain_to_beta" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="一键beta" android:layout_weight="2.0" />
+        <com.dianping.widget.DPBasicItem android:id="@id/web_clearcache" dp:dptitle="清除网页缓存" style="@style/SingleLineTableItemWithPadding" />
+        <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" style="@style/SingleLineTableItemWithLeftPadding">
+            <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="禁用白名单" android:layout_weight="1.0" />
+            <ToggleButton android:id="@id/disable_whitelist" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="18.0sp" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/web_injectjs_weinre" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Weinre注入" android:layout_weight="1.0" />
+            <EditText android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/jsfile_path" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="http://192.168.2.1:8081/target/target-script-min.js" />
+        </LinearLayout>
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+    </com.dianping.base.widget.TableView>
+</ScrollView>

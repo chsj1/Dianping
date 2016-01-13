@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/allin_payresult_title" android:background="@color/white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/orderresult_imageview" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="25.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/deep_gray" android:id="@id/main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/orderresult_imageview" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.0dip" android:singleLine="true" />
+    <ImageView android:id="@id/barcode_imageview" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="7.0dip" />
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="13.0dip" />
+</LinearLayout>

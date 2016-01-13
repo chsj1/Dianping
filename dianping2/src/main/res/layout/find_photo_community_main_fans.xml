@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaFrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/dark_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="101.0dip" android:text="你所关注的话题都会在这里呈现" />
+        <Button android:id="@id/login_btn" android:layout_width="160.0dip" android:layout_height="45.0dip" android:layout_marginTop="27.0dip" android:text="立即登录" style="@style/NovaWeightButtonTheme" />
+    </LinearLayout>
+    <ListView android:id="@id/photo_plaza_fans_list" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" />
+</com.dianping.widget.view.NovaFrameLayout>

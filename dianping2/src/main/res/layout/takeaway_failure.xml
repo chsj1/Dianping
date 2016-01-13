@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/takeaway_content_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="@dimen/text_size_25" android:textColor="@color/deep_black" android:gravity="center_vertical" android:id="@id/takeaway_failure_text_failure" android:paddingLeft="17.0dip" android:paddingTop="22.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下单失败" android:drawableLeft="@drawable/wm_tips_alert" android:drawablePadding="12.0dip" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="#ff878787" android:gravity="left" android:id="@id/takeaway_failure_text_hint" android:paddingLeft="17.0dip" android:paddingTop="12.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="抱歉，您的订单信息已过期，请重新下单！" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size_23" android:id="@id/takeaway_failure_retry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="17.0dip" android:text="重新下单" style="@style/NovaWeightButtonTheme" />
+</LinearLayout>

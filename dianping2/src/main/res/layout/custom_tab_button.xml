@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton android:textSize="@dimen/text_very_small" android:textColor="@color/tab_text_color" android:ellipsize="none" android:gravity="center" android:background="@drawable/tab_indicator_check" android:layout_width="0.0px" android:layout_height="fill_parent" android:button="@null" android:singleLine="true" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

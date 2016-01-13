@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/otel_roomtype_list_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/hotel_roomtype_list_dateview" android:visibility="gone" layout="@layout/search_date_header_view" />
+            <ListView android:id="@id/hotel_roomtype_list_typelist" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/hotel_layout_time" />
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/content_shop" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tabs" android:background="@drawable/appbar_detailpage_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/deep_gray" android:gravity="center" android:id="@id/cooperation" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/tabs" />
+        <include android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" layout="@layout/shopinfo_titlebar" />
+        <com.dianping.widget.MyScrollView android:id="@id/shopinfo_scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/cooperation" android:layout_below="@id/titlebar">
+            <LinearLayout android:orientation="vertical" android:id="@android:id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.dianping.widget.MyScrollView>
+    </RelativeLayout>
+</FrameLayout>

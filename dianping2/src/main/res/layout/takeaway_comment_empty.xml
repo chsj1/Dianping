@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_page_comments" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/deep_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="还没有外卖点评" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/font_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="等你来点单，评价一下哦" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_20" android:textColor="@color/text_gray" android:id="@id/shop_review_entr" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:text="去看到店点评" style="@style/NovaLightButtonTheme" />
+</LinearLayout>

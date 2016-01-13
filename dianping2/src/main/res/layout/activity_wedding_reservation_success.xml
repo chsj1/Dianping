@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/wedding_reservation_success_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip">
+        <ImageView android:layout_gravity="center" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_wedding_check_bg" />
+        <TextView android:textSize="@dimen/text_large" android:textStyle="bold" android:textColor="@color/orange" android:id="@id/congratulation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5.0dip" style="@style/TableItemWithPadding" />
+        <TextView android:textSize="@dimen/text_large" android:textColor="@color/orange" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请留意您的手机，我们将通知商户尽快与您联系。" style="@style/TableItemWithPadding" />
+    </LinearLayout>
+    <View android:background="@color/light_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/text_medium" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="工作时间：周一至周日10:00-22:00\n温馨提示:如有任何疑问请拨打客服电话\n400-820-5527" android:lineSpacingExtra="10.0dip" style="@style/TableItemWithPadding" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:layout_gravity="center|right|top" android:id="@id/guidance_newcomer_skip" android:background="@drawable/screen_skip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:text="跳过" android:drawableRight="@drawable/detail_icon_arrow"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

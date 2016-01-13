@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.TableView android:background="@drawable/table_view_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/event_info_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/deal_info_padding_left" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/deal_info_padding_right" android:layout_marginBottom="10.0dip" />
+        <RelativeLayout android:paddingLeft="@dimen/deal_info_padding_left" android:paddingTop="20.0dip" android:paddingRight="@dimen/deal_info_padding_right" android:paddingBottom="@dimen/table_item_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/dark_black" android:id="@id/region_name" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_18" android:textStyle="bold" android:textColor="@color/dark_black" android:id="@id/short_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/region_name" android:layout_alignTop="@id/region_name" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_hint" android:textColor="@color/text_color_gray" android:ellipsize="end" android:gravity="center|left" android:id="@id/title" android:paddingLeft="@dimen/deal_info_padding_left" android:paddingRight="@dimen/deal_info_padding_right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.2" />
+        <ImageView android:id="@id/event_and_refund_divider" android:paddingLeft="@dimen/deal_info_padding_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/gray_horizontal_line" android:scaleType="fitXY" />
+        <com.dianping.base.tuan.widget.RefundSupport android:id="@id/refund_support" android:paddingLeft="@dimen/deal_info_padding_left" android:paddingRight="@dimen/deal_info_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" style="@style/TableItemWithPadding" />
+        <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:id="@id/count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="3.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/dark_black" android:id="@id/remain_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="3.0dip" />
+        </LinearLayout>
+        <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/setting_tuan_item_divider_2" android:scaleType="fitXY" />
+    </LinearLayout>
+</com.dianping.base.widget.TableView>

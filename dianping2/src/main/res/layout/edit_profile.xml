@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:background="@color/gray_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_height">
+            <com.dianping.widget.view.NovaLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/img" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/SingleLineTableItemWithPadding">
+                <com.dianping.base.widget.CircleImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="58.0dip" android:layout_height="58.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/editprofile_blue" android:gravity="center|right" android:id="@id/icon_setting" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="修改头像" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/arrow" />
+            </com.dianping.widget.view.NovaLinearLayout>
+            <com.dianping.widget.DPBasicItem android:id="@id/name" dp:dptitle="昵称" dp:subTitle="" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/telephone" dp:dptitle="手机号" dp:subTitle="" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/password" dp:dptitle="密码" dp:subTitle="修改" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/openid" dp:dptitle="第三方账号绑定" dp:subTitle="" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/user_section_height" />
+            <com.dianping.widget.DPBasicItem android:id="@id/grade" dp:dptitle="我的等级" dp:subTitle="" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/vip" dp:dptitle="会员身份" dp:subTitle="成为VIP 享特权" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/user_section_height" />
+            <com.dianping.widget.DPBasicItem android:id="@id/sex" dp:dptitle="性别" dp:subTitle="" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.widget.DPBasicItem android:id="@id/residence" dp:dptitle="常居地" dp:subTitle="未设置" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/user_section_height" />
+            <com.dianping.widget.DPBasicItem android:id="@id/address" dp:dptitle="收货地址" dp:subTitle="修改/添加" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+            <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/user_section_height" />
+            <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_large" android:textColor="#ffffffff" android:id="@id/exitid" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="退出登录" style="@style/NovaWeightButton" />
+        </com.dianping.base.widget.TableView>
+    </ScrollView>
+</merge>

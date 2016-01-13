@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:id="@id/moviedetail" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/banner_stub" android:layout="@layout/movie_banner" android:inflatedId="@id/movie_banner_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/layer_movie_info" android:background="@drawable/list_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.movie.view.MovieInfoView android:id="@id/movie_info_view" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_moviediscountdesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+</com.dianping.widget.view.NovaLinearLayout>

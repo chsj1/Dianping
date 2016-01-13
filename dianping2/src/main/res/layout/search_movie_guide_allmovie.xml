@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.widget.SearchMovieDirectZoneAllMovie android:gravity="center" android:orientation="horizontal" android:background="@color/common_bk_color" android:clickable="true" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_gray" android:ellipsize="end" android:gravity="center" android:id="@id/txt_search_movie_more" android:layout_width="wrap_content" android:layout_height="112.0dip" android:text="全部电影全部电影全部电影" android:maxLines="6" android:ems="1" />
+</com.dianping.search.widget.SearchMovieDirectZoneAllMovie>

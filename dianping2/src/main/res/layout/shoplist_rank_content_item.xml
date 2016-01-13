@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.search.widget.ShopListRankContentItem android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/list_item" android:paddingLeft="3.0dip" android:paddingTop="10.0dip" android:paddingRight="3.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.NetworkThumbView android:id="@id/icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/deep_gray" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_red" android:id="@id/count" android:background="@drawable/background_round_textview_lightred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="120.0dip" android:singleLine="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/detail_icon_arrow" />
+</com.dianping.search.widget.ShopListRankContentItem>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/review_more_bg_color" android:gravity="center_horizontal" android:id="@id/scan_tips" android:background="@drawable/ugc_scan_background_line" android:paddingTop="44.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_scan_tip" android:layout_alignParentTop="true" android:lineSpacingExtra="8.0dip" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/manual_input_container" android:background="@color/scan_background" android:paddingTop="39.0dip" android:paddingBottom="45.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/review_more_bg_color" android:gravity="center" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_manual_tip" />
+                <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_17" android:textColor="@color/review_more_bg_color" android:layout_gravity="center_horizontal" android:id="@id/manualinput" android:background="@drawable/ugc_scan_background_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_manual_button" />
+            </LinearLayout>
+            <com.dianping.selectdish.ui.SelectDishesViewfinderView android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/manual_input_container" android:layout_below="@id/scan_tips" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

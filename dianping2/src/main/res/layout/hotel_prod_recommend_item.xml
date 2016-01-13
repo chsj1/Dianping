@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_dot" android:layout_width="5.299988dip" android:layout_height="5.299988dip" android:layout_marginTop="6.5dip" android:src="@drawable/hotel_prod_recommend_dot" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tuan_common_black" android:id="@id/recommend_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/item_dot" android:lineSpacingExtra="6.0dip" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.movie.view.CinemaListItemWithSelectedMovie android:orientation="vertical" android:id="@id/cinema_item" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/movie_cinema_list_item_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="2.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/layer_minprice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/light_red" android:id="@id/minprice_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_gray" android:id="@id/minprice_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="起" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/light_gray" android:id="@id/cinema_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3km" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/light_gray" android:id="@id/cinema_region" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:singleLine="true" android:layout_toLeftOf="@id/cinema_distance" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/layer_discountlabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/layer_minprice" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_light_gray" android:ellipsize="end" android:id="@id/tv_movieon_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_movieshow_express_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+        <View android:background="@color/inner_divider" android:layout_width="0.0px" android:layout_height="0.5dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_light_gray" android:gravity="center_horizontal" android:id="@id/tv_movieshow_express_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="今天场次" />
+        <View android:background="@color/inner_divider" android:layout_width="0.0px" android:layout_height="0.5dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <HorizontalScrollView android:id="@id/sv_movieshow_express" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_movieshows" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <View android:id="@id/bottom_divider_line" android:background="@color/wm_border_gray" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</com.dianping.movie.view.CinemaListItemWithSelectedMovie>

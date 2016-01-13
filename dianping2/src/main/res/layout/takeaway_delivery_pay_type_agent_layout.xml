@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/wm_list_bkg" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/paytype_online" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" layout="@layout/takeaway_paytype_item" />
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <include android:id="@id/paytype_facetoface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" layout="@layout/takeaway_paytype_item" />
+    </LinearLayout>
+    <View android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</LinearLayout>

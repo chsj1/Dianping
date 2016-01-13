@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.DPBasicItem android:id="@id/shopName_item" android:background="@color/white" android:layout_width="0.0dip" android:layout_weight="1.0" dp:dptitle="名称" dp:input_hint="输入商户名称" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/name_delete_btn" android:background="@drawable/icon_close" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.dianping.widget.DPBasicItem android:id="@id/address_item" android:background="@color/white" android:layout_width="0.0dip" android:layout_weight="1.0" dp:dptitle="地址" dp:input_hint="添加商户地址" dp:title_textType="black_color" style="@style/SingleLineTableItemWithPadding" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/address_clear_btn" android:background="@drawable/icon_close" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_get_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <View android:layout_gravity="center_vertical" android:background="@color/line_gray" android:layout_width="1.0px" android:layout_height="30.0dip" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/btn_hint_addr" android:background="@drawable/icon_location_mapchoose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.dianping.widget.DPBasicItem android:id="@id/channel_item" android:background="@color/white" android:layout_width="fill_parent" dp:dptitle="分类" dp:input_hint="选择商户类型" dp:clickable="true" dp:title_textType="black_color" dp:subTitle_textType="gray_color" style="@style/SingleLineTableItemWithPadding" />
+    <com.dianping.base.widget.TableHeader android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

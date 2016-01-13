@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.shoplist.widget.ShopListItem android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/shop_item" android:background="@drawable/list_item" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/basic_checkbox" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/thumb_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="8.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip">
+            <com.dianping.base.widget.NetworkThumbView android:id="@android:id/icon" android:background="@drawable/shop_item_img_border" android:padding="1.0dip" android:layout_width="102.0dip" android:layout_height="74.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading_b" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="true" />
+            <TextView android:textStyle="italic" android:textColor="@color/white" android:gravity="center" android:id="@id/paiming" android:background="@color/yellow_3" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:text="2" android:layout_alignLeft="@android:id/icon" android:layout_alignTop="@android:id/icon" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center|left|top" android:id="@id/food_authority_tags" android:paddingTop="1.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxWidth="90.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center|left|top" android:id="@id/ad_brand_tag" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="10.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="10.0dip" android:maxWidth="90.0dip" android:singleLine="true" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/right_part" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:paddingTop="2.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+            <include layout="@layout/shop_icon_layout" />
+            <include layout="@layout/new_shop_icon_layout" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/clickable_light_gray" android:id="@id/text_alt_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="2.0dip">
+            <com.dianping.base.widget.ShopPower android:layout_gravity="center_vertical" android:id="@id/shop_power" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/deep_gray" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@android:id/text2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/deep_gray" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/tv_score" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/light_red" android:layout_gravity="center_vertical" android:id="@id/tv_discount" android:background="@drawable/background_round_textview_lightred" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:maxWidth="60.0dip" android:singleLine="true" />
+            <ImageView android:layout_gravity="center|right" android:id="@id/newshop" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/label_newshop" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/place_range_line" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/clickable_light_gray" android:ellipsize="end" android:id="@id/text_place" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/clickable_light_gray" android:id="@id/text_range" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:id="@id/line3_text3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/clickable_light_gray" android:ellipsize="end" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/clickable_light_gray" android:id="@id/text4" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="180.0dip" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/clickable_light_gray" android:id="@id/tv_ad" android:padding="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <View android:id="@id/oversea_line" android:background="@drawable/dash_line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginTop="7.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/oversea_tags" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/clickable_light_gray" android:ellipsize="end" android:id="@id/other_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</com.dianping.base.shoplist.widget.ShopListItem>

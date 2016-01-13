@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/hotel_calender_select" />
+    <corners android:topLeftRadius="30.0dip" android:topRightRadius="30.0dip" android:bottomLeftRadius="30.0dip" android:bottomRightRadius="30.0dip" />
+    <gradient android:startColor="@color/hotel_calender_select" android:endColor="@color/hotel_calender_select" android:angle="90.0" />
+</shape>

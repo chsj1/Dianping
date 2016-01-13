@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/takeaway_bg_operate_item_line_both" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_icon_addadress_normal" />
+        <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/light_red" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="新增送餐地址" />
+    </LinearLayout>
+    <View android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</com.dianping.widget.view.NovaLinearLayout>

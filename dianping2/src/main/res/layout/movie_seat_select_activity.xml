@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/deep_black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:ellipsize="end" android:id="@id/movie_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:id="@id/show_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffe1e1e1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可选" android:drawableLeft="@drawable/movie_seat_color_rest" android:drawablePadding="5.0dip" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="已选" android:drawableLeft="@drawable/movie_seat_color_selected" android:drawablePadding="5.0dip" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="已售" android:drawableLeft="@drawable/movie_seat_color_sold" android:drawablePadding="5.0dip" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="情侣座" android:drawableLeft="@drawable/movie_seat_color_lovers" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bottom_btn_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:background="@drawable/table_view_item_with_line" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+                <com.dianping.base.tuan.widget.RMBLabelItem android:textSize="@dimen/text_size_20" android:textColor="@color/light_red" android:id="@id/sum_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/selected_seat_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toLeftOf="@id/sum_money" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/light_red" android:id="@id/select_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/sum_money" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.dianping.widget.view.NovaButton android:textSize="@dimen/text_size_20" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/commitorder" android:background="@drawable/btn_movie_submitorder_bg" android:focusable="false" android:layout_width="130.0dip" android:layout_height="54.0dip" android:text="请选座位" android:layout_alignParentRight="true" />
+                <include android:id="@id/ticket_phone" layout="@layout/movie_custom_edit_text" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_btn_layer">
+            <com.dianping.movie.view.MovieSelectSeatView android:id="@id/movie_select_seat_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/loading_retry_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

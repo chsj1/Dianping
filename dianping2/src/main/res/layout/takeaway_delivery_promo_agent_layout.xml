@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_gray" android:id="@id/activity_tips" android:background="@color/common_bk_color" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="选择一种优惠" />
+    <LinearLayout android:orientation="vertical" android:id="@id/activity_view" android:background="@drawable/wm_list_bkg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/dp_activity_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/takeaway_delivery_promo_activity_item" />
+        <View android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+        <include android:id="@id/eleme_activity_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/takeaway_delivery_promo_activity_item" />
+    </LinearLayout>
+    <View android:background="@color/common_bk_color" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+</LinearLayout>

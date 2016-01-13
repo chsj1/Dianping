@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.fastloginview.FastLoginView android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.base.widget.TableView android:orientation="vertical" android:id="@id/input_roots" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/phonenum" layout="@layout/custom_edit_text" />
+    </com.dianping.base.widget.TableView>
+    <include android:id="@id/verificode" layout="@layout/custom_edit_text" />
+</com.dianping.base.widget.fastloginview.FastLoginView>

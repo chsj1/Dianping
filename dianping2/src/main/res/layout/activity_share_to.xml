@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lay_share_bg" android:background="#60000000" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_share" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/tv_share" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:text="分享到" />
+        <com.dianping.widget.view.NovaGridView android:id="@id/gv_share" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="4" />
+    </LinearLayout>
+</RelativeLayout>

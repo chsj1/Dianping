@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ugc_photo_paster_item_view" android:background="@drawable/ugc_photo_paster_item_backgrround" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:layout_gravity="center" android:id="@id/ugc_photo_paster_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/placeholder_loading_b" dp:placeholderLoading="@drawable/placeholder_loading_b" dp:placeholderError="@drawable/placeholder_loading_b" />
+</LinearLayout>

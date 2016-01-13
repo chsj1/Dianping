@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:layout_gravity="center" android:id="@id/title_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaRelativeLayout android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="5.0dip">
+        <View android:id="@id/hint" android:background="@drawable/category_indicator" android:layout_width="2.0dip" android:layout_height="12.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/tuan_home_text_13" android:textColor="@color/text_gray_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/hint" android:layout_centerVertical="true" />
+    </com.dianping.widget.view.NovaRelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/tuan_home_divider" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

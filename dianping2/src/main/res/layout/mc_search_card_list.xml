@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/deal_filter_button_height" android:cacheColorHint="#00000000" style="@style/CustomListItem" />
+    <FrameLayout android:layout_gravity="top" android:id="@id/fliter_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/empty" android:background="@drawable/main_background" android:paddingTop="@dimen/deal_filter_button_height" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

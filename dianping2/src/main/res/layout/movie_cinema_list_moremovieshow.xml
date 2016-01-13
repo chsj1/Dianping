@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="horizontal" android:id="@id/cinema_item" android:background="@drawable/movie_cinema_show_expressbg" android:focusable="false" android:layout_width="88.0dip" android:layout_height="84.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_info" android:textColor="@color/text_color_light_gray" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_movie_cinema_today_time" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="查看更多" android:layout_weight="1.0" />
+    <ImageView android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/movie_gradient_vertical_line" />
+</com.dianping.widget.view.NovaLinearLayout>

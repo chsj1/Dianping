@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.shopinfo.widget.ShopInfoServiceItemView android:id="@id/common_item" android:background="@drawable/list_item" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/common_item_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <com.dianping.widget.NetworkImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/common_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:minWidth="22.0dip" android:minHeight="22.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/common_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/common_item_icon" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/common_item_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/inner_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</com.dianping.shopinfo.widget.ShopInfoServiceItemView>

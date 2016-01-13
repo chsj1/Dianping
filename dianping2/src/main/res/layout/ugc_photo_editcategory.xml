@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/photo_editcategory_select_layout" android:background="@color/photo_edit_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ugc_photo_editcategory_title" />
+    <RelativeLayout android:id="@id/photo_editcategory_select_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/photo_select_catetories" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/photo_edit_moving_circle" android:gravity="center_horizontal" android:id="@id/photo_editcategory_select_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ugc_photo_select_category" android:layout_above="@id/photo_select_catetories" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include layout="@layout/ugc_photo_editcategory_dish" />
+    <include layout="@layout/ugc_photo_editcategory_others" />
+    <include layout="@layout/ugc_photo_edit_community_poi" />
+    <include layout="@layout/ugc_photo_edit_community_tag" />
+</FrameLayout>

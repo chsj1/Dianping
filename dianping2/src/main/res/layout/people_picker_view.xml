@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.booking.view.PeoplePickerView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.NumberPicker android:id="@id/numberPicker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/NPWidget.Holo.NumberPicker" />
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="人" android:layout_toRightOf="@id/numberPicker" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.dianping.booking.view.PeoplePickerView>

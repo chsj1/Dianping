@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:layout_gravity="center" android:id="@id/cinema_morecomment" android:background="@drawable/list_item" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/middle_divder_line" android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="查看更多点评" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

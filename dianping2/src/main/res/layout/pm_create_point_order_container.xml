@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.dianping.base.widget.DPScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_view" android:layout_below="@id/top_view">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include android:id="@id/loading" android:visibility="gone" layout="@layout/loading_item_fullscreen" />
+            <include android:id="@id/error" android:visibility="gone" layout="@layout/error_item" />
+        </FrameLayout>
+    </com.dianping.base.widget.DPScrollView>
+</RelativeLayout>

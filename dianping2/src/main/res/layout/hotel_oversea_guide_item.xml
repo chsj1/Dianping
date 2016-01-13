@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/flipper_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/title" android:background="@drawable/hotel_oversea_guide_item_top" android:paddingTop="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                <TextView android:textSize="@dimen/text_size_20" android:textColor="#ff333333" android:gravity="center" android:id="@id/region_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffff6633" android:gravity="bottom" android:id="@id/hot_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="55.0dip" android:layout_marginTop="3.0dip" android:layout_below="@id/region_name" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/text_size_13" android:textColor="#ff999999" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:text="游客住这里" android:layout_toRightOf="@id/hot_rate" android:layout_below="@id/region_name" />
+                <TextView android:textSize="@dimen/text_size_13" android:textColor="#ff999999" android:gravity="center" android:id="@id/nearby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/indicator" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_40" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|left" android:id="@id/letter" android:background="@drawable/hotel_oversea_guide_item_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_alignParentLeft="true" />
+        </FrameLayout>
+        <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/hotel_oversea_guide_item_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:background="@drawable/hotel_oversea_guide_item_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/divider_1" android:background="@drawable/hotel_oversea_guide_line" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0px" android:layout_marginRight="25.0px" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/landmark_content" android:background="@drawable/hotel_oversea_guide_item_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/hotel_icon_locate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35.0px" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="#ff333333" android:gravity="center|left" android:layout_gravity="center|left" android:id="@id/landmark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0px" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+        <FrameLayout android:orientation="horizontal" android:id="@id/landmark_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/hotel_oversea_guide_item_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:background="@drawable/hotel_oversea_guide_item_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/divider_2" android:background="@drawable/hotel_oversea_guide_line" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0px" android:layout_marginRight="25.0px" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/hotel_oversea_guide_item_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/review_list" android:background="@drawable/hotel_oversea_guide_item_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:id="@id/button" android:background="@drawable/btn_weight_hotel_index" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="60.0px" android:layout_marginTop="30.0px" android:layout_marginRight="60.0px" android:layout_marginBottom="30.0px" android:text="住这里" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

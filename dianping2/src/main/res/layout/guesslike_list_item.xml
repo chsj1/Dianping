@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.home.GuessLikeListItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dp="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_selector_background"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/root_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10.0dip">
+
+        <FrameLayout
+            android:id="@id/deal_item_icon_frame"
+            android:layout_width="@dimen/home_deal_list_image_width"
+            android:layout_height="@dimen/home_deal_list_image_height"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true">
+
+            <CheckBox
+                android:id="@id/deal_item_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:button="@drawable/checkbox_normal"
+                android:clickable="false"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <com.dianping.base.widget.NetworkThumbView
+                android:id="@id/deal_item_icon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                dp:isCorner="true"
+                dp:placeholderEmpty="@drawable/placeholder_empty"
+                dp:placeholderError="@drawable/placeholder_error"
+                dp:placeholderLoading="@drawable/placeholder_loading_b" />
+
+            <ImageView
+                android:id="@id/deal_item_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left|top"
+                android:layout_marginTop="5.0dip"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@id/deal_item_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@id/deal_item_top_info"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/deal_item_title"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1.0"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/clickable_deep_black"
+                        android:textSize="@dimen/home_titlesize_larger" />
+
+                    <ImageView
+                        android:id="@id/ic_tuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|left"
+                        android:layout_marginBottom="2.0dip"
+                        android:padding="2.0dip"
+                        android:src="@drawable/ic_tuan_small"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@id/ic_promo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|left"
+                        android:layout_marginBottom="2.0dip"
+                        android:padding="2.0dip"
+                        android:src="@drawable/ic_promo_small"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@id/ic_book"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|left"
+                        android:layout_marginBottom="2.0dip"
+                        android:padding="2.0dip"
+                        android:src="@drawable/ic_book_small"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@id/ic_sceneryorder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center|left"
+                        android:layout_marginBottom="2.0dip"
+                        android:padding="2.0dip"
+                        android:src="@drawable/ic_sceneryorder_small"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/deal_item_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end|center"
+                    android:textColor="@color/tuan_common_gray"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+
+            <com.dianping.base.widget.ShopPower
+                android:id="@id/shop_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center|left"
+                android:paddingBottom="2.0dip"
+                android:paddingLeft="2.0dip"
+                android:paddingTop="2.0dip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@id/deal_item_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:lineSpacingExtra="1.0dip"
+                android:maxLines="2"
+                android:textColor="@color/text_color_gray"
+                android:textSize="@dimen/home_subtitlesize" />
+
+            <LinearLayout
+                android:id="@id/guesslikeitem_bottom_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@id/deal_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="3.0dip"
+                    android:gravity="bottom"
+                    android:padding="0.0dip"
+                    android:textColor="@color/tuan_common_orange"
+                    android:textSize="@dimen/home_titlesize_more_larger"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@id/deal_item_tags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3.0dip"
+                    android:layout_marginRight="3.0dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/deal_info_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/search_ad_icon_rest"
+                    android:visibility="gone" />
+
+                <com.dianping.base.widget.AutoInvisibleTextView
+                    android:id="@id/deal_item_rec_text"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="none"
+                    android:gravity="center|right"
+                    android:singleLine="true"
+                    android:textColor="@color/tuan_common_gray"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@id/item_foot_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="10.0dip"
+        android:background="@color/inner_divider" />
+</com.dianping.main.home.GuessLikeListItem>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/hotel_roomdetail_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/hotel_roomdetail_bar" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:paddingLeft="25.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                    <TextView android:textSize="@dimen/text_size_30" android:textColor="#ffff5000" android:layout_gravity="center_vertical" android:id="@id/hotel_roomdetail_text_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                        <TextView android:textSize="@dimen/text_very_small" android:textColor="#ff878787" android:id="@id/hotel_roomdetail_text_tax" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="0.0dip" />
+                        <TextView android:textSize="@dimen/text_very_small" android:textColor="#ffff5000" android:id="@id/hotel_roomdetail_text_refund" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="0.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textSize="@dimen/text_size_20" android:id="@id/hotel_roomdetail_button_book" android:paddingLeft="46.0dip" android:paddingTop="10.0dip" android:paddingRight="46.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预订" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/BookButtonTheme" />
+            </RelativeLayout>
+            <ImageView android:id="@id/hotel_roomdetail_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <com.dianping.base.widget.ListViewWithScrollChild android:id="@id/hotel_roomdetail_list" android:background="@null" android:paddingTop="0.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:layout_above="@id/hotel_roomdetail_bar" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <include android:id="@id/hotel_roomdetail_empty" android:visibility="gone" layout="@layout/hotel_roomtype_empty" />
+</FrameLayout>

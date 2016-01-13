@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/search_layout_guide_bg" android:background="@drawable/guide_keyword_bar_background" android:paddingLeft="4.0dip" android:paddingRight="6.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginRight="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/basesearch_shoplist_title_text_tag_size" android:textColor="@color/text_gray" android:gravity="center" android:id="@id/search_bar_guide_text" android:paddingLeft="2.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="6.0dip" android:singleLine="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ImageView android:id="@id/search_iv_close" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/search_ic_close" android:layout_centerVertical="true" />
+</LinearLayout>

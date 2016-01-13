@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.TableView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/order_discount" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:item_title="使用抵扣" dp:item_titleSize="@dimen/text_size_hint" dp:item_titleColor="@color/text_color_gray" dp:item_subTitleSize="@dimen/text_size_hint" dp:item_subTitleColor="@color/text_color_black" style="@style/TableItemWithPadding" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/order_id" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:item_title="订单编号" dp:item_titleSize="@dimen/text_size_hint" dp:item_titleColor="@color/text_color_gray" dp:item_subTitleSize="@dimen/text_size_hint" dp:item_subTitleColor="@color/text_color_black" style="@style/TableItemWithPadding" />
+        <com.dianping.base.tuan.widget.BasicSingleItem android:id="@id/order_time" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" dp:item_title="下单时间" dp:item_titleSize="@dimen/text_size_hint" dp:item_titleColor="@color/text_color_gray" dp:item_subTitleSize="@dimen/text_size_hint" dp:item_subTitleColor="@color/text_color_black" style="@style/TableItemWithPadding" />
+    </LinearLayout>
+    <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/order_detail_agents_divider_height" />
+</com.dianping.base.widget.TableView>

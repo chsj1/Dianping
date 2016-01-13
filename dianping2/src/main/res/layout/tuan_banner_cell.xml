@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaFrameLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/white_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="122.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/banner_info_rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/title_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/text_size_16" android:ellipsize="end" android:gravity="left" android:layout_gravity="left" android:id="@id/banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="6" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_gray_color" android:ellipsize="end" android:gravity="left" android:layout_gravity="left" android:id="@id/banner_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="6" android:singleLine="true" />
+        </LinearLayout>
+        <AbsoluteLayout android:layout_width="wrap_content" android:layout_height="69.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/title_ll" android:layout_centerHorizontal="true">
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" android:layout_y="7.0dip" />
+            <com.dianping.imagemanager.DPNetworkImageView android:id="@id/tag" android:layout_width="25.0dip" android:layout_height="25.0dip" android:scaleType="fitXY" android:layout_x="42.0dip" />
+        </AbsoluteLayout>
+    </RelativeLayout>
+    <ImageView android:gravity="center" android:layout_gravity="center" android:background="@drawable/banner_cell_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+</com.dianping.widget.view.NovaFrameLayout>

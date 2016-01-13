@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/deep_gray" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/dish_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="17.0dip" android:maxLines="2" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/evaluate_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:src="@drawable/wm_evaluation_love_normal" />
+</LinearLayout>

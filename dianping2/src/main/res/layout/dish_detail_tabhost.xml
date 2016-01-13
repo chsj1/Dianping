@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:id="@id/shoplist" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/deap_light_black" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.dianping.widget.view.NovaLinearLayout>
+</TabHost>

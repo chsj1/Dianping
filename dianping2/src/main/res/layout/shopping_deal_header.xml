@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.base.widget.NetworkPhotoView android:id="@id/header_photo" android:background="@drawable/tuan_load_fail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerHorizontal="true" dp:placeholderError="@drawable/tuan_load_fail" />
+        <ImageView android:id="@id/shop_panel_cover_image" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shopping_deal_header_mask" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/tag" android:background="@drawable/shopping_tag_sale_bg" android:paddingLeft="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:maxEms="4" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="right" android:id="@id/count" android:background="@drawable/shopping_count_bg" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:maxLines="1" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+            <TextView android:textSize="@dimen/text_size_21" android:textColor="@color/white" android:ellipsize="end" android:id="@id/title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:ellipsize="end" android:id="@id/desc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

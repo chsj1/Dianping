@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/coupon_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" />
+        <include android:id="@id/coupon_info" layout="@layout/layout_coupon_info" />
+        <LinearLayout android:orientation="vertical" android:id="@id/refund_process" android:background="@drawable/table_view_item" android:layout_width="fill_parent" android:layout_height="38.0dip">
+            <ImageView android:background="#fff3d08c" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/text_size_hint" android:textColor="#ffe58f1f" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/refund_latest" android:background="#fffff3db" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="[退款进度]:点评审核处理中，点击查看退款详情>>" android:singleLine="true" />
+            <ImageView android:background="#fff3d08c" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

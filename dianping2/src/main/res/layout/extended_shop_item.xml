@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.shoplist.widget.ExtendedShopListItem android:orientation="vertical" android:id="@id/extended_shop_item" android:background="@drawable/list_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_divider" android:background="@color/common_bk_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <View android:id="@id/top_line" android:background="@color/inner_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <include layout="@layout/shop_item" />
+    <View android:id="@id/inner_line" android:background="@color/inner_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="94.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/extended_list" android:paddingLeft="94.0dip" android:paddingTop="2.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/bottom_line" android:background="@color/common_bk_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <View android:id="@id/bottom_divider" android:background="@color/common_bk_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+</com.dianping.base.shoplist.widget.ExtendedShopListItem>

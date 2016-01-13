@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.hui.view.HuiBuffetItem android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:gravity="center_vertical" android:id="@id/tv_self_meal_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:height="45.0dip" android:maxEms="15" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_disable" android:gravity="center_vertical" android:id="@id/tv_self_meal_status" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17.0dip" android:text="不可用" android:height="45.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="17.0dip">
+        <com.dianping.base.tuan.widget.RMBLabelItem android:id="@id/cur_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" dp:style_price="style3" dp:usage="now" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:id="@id/tv_buffet_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="3.0dip" android:text="/位" android:layout_toRightOf="@id/cur_price" android:layout_alignBottom="@id/cur_price" />
+        <com.dianping.base.tuan.widget.RMBLabelItem android:id="@id/origin_price" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/tv_buffet_unit" android:layout_alignBottom="@id/tv_buffet_unit" dp:style_price="style4" dp:usage="origin" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:id="@id/tv_self_meal_origin_price_unit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="/位" android:layout_toRightOf="@id/origin_price" android:layout_alignBottom="@id/tv_buffet_unit" />
+        <com.dianping.hui.view.Operator android:gravity="center_vertical" android:id="@id/buffet_operator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_self_use_rule" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" />
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="17.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_more_self_rule" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <TextView android:textSize="@dimen/text_size_17" android:gravity="center_horizontal" android:id="@id/tv_buffet_rule_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多信息" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_self_meal_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/navibar_arrow_down" android:layout_toRightOf="@id/tv_buffet_rule_more" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</com.dianping.hui.view.HuiBuffetItem>

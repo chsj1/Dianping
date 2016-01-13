@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.main.find.pictureplaza.PlazaTopicGridViewItem android:gravity="center_vertical" android:background="@drawable/find_list_item" android:layout_width="78.0dip" android:layout_height="78.0dip" android:layout_margin="4.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.imagemanager.DPNetworkImageView android:id="@android:id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" dp:isSquare="true" dp:forceDownload="true" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+    <FrameLayout android:background="@drawable/found_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:maxLines="2" />
+</com.dianping.main.find.pictureplaza.PlazaTopicGridViewItem>

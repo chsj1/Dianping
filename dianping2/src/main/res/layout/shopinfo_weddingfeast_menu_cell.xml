@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.ShopinfoCommonCell android:orientation="vertical" android:background="@color/white_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/weddingfeast_menu_cell" android:background="@drawable/table_view_item" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/menu_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="婚宴菜单" android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/menu_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_toLeftOf="@id/indicator" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.dianping.base.widget.ShopinfoCommonCell>

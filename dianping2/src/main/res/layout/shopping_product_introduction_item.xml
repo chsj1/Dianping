@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_gray_color" android:gravity="center_vertical" android:id="@id/intro" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <com.dianping.base.widget.NetworkPhotoView android:id="@id/intro_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="140.0dip" android:layout_marginTop="10.0dip" android:scaleType="centerCrop" dp:placeholderError="@drawable/tuan_load_fail" />
+</com.dianping.widget.view.NovaLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/dark_gray" android:id="@id/order_refund_method_text" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退款方式" />
+    <com.dianping.base.widget.TableView android:id="@id/order_refund_method_table" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TableItem" />
+</LinearLayout>

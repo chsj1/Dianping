@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/detail_panel" android:background="@color/white" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_gray" android:gravity="left" android:id="@id/label_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:text="退款金额:" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/light_red" android:gravity="left" android:id="@id/text_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_gray" android:gravity="left" android:id="@id/label_quantity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:text="退款数量:" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:gravity="left" android:id="@id/text_quantity" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_gray" android:gravity="left" android:id="@id/label_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:text="退回账户:" />
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_black" android:gravity="left" android:id="@id/text_account" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@drawable/divider_gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/tuan_common_gray" android:id="@id/title_refund_flow" android:paddingTop="15.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="退款流程" />
+        <View android:id="@id/divider_line" android:background="@drawable/divider_gray_horizontal_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/refund_flow_panel" android:background="@color/white" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

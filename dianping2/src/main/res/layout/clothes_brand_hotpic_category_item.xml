@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_size_14" android:textColor="@color/review_tag_textcolor" android:gravity="center" android:id="@id/category" android:background="@drawable/review_table_item" android:layout_width="fill_parent" android:layout_height="30.0dip" android:singleLine="true" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

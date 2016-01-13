@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_20" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单提交成功" android:drawableLeft="@drawable/common_indicator_icon_complete" />
+    <TextView android:textSize="@dimen/text_medium_1" android:id="@id/orderNum" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="订单号：T121232132131" />
+    <TextView android:textSize="@dimen/text_medium" android:id="@id/notice" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取票人手机将收到确认短信，请凭此短信直接到指定的售票窗口按照订单价格付款购买" />
+    <Button android:id="@id/viewOrder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="查看订单" style="@style/NovaLightButton" />
+    <Button android:id="@id/backToShop" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="返回商户" style="@style/NovaLightButton" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/content_using_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用时间：" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/using_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="周一到周五 11:00-12:00" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content_rules" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="使用规则：" />
+        <LinearLayout android:orientation="vertical" android:id="@id/rules" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/content_valid_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/deep_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="有效期：" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_gray" android:id="@id/valid_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2014-11-01至2015-11-01" />
+    </LinearLayout>
+</LinearLayout>

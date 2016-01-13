@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/select_hotel_time" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="18.0dip" android:src="@drawable/detail_booking_icon" android:minWidth="22.0dip" android:minHeight="22.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <com.dianping.widget.view.NovaTextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_dail_hotel" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/gray" android:gravity="top" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="该酒店暂无报价，你可以电话咨询酒店" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

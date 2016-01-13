@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frameLayout" android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.membercard.utils.ListViewWithViewPager android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/common_bk_color" style="@style/CustomListItem" />
+    <ListView android:layout_gravity="bottom|center|right" android:id="@id/index_list" android:background="@drawable/main_background" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:cacheColorHint="#00000000" android:divider="@null" />
+    <TextView android:textSize="@dimen/text_size_22" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center|right" android:id="@android:id/title" android:background="#99000000" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="40.0dip" android:text="1F" />
+    <include android:id="@id/float_head_shop_type" android:visibility="gone" layout="@layout/mc_shop_type_layout" />
+</FrameLayout>

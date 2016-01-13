@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/title_bar_layout"
+        style="?android:attr/windowTitleBackgroundStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.dianping.widget.TopCropImageView
+        android:id="@id/listview_skin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar_layout"
+        android:scaleType="matrix"
+        android:src="@drawable/main_home_background"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@id/anim_Layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar_layout" />
+
+    <com.dianping.widget.pulltorefresh.PullToRefreshRecyclerView
+        android:id="@id/main_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar_layout"
+        android:background="@color/transparent" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/booking_shoplist_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@null" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/booking_shoplist_empty" android:background="@drawable/main_background" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/empty_page_search" />
+        <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:id="@id/empty_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="没有找到合适的商户喔" android:layout_toRightOf="@id/empty_icon" />
+        <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="请更改筛选条件" android:layout_toRightOf="@id/empty_icon" android:layout_below="@id/empty_tip" android:layout_alignLeft="@id/empty_tip" />
+    </RelativeLayout>
+</FrameLayout>

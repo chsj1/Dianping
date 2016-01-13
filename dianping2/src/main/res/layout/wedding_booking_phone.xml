@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:orientation="horizontal" android:id="@id/tel" android:background="@drawable/clickable_white_to_gray" android:layout_width="fill_parent" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_1" android:ellipsize="end" android:id="@id/product_phone" android:paddingLeft="@dimen/shopinfo_marginleft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.1" />
+    <TextView android:textSize="@dimen/text_medium" android:ellipsize="end" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@id/product_window_arrow_right" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/product_window_arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/shopinfo_marginright" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

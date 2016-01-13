@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.base.widget.ToolbarButton android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.dianping.base.widget.ToolbarImageButton android:id="@android:id/icon" android:background="@null" android:duplicateParentState="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/shopinfo_bottombar_text_color" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/center" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/message" android:background="@drawable/shop_toolbar_bg_round_textview_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="7.0dip" android:singleLine="true" android:layout_alignLeft="@id/center" android:layout_alignBottom="@id/center" />
+    <View android:background="@color/inner_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" />
+</com.dianping.base.widget.ToolbarButton>

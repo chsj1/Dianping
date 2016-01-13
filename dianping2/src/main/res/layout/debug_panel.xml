@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.base.widget.TableView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/text_size_18" android:id="@id/gogo_dianping" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="一键点评" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/text_size_18" android:id="@id/gogo_51ping" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="一键beta" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/text_size_18" android:id="@id/gogo_ppe" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="一键ppe" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/text_size_18" android:id="@id/gogo_mock" android:layout_width="0.0px" android:layout_height="fill_parent" android:text="mock" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.widget.DPBasicItem android:id="@id/domain_selector_item" dp:dptitle="域名选择" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/entranceip_selector_item" dp:dptitle="其他入口地址选择" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/clear_mapi_cache" dp:dptitle="删除MAPI缓存" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <LinearLayout android:orientation="horizontal" style="@style/SingleLineTableItemWithLeftPadding">
+            <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="模拟5秒网络延时" android:layout_weight="1.0" />
+            <ToggleButton android:id="@id/debug_network_delay" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" style="@style/SingleLineTableItemWithLeftPadding">
+            <TextView android:textSize="18.0sp" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="模拟50%网络错误" android:layout_weight="1.0" />
+            <ToggleButton android:id="@id/debug_network_error" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
+        </LinearLayout>
+        <com.dianping.widget.DPBasicItem android:id="@id/debug_force_network_error" dp:dptitle="模拟10次网络错误" style="@style/SingleLineTableItemWithPadding" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip">
+            <CheckBox android:id="@id/tunnel_debug" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tunnel长连" />
+            <CheckBox android:id="@id/tunnel_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="输出日志" />
+            <CheckBox android:id="@id/tunnel_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="beta长连配置" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/tunnel_debug_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+            <CheckBox android:id="@id/tunnel_enabled" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="false" android:text="Tunnel" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/utn_enabled" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="false" android:text="UDP" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/http_enabled" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="true" android:text="HTTP" android:layout_weight="1.0" />
+            <CheckBox android:id="@id/wns_enabled" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="false" android:text="WNS" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.widget.DPBasicItem android:id="@id/webview_debug" dp:dptitle="WebView调试" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/guidance_reset_item" dp:dptitle="引导与重置" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.widget.DPBasicItem android:id="@id/btn_open_scheme" dp:dptitle="查看 Scheme" style="@style/SingleLineTableItemWithPadding" />
+        <LinearLayout android:orientation="horizontal" style="@style/SingleLineTableItemWithLeftPadding">
+            <EditText android:textSize="@dimen/text_size_18" android:id="@id/text_url" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="dianping://" android:hint="输入要打开的url" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/text_size_18" android:id="@id/btn_open_url" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="打开" />
+        </LinearLayout>
+        <com.dianping.base.widget.TableHeader android:layout_width="fill_parent" android:layout_height="@dimen/section_height" />
+        <com.dianping.widget.DPBasicItem android:id="@id/statistics_item" dp:dptitle="日志统计" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/debug_send_crash" dp:dptitle="查看/发送上一次crash报告" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/debug_send_dpid" dp:dptitle="发送dpid" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/detail_info_item" dp:dptitle="调试信息" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/debug_off" dp:dptitle="关闭调试" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/debug_agentconfig" dp:dptitle="查看/复制/发送可配模块列表" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/debug_showcachefilesize" dp:dptitle="查看App磁盘空间占用" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+        <com.dianping.widget.DPBasicItem android:id="@id/permissiontest" dp:dptitle="runtime permission test" dp:clickable="true" style="@style/SingleLineTableItemWithPadding" />
+    </com.dianping.base.widget.TableView>
+</ScrollView>

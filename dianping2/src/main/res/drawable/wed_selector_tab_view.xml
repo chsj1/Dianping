@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@color/line_gray" />
+            <item android:drawable="@color/light_line_red" android:bottom="1.0dip" />
+            <item android:drawable="@color/white" android:bottom="3.0dip" />
+        </layer-list>
+    </item>
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:drawable="@color/line_gray" />
+            <item android:drawable="@color/light_line_red" android:bottom="1.0dip" />
+            <item android:drawable="@color/white" android:bottom="3.0dip" />
+        </layer-list>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item android:drawable="@color/line_gray" />
+            <item android:drawable="@color/light_line_red" android:bottom="1.0dip" />
+            <item android:drawable="@color/white" android:bottom="3.0dip" />
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:drawable="@color/line_gray" />
+            <item android:drawable="@color/white" android:bottom="1.0dip" />
+        </layer-list>
+    </item>
+</selector>

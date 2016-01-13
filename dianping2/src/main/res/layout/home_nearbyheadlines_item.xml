@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:id="@id/nearby_headlines" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/nearby_headlines_img" android:layout_width="72.0dip" android:layout_height="21.0dip" android:src="@drawable/home_nearbyheadlines_img" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/nearby_headlines_arrow" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow" android:layout_alignParentRight="true" />
+    <TextSwitcher android:id="@id/nearby_headlines_title" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:inAnimation="@anim/slide_in_from_bottom" android:outAnimation="@anim/slide_out_to_top" android:layout_toLeftOf="@id/nearby_headlines_arrow" android:layout_toRightOf="@id/nearby_headlines_img">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </TextSwitcher>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="91.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="60.0dip">
+        <com.dianping.base.widget.CircleImageView android:id="@id/actor_icon_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:scaleType="fitCenter" dp:placeholderEmpty="@drawable/portrait_def" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" />
+        <View android:background="@color/line_gray" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/tuan_common_black" android:id="@id/actor_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:singleLine="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/tuan_common_gray" android:id="@id/actor_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:singleLine="true" />
+</com.dianping.widget.view.NovaLinearLayout>

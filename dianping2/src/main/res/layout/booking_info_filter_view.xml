@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_header" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.dianping.widget.view.NovaLinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/filter_view" android:background="@drawable/booking_channel_filter_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_booking_info_filter_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/yy_booking_info_edit" />
+            <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/filter_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </com.dianping.widget.view.NovaLinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_black" android:layout_gravity="center_horizontal" android:id="@id/booking_empty_shoplist_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="您选择的时间点无符合预订条件商户，请更改就餐时间" />
+</LinearLayout>

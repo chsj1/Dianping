@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/head" android:layout_width="103.81dip" android:layout_height="32.809998dip" android:layout_marginTop="12.0dip" android:src="@drawable/hotel_prod_recommend_selected_title" />
+    <RelativeLayout android:id="@id/short_recommend_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/editprofile_orange" android:id="@id/short_recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="去江南古典园林，住私家园林式酒店" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/hotel_prod_short_left_tag" android:layout_toLeftOf="@id/short_recommend" />
+        <ImageView android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="16.0dip" android:src="@drawable/hotel_prod_short_right_tag" android:layout_toRightOf="@id/short_recommend" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/recommend_content" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

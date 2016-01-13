@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.tencentmap.mapsdk.maps.MapView android:id="@id/map" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:layout_gravity="bottom|center|right" android:id="@id/my_location" android:background="@drawable/btn_my_local_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" />
+    </FrameLayout>
+    <include android:layout_gravity="center" android:id="@id/id_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/loading_item" />
+    <include android:layout_gravity="center" android:id="@id/id_loading_fail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/error_item" />
+    <FrameLayout android:id="@id/id_custom_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

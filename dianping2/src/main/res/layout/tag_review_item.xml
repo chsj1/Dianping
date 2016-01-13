@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/tag_lay" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_medium_2" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/tag_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17.0dip" android:text="title" android:singleLine="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/text_medium_1" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/tag_text" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/my_info_arrow" android:layout_toRightOf="@id/tag_title" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/my_info_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

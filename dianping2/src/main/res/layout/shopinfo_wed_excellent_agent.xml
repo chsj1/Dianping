@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.widget.view.NovaLinearLayout android:orientation="horizontal" android:id="@id/wed_excellent_agent_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shopinfo_marginleft" android:src="@drawable/shopinfo_wed_excellent_marker" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/wed_excellent_top_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="服务全面升级，了解详情" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/shopinfo_marginright" android:src="@drawable/arrow" />
+    </com.dianping.widget.view.NovaLinearLayout>
+    <View android:background="@color/background_gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/shopinfo_marginleft" />
+    <com.dianping.base.widget.MeasuredGridView android:id="@id/wed_excellent_gridview" android:paddingLeft="@dimen/shopinfo_marginleft" android:paddingTop="10.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+</com.dianping.widget.view.NovaLinearLayout>

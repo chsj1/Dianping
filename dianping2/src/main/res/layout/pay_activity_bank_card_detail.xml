@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.base.widget.NetworkThumbView android:id="@id/bank_icon" android:padding="5.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/bank_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:id="@id/tv_bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/tuan_common_gray" android:ellipsize="end" android:id="@id/tv_bank_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.dianping.base.widget.TableView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单笔限额" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:id="@id/tv_once_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单日限额" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/tuan_common_black" android:ellipsize="end" android:id="@id/tv_day_limit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </com.dianping.base.widget.TableView>
+</LinearLayout>

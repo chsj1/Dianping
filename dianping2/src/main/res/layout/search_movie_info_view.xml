@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaRelativeLayout android:id="@id/search_one_movie_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <com.dianping.search.view.SearchBlurImageView android:id="@id/blur_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" dp:placeholderEmpty="@color/transparent" dp:placeholderLoading="@color/transparent" dp:placeholderError="@color/transparent" />
+    <FrameLayout android:id="@id/movie_pic_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <com.dianping.base.widget.NetworkThumbView android:layout_gravity="center_vertical" android:id="@id/movie_icon_img" android:layout_width="100.0dip" android:layout_height="140.0dip" android:scaleType="fitXY" dp:placeholderEmpty="@drawable/search_movie_photo_default" dp:placeholderLoading="@drawable/search_movie_photo_default" dp:placeholderError="@drawable/search_movie_photo_default" />
+        <ImageView android:id="@id/movie_edition" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/movie_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/movie_arrow" android:layout_toRightOf="@id/movie_pic_layout">
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/white" android:ellipsize="end" android:id="@id/movie_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="夏洛特烦恼" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layer_grade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="6.0dip">
+            <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/light_orange" android:ellipsize="end" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.9" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_medium" android:textColor="@color/light_orange" android:id="@id/grade_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="分" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/movie_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/search_white_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.dianping.widget.view.NovaRelativeLayout>

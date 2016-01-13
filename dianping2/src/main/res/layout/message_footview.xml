@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/footview" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:background="@color/listitem_divide" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_gray" android:gravity="center" android:id="@id/message_tips" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

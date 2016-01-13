@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dianping.widget.view.NovaLinearLayout android:orientation="vertical" android:background="@drawable/wed_gray_stroke" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dp="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.dianping.widget.NetworkImageView android:id="@id/imageView_caselist_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:minHeight="110.0dip" dp:placeholderEmpty="@drawable/placeholder_empty" dp:placeholderLoading="@drawable/placeholder_loading" dp:placeholderError="@drawable/placeholder_error" dp:isCorner="false" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/imageView_caselist_item_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/wed_icon_case_special" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bottom_layout_id" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_gray" android:gravity="center_vertical" android:id="@id/wed_caselist_item_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="102张" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/deep_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/wed_caselist_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="韩国的邂逅" android:singleLine="true" android:layout_toLeftOf="@id/wed_caselist_item_count" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</com.dianping.widget.view.NovaLinearLayout>

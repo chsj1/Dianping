@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.dianping.wed.baby.widget.PullViewPager android:id="@id/wed_casedetail_pullviewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip">
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/light_red" android:id="@id/wed_casedetail_feature" android:background="@drawable/background_light_red_border_nopadding" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/deep_gray" android:ellipsize="end" android:id="@id/wed_casedetail_casename" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" android:singleLine="false" android:layout_toLeftOf="@id/wed_casedetail_feature" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:paddingLeft="@dimen/shopinfo_marginleft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/light_red" android:gravity="bottom" android:id="@id/text1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="¥" android:singleLine="true" android:layout_alignBottom="@id/text2" />
+        <TextView android:textSize="@dimen/text_size_32" android:textColor="@color/light_line_red" android:gravity="bottom" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/wedding_edit_hint_gray" android:gravity="bottom" android:id="@id/text3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>
